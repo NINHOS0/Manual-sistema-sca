@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import HomeMainItem from "./HomeMainItem";
 import { galleryItem, linkItem, textItem } from "@/interfaces/itensProps";
 import Lightbox from "yet-another-react-lightbox"
-import { Counter, Thumbnails, Captions } from "yet-another-react-lightbox/plugins";
+import { Counter, Thumbnails, Captions, Zoom } from "yet-another-react-lightbox/plugins";
 import "yet-another-react-lightbox/styles.css";
 import "yet-another-react-lightbox/plugins/counter.css";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
@@ -35,6 +35,7 @@ export default function HomeMainContent({ content }: HomeMainContentProps) {
   const [open, setOpen] = useState(false);
   const [image, setImage] = useState<number>(0);
   const captionsRef = useRef<any>(null);
+  const zoomRef = useRef<any>(null);
 
   function getIndex(src: string): number {
     let index = -1;
@@ -62,11 +63,17 @@ export default function HomeMainContent({ content }: HomeMainContentProps) {
         close={() => setOpen(false)}
         slides={images}
         index={image}
-        plugins={[Counter, Thumbnails, Captions]}
-        counter={{ container: { style: { top: "unset", bottom: -10, left: '50%', transform: 'translateX(-50%)' } } }}
+        plugins={[Counter, Thumbnails, Captions, Zoom]}
+        counter={{ container: { style: { top: "unset", bottom: -10, left: '50%', transform: 'translateX(-60%)' } } }}
         thumbnails={{ imageFit: 'cover', padding: 0 }}
         captions={{ ref: captionsRef }}
         carousel={{ finite: true }}
+        zoom={{
+          ref: zoomRef,
+          maxZoomPixelRatio: 3,
+          wheelZoomDistanceFactor: 1000,
+          scrollToZoom: true
+        }}
         controller={{ closeOnBackdropClick: true, closeOnPullDown: false}}
       />
     </Stack>

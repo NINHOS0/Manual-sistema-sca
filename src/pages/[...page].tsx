@@ -90,8 +90,8 @@ export async function getStaticProps(context: any) {
   
   const _data_ = data[params.page[0]]
   const _content_ = params.page[2]
-    ? data[params.page[0]].filter((s: section) => s.id === params.page[1])[0].routes?.filter((sub: subsection) => sub.id.split('_')[0] === params.page[2])[0]?.content
-    : data[params.page[0]].filter((s: section) => s.id === params.page[1])[0]?.content
+    ? data[params.page[0]]?.filter((s: section) => s.id === params.page[1])[0].routes?.filter((sub: subsection) => sub.id.split('_')[0] === params.page[2])[0]?.content
+    : data[params.page[0]]?.filter((s: section) => s.id === params.page[1])[0]?.content
 
   return {
     props: {
