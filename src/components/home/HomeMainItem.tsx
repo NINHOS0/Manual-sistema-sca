@@ -22,7 +22,7 @@ export default function HomeMainItem({ item, handleOpenLighbox }: HomeMainItemPr
           {item.images.map((img, i) => (
             <Stack gap={0.5} key={i}>
               <Text fontSize={'xs'} color={'gray.400'}>{img.alt}</Text>
-              <Image src={`/img/${img.src}`} onClick={() => handleOpenLighbox(`/img/${img.src}`)} alt={img.alt} w={'full'} maxW={750} borderRadius={"lg"} />
+              <Image cursor={'pointer'} src={`/img/${img.src}`} onClick={() => handleOpenLighbox(`/img/${img.src}`)} alt={img.alt} w={'full'} maxW={750} borderRadius={"lg"} />
             </Stack>
           ))}
         </Grid>

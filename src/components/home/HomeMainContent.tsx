@@ -70,7 +70,7 @@ export default function HomeMainContent({ content }: HomeMainContentProps) {
         carousel={{ finite: true }}
         zoom={{
           ref: zoomRef,
-          maxZoomPixelRatio: 3,
+          maxZoomPixelRatio: 2,
           wheelZoomDistanceFactor: 1000,
           scrollToZoom: true
         }}

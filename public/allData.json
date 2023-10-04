@@ -13,7 +13,7 @@
           },
           {
             "type": "text",
-            "value": "Na tela inicial/painel é possível observar quantidade de visitas pendentes qu ainda faltam, e a quantidade de visitas já realizadas, junto com a integração do gráfico separada em meses para uma melhor visualização."
+            "value": "Na tela inicial/painel é possível observar quantidade de visitas pendentes que ainda restam, e quantidade de visitas já realizadas, junto com a integração do gráfico mensal para uma melhor visualização."
           },
           {
             "type": "gallery",
@@ -41,14 +41,41 @@
             "fontSize": "lg"
           },
           {
+            "type": "gallery",
+            "images": [
+              {
+                "src": "vendas_01.png",
+                "alt": "Adicionando nova venda"
+              }
+            ]
+          },
+          {
             "type": "text",
             "value": "Após preencher todos os campos pressione o botão 'Incluir Item', após apertar o botão, os campos de 'Produtos' e 'Quantidade' serão limpos, e os dados informados apareceram na tabela conforme a imagem abaixo:",
             "fontSize": "lg"
           },
           {
+            "type": "gallery",
+            "images": [
+              {
+                "src": "vendas_02.png",
+                "alt": "Adicionando venda á tabela"
+              }
+            ]
+          },
+          {
             "type": "text",
-            "value": "Ao adicionar todos os produtos da venda é só clicar no botão 'Finalizar', ou cancelar caso não queira proseguir.",
+            "value": "Ao adicionar todos os produtos da venda você pode removê-los individualmente clicando no ícone de lixeira ou clicar no botão 'Finalizar' para realizar a venda, caso queira cancelar a operação é só pressionar o botão 'Cancelar'.",
             "fontSize": "lg"
+          },
+          {
+            "type": "gallery",
+            "images": [
+              {
+                "src": "vendas_03.png",
+                "alt": "Finalização da venda"
+              }
+            ]
           }
         ]
       },
@@ -90,6 +117,10 @@
               {
                 "src": "agenda_01.png",
                 "alt": "Conhecendo a página de agenda"
+              },
+              {
+                "src": "agenda_02.png",
+                "alt": "Agendando uma nova visita"
               }              
             ]
           },
@@ -101,10 +132,6 @@
           {
             "type": "gallery",
             "images": [
-              {
-                "src": "agenda_02.png",
-                "alt": "Agendando uma nova visita"
-              },
               {
                 "src": "agenda_03.png",
                 "alt": "Visualizando a visita agendada no calendário"
