@@ -1,0 +1,221 @@
+{
+  "data": {
+    "pt-br": [
+      {
+        "id": "inicio",
+        "name": "Início",
+        "content": [
+          {
+            "type": "text",
+            "fontSize": "3xl",
+            "fontWeight": "bold",
+            "value": "Painel inicial"
+          },
+          {
+            "type": "text",
+            "value": "Na tela inicial/painel é possível observar quantidade de visitas pendentes qu ainda faltam, e a quantidade de visitas já realizadas, junto com a integração do gráfico separada em meses para uma melhor visualização."
+          },
+          {
+            "type": "gallery",
+            "images": [
+              {
+                "src": "painel.png",
+                "alt": "Página inicial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "vendas",
+        "name": "Vendas",
+        "content": [
+          {
+            "type": "text",
+            "value": "Vendas",
+            "fontSize": "3xl"
+          },
+          {
+            "type": "text",
+            "value": "Olhando para a interface podemos visualizar o campo formulário e de tabela, vendo o formulário temos os campos 'Cliente' que listas todos os clientes, o campo 'Produto' onde podemos escolher o produto, 'Quantidade' quantidade de produtos e 'Forma de Pagamento' a escolha de método de pagamento do cliente.",
+            "fontSize": "lg"
+          },
+          {
+            "type": "text",
+            "value": "Após preencher todos os campos pressione o botão 'Incluir Item', após apertar o botão, os campos de 'Produtos' e 'Quantidade' serão limpos, e os dados informados apareceram na tabela conforme a imagem abaixo:",
+            "fontSize": "lg"
+          },
+          {
+            "type": "text",
+            "value": "Ao adicionar todos os produtos da venda é só clicar no botão 'Finalizar', ou cancelar caso não queira proseguir.",
+            "fontSize": "lg"
+          }
+        ]
+      },
+      {
+        "id": "clientes",
+        "name": "Clientes",
+        "routes": [
+          {
+            "id": "adicionar-cliente",
+            "name": "Adicionar cliente"
+          },
+          {
+            "id": "atualizar-cliente",
+            "name": "Atualizar cliente"
+          }
+        ]
+      },
+      {
+        "id": "produtos",
+        "name": "Produtos"
+      },
+      {
+        "id": "agenda",
+        "name": "Agenda",
+        "content": [
+          {
+            "type": "text",
+            "value": "Agenda",
+            "fontSize": "3xl"
+          },
+          {
+            "type": "text",
+            "value": "Abrindo a página de 'Agenda' podemos ver o botão 'Agendar Visita' e o calendário, pressionando o botão vemos na direita o formulário para agendar uma entrevista. O campo de 'Título' para os principais detalhes, 'Data & Hora' para sinalizar a data e horário da visita, 'Cliente' cliente á ser visitado, 'Descrição' demais dados sobre a visita e o 'Endereço' local da visita.",
+            "fontSize": "lg"
+          },
+          {
+            "type": "gallery",
+            "images": [
+              {
+                "src": "agenda_01.png",
+                "alt": "Conhecendo a página de agenda"
+              }              
+            ]
+          },
+          {
+            "type": "text",
+            "value": "Preenchendo todos os dados necessários e clicando no botão de 'Agenda Visita' o formulário será fechado e aparecerá no calendário a visita registrada conforme imagem abaixo:",
+            "fontSize": "lg"
+          },
+          {
+            "type": "gallery",
+            "images": [
+              {
+                "src": "agenda_02.png",
+                "alt": "Agendando uma nova visita"
+              },
+              {
+                "src": "agenda_03.png",
+                "alt": "Visualizando a visita agendada no calendário"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "value": "Clicando na visita pré-criada no calendário conseguimos visualizar e editar todas as informações sobre a visita, caso for feita alguma alteração é só clicar em 'Salvar Alterações' para não perder os dados modificados, ou clique em 'Concluir OS' para concluir a visita.",
+            "fontSize": "lg"
+          },
+          {
+            "type": "gallery",
+            "images": [
+              {
+                "src": "agenda_04.png",
+                "alt": "Abrindo e editando a visita agendada"
+              }              
+            ]
+          }
+        ]
+      },
+      {
+        "id": "importar-xml",
+        "name": "Importar XML"
+      },
+      {
+        "id": "contas-a-receber",
+        "name": "Contas a receber"
+      },
+      {
+        "id": "relatorios",
+        "name": "Relatórios",
+        "content": [
+          {
+            "type": "text",
+            "value": "Relatórios",
+            "fontSize": "3xl"
+          },
+          {
+            "type": "text",
+            "value": "Seguindo a imagem abaixo pode-se visualizar a aba de 'Inventário de Estoque', abrindo a aba você consegue selecionar o intervalo de início e final pela data, após selecionar o intervalo desejado clique em 'Gerar PDF' e salve-o em um lugar seguro.",
+            "fontSize": "lg"
+          },
+          {
+            "type": "gallery",
+            "images": [
+              {
+                "src": "relatorios_01.png",
+                "alt": "Abrindo relatório 'Inventário de Estoque'"
+              },
+              {
+                "src": "relatorios_02.png",
+                "alt": "Exportando pdf"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+
+    "en": [
+      {
+        "id": "inicio",
+        "name": "Welcome",
+        "content": [
+          {
+            "type": "text",
+            "fontSize": "3xl",
+            "fontWeight": "bold",
+            "value": "Welcome"
+          },
+          {
+            "type": "text",
+            "value": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, pariatur exercitationem! Iste deserunt adipisci, fuga omnis sequi aspernatur ad rerum nobis, doloribus odit maxime dignissimos commodi ex vitae totam. Quibusdam? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non perspiciatis fuga vero dolorum quaerat, corporis numquam? Omnis, debitis alias tempore soluta doloremque recusandae quo explicabo officiis, reprehenderit molestias possimus in."
+          },
+          {
+            "type": "link",
+            "value": "Go to products",
+            "url": "produtos/cadastro"
+          }
+        ]
+      },
+      {
+        "id": "produtos",
+        "name": "Products",
+        "routes": [
+          {
+            "id": "cadastro_produtos",
+            "name": "New product",
+            "content": [
+              {
+                "type": "text",
+                "fontSize": "2xl",
+                "value": "Cadaster of products"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+
+  "languages": [
+    {
+      "id": "pt-br",
+      "name": "Português"
+    },
+    {
+      "id": "en",
+      "name": "English"
+    }
+  ]
+}

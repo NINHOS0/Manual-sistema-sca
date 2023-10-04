@@ -1,12 +1,14 @@
 import { galleryItem, linkItem, textItem } from "@/interfaces/itensProps"
 import { ExternalLinkIcon } from "@chakra-ui/icons"
-import { Flex, Image, Link, Text } from "@chakra-ui/react"
+import { Grid, Image, Link, Stack, Text } from "@chakra-ui/react"
 
 interface HomeMainItemProps {
   item: (textItem | linkItem | galleryItem)
+  handleOpenLighbox: (src: string) => void
 }
 
-export default function HomeMainItem({ item }: HomeMainItemProps) {
+export default function HomeMainItem({ item, handleOpenLighbox }: HomeMainItemProps) {
+
   return (
     <>
       {
@@ -16,11 +18,14 @@ export default function HomeMainItem({ item }: HomeMainItemProps) {
       ? <Link display={"inline-flex"} alignItems={"center"} gap={"1"} color={"blue.500"} w={'fit-content'} fontSize={item.fontSize} fontWeight={item.fontWeight} href={`${item.url}`}><ExternalLinkIcon boxSize={'3.5'} />{item.value}</Link>
       : item.type === "gallery"
       ? (
-        <Flex flexWrap={{ base: "wrap", lg: "nowrap" }} gap={4} justifyContent={"center"} mt={8} mx={8}>
+        <Grid templateColumns={{base: '1fr', lg: `repeat(${item.images.length <= 1 ? '1' : 2}, 1fr)`}} justifyItems={{base: 'center', lg: 'baseline'}} gap={2} mt={1} mb={12}>
           {item.images.map((img, i) => (
-            <Image key={1} src={`./img/${img.src}`} alt={img.alt} minW={"200px"} w={{ base: "250px", lg: "350px" }} borderRadius={"lg"} />
+            <Stack gap={0.5} key={i}>
+              <Text fontSize={'xs'} color={'gray.400'}>{img.alt}</Text>
+              <Image src={`/img/${img.src}`} onClick={() => handleOpenLighbox(`/img/${img.src}`)} alt={img.alt} w={'full'} maxW={750} borderRadius={"lg"} />
+            </Stack>
           ))}
-        </Flex>
+        </Grid>
       )
       : ''}
     </>

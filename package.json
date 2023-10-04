@@ -21,12 +21,14 @@
     "eslint": "8.47.0",
     "eslint-config-next": "13.4.16",
     "framer-motion": "^10.16.0",
-    "next": "13.4.16",
+    "next": "^13.5.4",
     "postcss": "8.4.28",
     "react": "18.2.0",
     "react-beautiful-dnd": "^13.1.1",
     "react-dom": "18.2.0",
+    "sharp": "^0.32.6",
     "tailwindcss": "3.3.3",
-    "typescript": "5.1.6"
+    "typescript": "5.1.6",
+    "yet-another-react-lightbox": "^3.12.2"
   }
 }

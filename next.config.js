@@ -1,9 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: false,
-  images: {
-    path: './public/img/'
-  }
+  reactStrictMode: true,
 }
 
 module.exports = nextConfig
