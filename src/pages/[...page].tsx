@@ -16,9 +16,10 @@ interface InitialHomeProps {
   data: section[]
   content: (textItem | linkItem | galleryItem)[]
   languages: language[]
+  projectVersion: string
 }
 
-export default function InitialHome({ data, content, languages }: InitialHomeProps) {
+export default function InitialHome({ data, content, languages, projectVersion }: InitialHomeProps) {
   const { isOpen, onOpen, onClose } = useDisclosure()
 
   return (
@@ -60,7 +61,8 @@ export default function InitialHome({ data, content, languages }: InitialHomePro
           </Box>
         </Flex>
         <Flex align={"center"} justify={"center"} w={"full"} h={8} color={"black"} bgColor={"blackAlpha.200"} _dark={{ color: "white", bgColor: "blackAlpha.500" }}>
-          <Text fontSize={"xs"} fontWeight={"medium"}>Innosec - Manual de utilização do sistema</Text>
+          <Text fontSize={"sm"} fontWeight={"medium"}>Innosec - Manual de utilização do sistema</Text>
+          <Box fontSize={"xs"} as="span" pos={'absolute'} right={2}>Versão {projectVersion}</Box>
         </Flex>
       </Flex>
     </>
@@ -88,6 +90,14 @@ export async function getStaticProps(context: any) {
   
   const { params } = context
   
+  const fs = require('fs');
+  const path = require('path');
+  
+  const packageJsonPath = path.resolve(process.cwd(), 'package.json');  
+  const packageJsonContent = fs.readFileSync(packageJsonPath, 'utf8');
+  const packageJson = JSON.parse(packageJsonContent);
+  const projectVersion: string = packageJson.version;  
+
   const _data_ = data[params.page[0]]
   const _content_ = params.page[2]
     ? data[params.page[0]]?.filter((s: section) => s.id === params.page[1])[0].routes?.filter((sub: subsection) => sub.id.split('_')[0] === params.page[2])[0]?.content
@@ -97,7 +107,8 @@ export async function getStaticProps(context: any) {
     props: {
       data: _data_,
       content: _content_ || [],
-      languages: dataLang
+      languages: dataLang,
+      projectVersion: projectVersion
     }
   }
 }

@@ -1,4 +1,4 @@
-import { galleryItem, linkItem, textItem } from "./itensProps";
+import { galleryItem, linkItem, listItem, textItem } from "./itensProps";
 
 export interface data {
   languages: language[];
@@ -17,12 +17,12 @@ export interface content {
 export interface section {
   id: string;
   name: string;
-  content?: (textItem | linkItem | galleryItem)[];
+  content?: (textItem | linkItem | galleryItem | listItem)[];
   routes?: subsection[];
 }
 
 export interface subsection {
   id: string;
   name: string;
-  content: (textItem | linkItem | galleryItem)[];
+  content: (textItem | linkItem | galleryItem | listItem)[];
 }

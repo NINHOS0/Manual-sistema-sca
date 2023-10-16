@@ -14,6 +14,17 @@ export interface linkItem {
   url: string;
 }
 
+export interface listItem {
+  type: 'list';
+  style: 'number' | 'point';
+  list: listObject[]
+}
+
+interface listObject {
+  title: string,
+  text?: string
+}
+
 export interface galleryItem {
   type: 'gallery';
   images: image[];

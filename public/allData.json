@@ -7,13 +7,13 @@
         "content": [
           {
             "type": "text",
-            "fontSize": "3xl",
+            "fontSize": "2xl",
             "fontWeight": "bold",
             "value": "Painel inicial"
           },
           {
             "type": "text",
-            "value": "Na tela inicial/painel é possível observar quantidade de visitas pendentes que ainda restam, e quantidade de visitas já realizadas, junto com a integração do gráfico mensal para uma melhor visualização."
+            "value": "Na tela inicial/painel, podemos indentificar o número de visitas pendentes e concluídas, além de um gráfico mensal para uma visão mais clara."
           },
           {
             "type": "gallery",
@@ -26,19 +26,44 @@
           }
         ]
       },
+
+
+
       {
         "id": "vendas",
         "name": "Vendas",
         "content": [
           {
             "type": "text",
-            "value": "Vendas",
-            "fontSize": "3xl"
+            "value": "Página de Vendas",
+            "fontSize": "2xl",
+            "fontWeight": "bold"
           },
           {
             "type": "text",
-            "value": "Olhando para a interface podemos visualizar o campo formulário e de tabela, vendo o formulário temos os campos 'Cliente' que listas todos os clientes, o campo 'Produto' onde podemos escolher o produto, 'Quantidade' quantidade de produtos e 'Forma de Pagamento' a escolha de método de pagamento do cliente.",
-            "fontSize": "lg"
+            "value": "Na tela de vendas, podemos identificar duas sessões importantes: um formulário e uma tabela. No formulário, encontramos os seguintes campos:"
+          },
+          {
+            "type": "list",
+            "style": "point",
+            "list": [
+              {
+                "title": "Cliente"
+              },
+              {
+                "title": "Produto"
+              },
+              {
+                "title": "Quantidade"
+              },
+              {
+                "title": "Forma de Pagamento"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "value": "Para adicionar um novo item, preencha todos os campos e clique no botão 'Incluir Item'. Após apertar o botão os dados inseridos serão exibidos na tabela, conforme mostrado na imagem abaixo:"
           },
           {
             "type": "gallery",
@@ -46,27 +71,16 @@
               {
                 "src": "vendas_01.png",
                 "alt": "Adicionando nova venda"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "value": "Após preencher todos os campos pressione o botão 'Incluir Item', após apertar o botão, os campos de 'Produtos' e 'Quantidade' serão limpos, e os dados informados apareceram na tabela conforme a imagem abaixo:",
-            "fontSize": "lg"
-          },
-          {
-            "type": "gallery",
-            "images": [
+              },
               {
                 "src": "vendas_02.png",
-                "alt": "Adicionando venda á tabela"
+                "alt": "Adicionando venda à tabela"
               }
             ]
           },
           {
             "type": "text",
-            "value": "Ao adicionar todos os produtos da venda você pode removê-los individualmente clicando no ícone de lixeira ou clicar no botão 'Finalizar' para realizar a venda, caso queira cancelar a operação é só pressionar o botão 'Cancelar'.",
-            "fontSize": "lg"
+            "value": "Para adicionar todos os produtos à venda, basta clicar no botão 'Finalizar venda'. Se precisar remover algum produto individualmente, clique no ícone de lixeira. Se desejar cancelar a operação, simplesmente pressione o botão 'Cancelar'."
           },
           {
             "type": "gallery",
@@ -79,24 +93,577 @@
           }
         ]
       },
+
+
+
       {
         "id": "clientes",
         "name": "Clientes",
         "routes": [
           {
-            "id": "adicionar-cliente",
-            "name": "Adicionar cliente"
+            "id": "adicionar",
+            "name": "Adicionar",
+            "content": [
+              {
+                "type": "text",
+                "value": "Adicionando Cliente",
+                "fontSize": "2xl",
+                "fontWeight": "bold"
+              },
+              {
+                "type": "text",
+                "value": "Na tela clientes, podemos identificar o botão 'Adicionar' na direita superior da tela, entrando no botão vemos a seguinte tela:"
+              },
+              {
+                "type": "gallery",
+                "images": [
+                  {
+                    "src": "clientes_01.png",
+                    "alt": "Acessando página para registro de cliente"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "value": "Ao acessar podemos visualizar três abas: Principal, contato e localização. Cada uma dessas abas contêm um formulário, começando pelo principal percebemos um botão de alternar entre CNPJ e CPF, selecionando CNPJ temos os seguintes campos:"
+              },
+              {
+                "type": "list",
+                "style": "point",
+                "list": [
+                  {
+                    "title": "CNPJ",
+                    "text": "CNPJ do cliente."
+                  },
+                  {
+                    "title": "Nome",
+                    "text": "Nome completo do cliente."
+                  },
+                  {
+                    "title": "Nome Fantasia",
+                    "text": "Nome fantasia do cliente, se houver."
+                  },
+                  {
+                    "title": "Inscrição Estadual",
+                    "text": "Inscrição estadual do cliente, se houver."
+                  },
+                  {
+                    "title": "Fundação",
+                    "text": "Data de fundação do cliente"
+                  },
+                  {
+                    "title": "Data de Abertura",
+                    "text": "Data de abertura do local do cliente."
+                  },
+                  {
+                    "title": "Alugado?",
+                    "text": "Alterne esta opção se o local do cliente for alugado."
+                  },
+                  {
+                    "title": "Limite de Crédito",
+                    "text": "Limite de crédito do cliente"
+                  },
+                  {
+                    "title": "Inativo",
+                    "text": "Cliente está ativo no sistema."
+                  },
+                  {
+                    "title": "Grupo",
+                    "text": "Grupo ao qual o cliente pertence, ex: industrial, climatizadores, segurança e etc..."
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "value": "Se o cliente for por CPF os campos são:"
+              },
+              {
+                "type": "list",
+                "style": "point",
+                "list": [
+                  {
+                    "title": "CPF",
+                    "text": "CPF do cliente."
+                  },
+                  {
+                    "title": "Nome",
+                    "text": "Nome completo do cliente."
+                  },
+                  {
+                    "title": "RG",
+                    "text": "RG do cliente."
+                  },
+                  {
+                    "title": "Gênero",
+                    "text": "Gênero do cliente."
+                  },
+                  {
+                    "title": "Data de nascimento",
+                    "text": "Data de nascimento do cliente."
+                  },
+                  {
+                    "title": "Limite de Crédito",
+                    "text": "Limite de crédito do cliente"
+                  },
+                  {
+                    "title": "Grupo",
+                    "text": "Grupo ao qual o cliente pertence, ex: industrial, climatizadores, segurança e etc..."
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "value": "Para maior compreenção observe a imagem abaixo:"
+              },
+              {
+                "type": "gallery",
+                "images": [
+                  {
+                    "src": "clientes_02.png",
+                    "alt": "Formulário via CNPJ"
+                  },
+                  {
+                    "src": "clientes_03.png",
+                    "alt": "Formulário via CPF"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "value": "Caminhando para a segunda aba, 'Contato' veremos os seguintes campos:"
+              },
+              {
+                "type": "list",
+                "style": "point",
+                "list": [
+                  {
+                    "title": "E-mail",
+                    "text": "E-mail de contato do cliente."
+                  },
+                  {
+                    "title": "Fax",
+                    "text": "Fax do cliente."
+                  },
+                  {
+                    "title": "Celular",
+                    "text": "Celular de contato do cliente."
+                  },
+                  {
+                    "title": "Telefone",
+                    "text": "Telefone de contato do cliente."
+                  }
+                ]
+              },
+              {
+                "type": "gallery",
+                "images": [
+                  {
+                    "src": "clientes_04.png",
+                    "alt": "Aba de contado do cliente"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "value": "Finalizando para a aba de 'Localização' obtemos os campos:"
+              },
+              {
+                "type": "list",
+                "style": "point",
+                "list": [
+                  {
+                    "title": "Código Postal",
+                    "text": "Código postal do cliente."
+                  },
+                  {
+                    "title": "Bairro",
+                    "text": "Bairro do cliente."
+                  },
+                  {
+                    "title": "Rua",
+                    "text": "Rua do cliente."
+                  },
+                  {
+                    "title": "Município",
+                    "text": "Município do cliente."
+                  }
+                ]
+              },
+              {
+                "type": "gallery",
+                "images": [
+                  {
+                    "src": "clientes_05.png",
+                    "alt": "Aba de localização do cliente"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "value": "Após preencher todos os dados necessário do cliente aperte no botão 'Salvar' para adicionar o cliente. O botão 'Cancelar' ou 'Voltar' para retornar à página inicial."
+              }
+            ]
           },
           {
-            "id": "atualizar-cliente",
-            "name": "Atualizar cliente"
+            "id": "editar",
+            "name": "Editar",
+            "content": [
+              {
+                "type": "text",
+                "value": "Editando Cliente",
+                "fontSize": "2xl",
+                "fontWeight": "bold"
+              },
+              {
+                "type": "text",
+                "value": "Na tela clientes, podemos identificar os clientes cadastrados na lista, em cada um deles há uma opção editar e deletar cliente, como a imagem abaixo:"
+              },
+              {
+                "type": "gallery",
+                "images": [
+                  {
+                    "src": "clientes_01.png",
+                    "alt": "Acessando página para registro de cliente"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "value": "Na tela clientes, podemos identificar três abas: Principal, contato e localização. Cada uma dessas abas contêm um formulário, começando pelo principal percebemos um botão de alternar entre CNPJ e CPF, selecionando CNPJ temos os seguintes campos:"
+              },
+              {
+                "type": "list",
+                "style": "point",
+                "list": [
+                  {
+                    "title": "CNPJ",
+                    "text": "CNPJ do cliente."
+                  },
+                  {
+                    "title": "Nome",
+                    "text": "Nome completo do cliente."
+                  },
+                  {
+                    "title": "Nome Fantasia",
+                    "text": "Nome fantasia do cliente, se houver."
+                  },
+                  {
+                    "title": "Inscrição Estadual",
+                    "text": "Inscrição estadual do cliente, se houver."
+                  },
+                  {
+                    "title": "Fundação",
+                    "text": "Data de fundação do cliente"
+                  },
+                  {
+                    "title": "Data de Abertura",
+                    "text": "Data de abertura do local do cliente."
+                  },
+                  {
+                    "title": "Alugado?",
+                    "text": "Alterne esta opção se o local do cliente for alugado."
+                  },
+                  {
+                    "title": "Limite de Crédito",
+                    "text": "Limite de crédito do cliente"
+                  },
+                  {
+                    "title": "Inativo",
+                    "text": "Cliente está ativo no sistema."
+                  },
+                  {
+                    "title": "Grupo",
+                    "text": "Grupo ao qual o cliente pertence, ex: industrial, climatizadores, segurança e etc..."
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "value": "Se o cliente for por CPF os campos são:"
+              },
+              {
+                "type": "list",
+                "style": "point",
+                "list": [
+                  {
+                    "title": "CPF",
+                    "text": "CPF do cliente."
+                  },
+                  {
+                    "title": "Nome",
+                    "text": "Nome completo do cliente."
+                  },
+                  {
+                    "title": "RG",
+                    "text": "RG do cliente."
+                  },
+                  {
+                    "title": "Gênero",
+                    "text": "Gênero do cliente."
+                  },
+                  {
+                    "title": "Data de nascimento",
+                    "text": "Data de nascimento do cliente."
+                  },
+                  {
+                    "title": "Limite de Crédito",
+                    "text": "Limite de crédito do cliente"
+                  },
+                  {
+                    "title": "Grupo",
+                    "text": "Grupo ao qual o cliente pertence, ex: industrial, climatizadores, segurança e etc..."
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "value": "Para maior compreenção observe a imagem abaixo:"
+              },
+              {
+                "type": "gallery",
+                "images": [
+                  {
+                    "src": "clientes_02.png",
+                    "alt": "Formulário via CNPJ"
+                  },
+                  {
+                    "src": "clientes_03.png",
+                    "alt": "Formulário via CPF"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "value": "Caminhando para a segunda aba, 'Contato' veremos os seguintes campos:"
+              },
+              {
+                "type": "list",
+                "style": "point",
+                "list": [
+                  {
+                    "title": "E-mail",
+                    "text": "E-mail de contato do cliente."
+                  },
+                  {
+                    "title": "Fax",
+                    "text": "Fax do cliente."
+                  },
+                  {
+                    "title": "Celular",
+                    "text": "Celular de contato do cliente."
+                  },
+                  {
+                    "title": "Telefone",
+                    "text": "Telefone de contato do cliente."
+                  }
+                ]
+              },
+              {
+                "type": "gallery",
+                "images": [
+                  {
+                    "src": "clientes_04.png",
+                    "alt": "Aba de contado do cliente"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "value": "Finalizando para a aba de 'Localização' obtemos os campos:"
+              },
+              {
+                "type": "list",
+                "style": "point",
+                "list": [
+                  {
+                    "title": "Código Postal",
+                    "text": "Código postal do cliente."
+                  },
+                  {
+                    "title": "Bairro",
+                    "text": "Bairro do cliente."
+                  },
+                  {
+                    "title": "Rua",
+                    "text": "Rua do cliente."
+                  },
+                  {
+                    "title": "Município",
+                    "text": "Município do cliente."
+                  }
+                ]
+              },
+              {
+                "type": "gallery",
+                "images": [
+                  {
+                    "src": "clientes_05.png",
+                    "alt": "Aba de localização do cliente"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "value": "Após alterar as informações necessárias do cliente aperte no botão 'Salvar' para adicionar o cliente. O botão 'Cancelar' ou 'Voltar' para retornar à página inicial."
+              }
+            ]
           }
         ]
       },
+
+
+
       {
         "id": "produtos",
-        "name": "Produtos"
+        "name": "Produtos",
+        "routes": [
+          {
+            "id": "adicionar",
+            "name": "Adicionar",
+            "content": [
+              {
+                "type": "text",
+                "value": "Na tela de produtos, podemos identificar o botão 'Adicionar' na direita superior da tela, entrando no botão vemos a seguinte tela:"
+              },
+              {
+                "type": "text",
+                "value": "No formulário conseguimos ver os seguintes campos:"
+              },
+              {
+                "type": "list",
+                "style": "point",
+                "list": [
+                  {
+                    "title": "Descrição:",
+                    "text": "Nome, descrição e demais informações do produto." 
+                  },
+                  {
+                    "title": "Código de barras:"
+                  },
+                  {
+                    "title": "Referência:"
+                  },
+                  {
+                    "title": "Fabricante:"
+                  },
+                  {
+                    "title": "Grupo:",
+                    "text": "Grupo/Categoria do produto." 
+                  },
+                  {
+                    "title": "Situação Tributária:" 
+                  },
+                  {
+                    "title": "Estoque:",
+                    "text": "Quantidade do produto no estoque." 
+                  },
+                  {
+                    "title": "Estoque Mínimo:",
+                    "text": "Quantidade do estoque mínimo para alerta." 
+                  },
+                  {
+                    "title": "Preço de Venda:",
+                    "text": "Valor do produto á ser vendido." 
+                  },
+                  {
+                    "title": "Preço de Custo:",
+                    "text": "Valor do custo de compra." 
+                  },
+                  {
+                    "title": "Margem de Lucro:",
+                    "text": "Margem de lucro em porcentagem (%)." 
+                  },
+                  {
+                    "title": "ICMS:"
+                  },
+                  {
+                    "title": "Ativo/Desativado:",
+                    "text": "Status do produto se está sendo circulado ou não." 
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "value": "Após preencher todos os campos clique em 'Cadastrar' para salvar o produto, ou 'Cancelar' para voltar."
+              }
+            ]
+          },
+          {
+            "id": "editar",
+            "name": "Editar",
+            "content": [
+              {
+                "type": "text",
+                "value": "Na tela produtos, podemos identificar o botão 'Adicionar' na direita superior da tela, entrando no botão vemos a seguinte tela:"
+              },
+              {
+                "type": "text",
+                "value": "No formulário conseguimos ver os seguintes campos:"
+              },
+              {
+                "type": "list",
+                "style": "point",
+                "list": [
+                  {
+                    "title": "Descrição:",
+                    "text": "Nome, descrição e demais informações do produto." 
+                  },
+                  {
+                    "title": "Código de barras:"
+                  },
+                  {
+                    "title": "Referência:"
+                  },
+                  {
+                    "title": "Fabricante:"
+                  },
+                  {
+                    "title": "Grupo:",
+                    "text": "Grupo/Categoria do produto." 
+                  },
+                  {
+                    "title": "Situação Tributária:" 
+                  },
+                  {
+                    "title": "Estoque:",
+                    "text": "Quantidade do produto no estoque." 
+                  },
+                  {
+                    "title": "Estoque Mínimo:",
+                    "text": "Quantidade do estoque mínimo para alerta." 
+                  },
+                  {
+                    "title": "Preço de Venda:",
+                    "text": "Valor do produto á ser vendido." 
+                  },
+                  {
+                    "title": "Preço de Custo:",
+                    "text": "Valor do custo de compra." 
+                  },
+                  {
+                    "title": "Margem de Lucro:",
+                    "text": "Margem de lucro em porcentagem (%)." 
+                  },
+                  {
+                    "title": "ICMS:"
+                  },
+                  {
+                    "title": "Ativo/Desativado:",
+                    "text": "Status do produto se está sendo circulado ou não." 
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "value": "Após preencher todos os campos clique em 'Cadastrar' para salvar o produto, ou 'Cancelar' para voltar."
+              }
+            ]
+          }
+        ]
       },
+
+
+
       {
         "id": "agenda",
         "name": "Agenda",
@@ -108,8 +675,34 @@
           },
           {
             "type": "text",
-            "value": "Abrindo a página de 'Agenda' podemos ver o botão 'Agendar Visita' e o calendário, pressionando o botão vemos na direita o formulário para agendar uma entrevista. O campo de 'Título' para os principais detalhes, 'Data & Hora' para sinalizar a data e horário da visita, 'Cliente' cliente á ser visitado, 'Descrição' demais dados sobre a visita e o 'Endereço' local da visita.",
+            "value": "Na tela de agenda, podemos identificar o botão 'Agendar Visita' e o calendário. Ao clicar no botão 'Agendar Visita', você verá à direita um formulário que permite agendar uma visita. No formulário, você preencherá os seguintes campos:",
             "fontSize": "lg"
+          },
+          {
+            "type": "list",
+            "style": "point",
+            "list": [
+              {
+                "title": "Título",
+                "text": "Principais detalhes."
+              },
+              {
+                "title": "Data & Hora",
+                "text": "Data e horário da visita."
+              },
+              {
+                "title": "Cliente",
+                "text": "O cliente que vai ser visitado."
+              },
+              {
+                "title": "Descrição",
+                "text": "Demais detalhes sobre a visita"
+              },
+              {
+                "title": "Endereço",
+                "text": "Localização da visita"
+              }
+            ]
           },
           {
             "type": "gallery",
@@ -126,7 +719,7 @@
           },
           {
             "type": "text",
-            "value": "Preenchendo todos os dados necessários e clicando no botão de 'Agenda Visita' o formulário será fechado e aparecerá no calendário a visita registrada conforme imagem abaixo:",
+            "value": "Preenchendo todos os dados necessários e clicando no botão de 'Agendar Visita' o formulário será fechado e aparecerá no calendário a visita registrada conforme imagem abaixo:",
             "fontSize": "lg"
           },
           {
@@ -140,7 +733,7 @@
           },
           {
             "type": "text",
-            "value": "Clicando na visita pré-criada no calendário conseguimos visualizar e editar todas as informações sobre a visita, caso for feita alguma alteração é só clicar em 'Salvar Alterações' para não perder os dados modificados, ou clique em 'Concluir OS' para concluir a visita.",
+            "value": "Ao clicar na visita que já está agendada no calendário, você poderá ver e fazer alterações em todas as informações relacionadas a essa visita. Se você fizer alguma alteração, basta clicar em 'Salvar Alterações' para garantir que as informações atualizadas sejam salvas. Se a visita já foi realizada, clique em 'Concluir OS' para definir como concluída.",
             "fontSize": "lg"
           },
           {
@@ -154,14 +747,35 @@
           }
         ]
       },
+
+
+
       {
         "id": "importar-xml",
-        "name": "Importar XML"
+        "name": "Importar XML",
+        "content": [
+          {
+            "type": "text",
+            "value": "Na tela de importar xml, podemos identificar um espaço para anexar um arquivo xml, caso tenha um arquivo xml de um produto, basta arrastar o arquivo no espaço disponível."
+          }
+        ]
       },
+
+
+
       {
         "id": "contas-a-receber",
-        "name": "Contas a receber"
+        "name": "Contas a receber",
+        "content": [
+          {
+            "type": "text",
+            "value": "Sem informações"
+          }
+        ]
       },
+
+
+
       {
         "id": "relatorios",
         "name": "Relatórios",
@@ -173,7 +787,7 @@
           },
           {
             "type": "text",
-            "value": "Seguindo a imagem abaixo pode-se visualizar a aba de 'Inventário de Estoque', abrindo a aba você consegue selecionar o intervalo de início e final pela data, após selecionar o intervalo desejado clique em 'Gerar PDF' e salve-o em um lugar seguro.",
+            "value": "Na tela de relatórios, podemos identificar 'Inventário de Estoque', basta seguir as instruções na imagem. Ao expandir, você pode escolher o período que deseja analisar, especificando a data de início e fim. Depois de definir o intervalo desejado, clique em 'Gerar PDF' e salve o arquivo em um local seguro.",
             "fontSize": "lg"
           },
           {
@@ -190,8 +804,40 @@
             ]
           }
         ]
+      },
+
+      {
+        "id": "site_sca",
+        "name": "Site SCA",
+        "routes": [
+          {
+            "id": "servicos",
+            "name": "Serviços",
+            "content": [
+              {
+                "type": "text",
+                "value": "Na aba serviços da tela site SCA, podemos identificar a lista de serviços, clicando no ícone de lápis você pode editar, e na lixeira para excluir. Caso queira adicionar um novo serviço, basta clicar em 'Novo Serviço'."
+              }
+            ]
+          },
+          {
+            "id": "faq",
+            "name": "FAQ",
+            "content": [
+              {
+                "type": "text",
+                "value": "Na aba FAQ da tela site SCA, podemos identificar a lista de FAQs, clicando no ícone de lápis você pode editar, e na lixeira para excluir. Caso queira adicionar um novo FAQ, basta clicar em 'Novo FAQ'."
+              }
+            ]
+          }
+        ]
       }
     ],
+
+
+
+
+
 
     "en": [
       {
@@ -234,6 +880,16 @@
       }
     ]
   },
+
+
+
+
+
+
+
+
+
+
 
   "languages": [
     {

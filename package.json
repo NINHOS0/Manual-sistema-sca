@@ -1,6 +1,6 @@
 {
   "name": "manual",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -21,6 +21,7 @@
     "eslint": "8.47.0",
     "eslint-config-next": "13.4.16",
     "framer-motion": "^10.16.0",
+    "fs": "^0.0.1-security",
     "next": "^13.5.4",
     "postcss": "8.4.28",
     "react": "18.2.0",

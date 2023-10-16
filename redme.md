@@ -12,3 +12,9 @@ Manual de utilização do sistema da empresa SCA Portões Eletrônicos para auxi
 + Adicionado changelog
 + Arrumado centralização da paginação das imagens
 + Adição de imagens na página 'Vendas'
+
+### Update 1.0.3
++ Adicionado sombreamento nas imagens
++ Adicionado componente de lista
++ Adicionado mostrador de versão
++ Adicionado novos conteúdos
