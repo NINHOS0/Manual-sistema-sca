@@ -31,3 +31,9 @@ Manual de utilização do sistema da empresa SCA Portões Eletrônicos para auxi
 + Arrumado posição da versão no mobile
 + Adicionado a base do manual do aplicativo
 + Adicionado novos conteúdos
+
+### Update 1.0.6
++ Adicionado a exibição no sidebar (Agora aparece em destaque a página que você está nos caminhos)
++ Adicionado loading nas imagens
++ Adicionado redirecionamento de página (Caso a página não for encontrada)
++ Alterado o ícone do site

@@ -1,7 +1,4 @@
-// import { Inter } from "next/font/google";
 import { Text, Flex, Box, IconButton, Drawer, DrawerOverlay, DrawerContent, DrawerBody, DrawerCloseButton, DrawerHeader, useDisclosure } from "@chakra-ui/react";
-// import { useRouter } from "next/router";
-import React, { useEffect, useContext } from "react";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import { language, section, subsection } from "@/interfaces/contentProps";
 import HomeHeader from "@/components/home/HomeHeader";
@@ -12,7 +9,6 @@ import HomeMainContent from "@/components/home/HomeMainContent";
 import { galleryItem, linkItem, textItem } from "@/interfaces/itensProps";
 import allData from "../../public/allData.json";
 import Head from "next/head";
-import { useRouter } from "next/router";
 
 interface InitialHomeProps {
   page: string
@@ -30,7 +26,7 @@ export default function InitialHome({ page, subpage, lang, data, content, langua
   return (
     <>
       <Head>
-        <title>{`${subpage ? `${page} - ${subpage}` : page}`}</title>
+        <title>{page ? (`${subpage ? `${page} - ${subpage}` : page}`) : "Manual de Utilização do Sistema"}</title>
       </Head>
       <Drawer
         isOpen={isOpen}
@@ -57,7 +53,7 @@ export default function InitialHome({ page, subpage, lang, data, content, langua
             <HomeAside data={data} />
           </Box>
           <Box flex={1}>
-            <Flex justifyContent={"space-between"} mb={"8"} alignItems={"center"}>
+            <Flex justifyContent={"space-between"} mb={"6"} alignItems={"center"}>
               <Box display={{ base: "none", md: "inherit" }}>
                 <HomeCurrentPage data={data} />
               </Box>
@@ -110,8 +106,18 @@ export async function getStaticProps(context: any) {
     ? data[params.page[0]]?.filter((s: section) => s.id === params.page[1])[0]?.routes?.filter((sub: subsection) => sub.id === params.page[2])[0]?.content
     : data[params.page[0]]?.filter((s: section) => s.id === params.page[1])[0]?.content || null
 
-    const page = _data_.filter((s: section) => s.id === params.page[1])[0]?.name || null
-    const subpage = params.page[2] && _data_.filter((s: section) => s.id === params.page[1])[0]?.routes.filter((sub: subsection) => sub.id === params.page[2])[0]?.name || null
+  const page = _data_.filter((s: section) => s.id === params.page[1])[0]?.name || null
+  const subpage = params.page[2] && _data_.filter((s: section) => s.id === params.page[1])[0]?.routes?.filter((sub: subsection) => sub.id === params.page[2])[0]?.name || null
+
+  if (!page || params.page[2] && !subpage) {
+    return {
+      redirect: {
+        destination: `/${params.page[0]}/inicio`,
+        permanent: false,
+      }
+    }
+  }
+    
   return {
     props: {
       page: page,
