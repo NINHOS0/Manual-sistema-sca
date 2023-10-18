@@ -8,7 +8,7 @@ interface HomeMainItemProps {
 }
 
 export default function HomeMainItem({ item, handleOpenLighbox }: HomeMainItemProps) {
-
+  
   return (
     <>
       {
@@ -18,7 +18,7 @@ export default function HomeMainItem({ item, handleOpenLighbox }: HomeMainItemPr
       ? <Link display={"inline-flex"} alignItems={"center"} gap={"1"} color={"blue.500"} w={'fit-content'} fontSize={item.fontSize} fontWeight={item.fontWeight} href={`${item.url}`}><ExternalLinkIcon boxSize={'3.5'} />{item.value}</Link>
       : item.type === "gallery"
       ? (
-        <Grid templateColumns={{base: '1fr', lg: `repeat(${item.images.length <= 1 ? '1' : 2}, 1fr)`}} justifyItems={{base: 'center', lg: 'baseline'}} gap={2} mt={1} mb={12} px={1}>
+        <Grid templateColumns={{base: '1fr', lg: `repeat(${item.images.length <= 1 ? '1' : 2}, 1fr)`}} justifyItems={{base: 'center', lg: 'baseline'}} gap={2} mt={1} mb={4} px={1}>
           {item.images.map((img, i) => (
             <Stack gap={0.5} key={i}>
               <Text fontSize={'xs'} color={'gray.400'}>{img.alt}</Text>

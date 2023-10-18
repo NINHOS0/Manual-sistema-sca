@@ -1,8 +1,9 @@
 import { language } from "@/interfaces/contentProps";
 import { Select, Tooltip } from "@chakra-ui/react";
 import { useRouter } from "next/router";
+import { memo } from 'react';
 
-export default function HomeLanguage({ languages }: { languages: language[] }) {
+const HomeLanguage = ({ languages }: { languages: language[] }) => {
   const route = useRouter()
   const { page } = route.query
 
@@ -18,3 +19,5 @@ export default function HomeLanguage({ languages }: { languages: language[] }) {
     </Tooltip>
   )
 }
+
+export default memo(HomeLanguage)

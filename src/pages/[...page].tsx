@@ -11,20 +11,27 @@ import HomeLanguage from "@/components/home/HomeLanguage";
 import HomeMainContent from "@/components/home/HomeMainContent";
 import { galleryItem, linkItem, textItem } from "@/interfaces/itensProps";
 import allData from "../../public/allData.json";
+import Head from "next/head";
+import { useRouter } from "next/router";
 
 interface InitialHomeProps {
+  page: string
+  subpage: string | null
+  lang: string
   data: section[]
   content: (textItem | linkItem | galleryItem)[]
   languages: language[]
   projectVersion: string
 }
 
-export default function InitialHome({ data, content, languages, projectVersion }: InitialHomeProps) {
+export default function InitialHome({ page, subpage, lang, data, content, languages, projectVersion }: InitialHomeProps) {
   const { isOpen, onOpen, onClose } = useDisclosure()
-
+  
   return (
     <>
-
+      <Head>
+        <title>{`${subpage ? `${page} - ${subpage}` : page}`}</title>
+      </Head>
       <Drawer
         isOpen={isOpen}
         onClose={onClose}
@@ -44,7 +51,7 @@ export default function InitialHome({ data, content, languages, projectVersion }
       </Drawer>
 
       <Flex bgColor={"gray.100"} color={"black"} _dark={{ color: "white", bgColor: "gray.900" }} direction={"column"} minH={"100vh"} h={"full"} alignItems={"center"}>
-        <HomeHeader data={data} />
+        <HomeHeader data={data} lang={lang}/>
         <Flex w={"full"} maxW={"1400px"} flex={1} py={8} pr={{ base: 4, sm: 8, md: 12 }} pl={{ base: 4, sm: 8, md: 12 }} overflow={{ base: "auto", md: "hidden" }}>
           <Box w={"56"} display={{ base: "none", md: "initial" }} pr={12}>
             <HomeAside data={data} />
@@ -74,13 +81,13 @@ export async function getStaticPaths() {
   const data: any = allData.data
 
   const paths: any[] = []
-  dataLang.map((lang: language) => data[lang.id]?.map((cont: section) => {
-    return cont.content ? paths.push({ params: { page: [lang.id, cont.id] } }) : cont.routes?.map((sub: subsection) => paths.push({ params: { page: [lang.id, cont.id, sub.id.split('_')[0]] } }))
+  dataLang.map((lang: language) => data[lang.id].map((cont: section) => {
+    return cont.content ? paths.push({ params: { page: [lang.id, cont.id] } }) : cont.routes?.map((sub: subsection) => paths.push({ params: { page: [lang.id, cont.id, sub.id] } }))
   }))
 
   return {
     paths: paths,
-    fallback: 'blocking'
+    fallback: "blocking"
   }
 }
 
@@ -100,11 +107,16 @@ export async function getStaticProps(context: any) {
 
   const _data_ = data[params.page[0]]
   const _content_ = params.page[2]
-    ? data[params.page[0]]?.filter((s: section) => s.id === params.page[1])[0].routes?.filter((sub: subsection) => sub.id.split('_')[0] === params.page[2])[0]?.content
-    : data[params.page[0]]?.filter((s: section) => s.id === params.page[1])[0]?.content
+    ? data[params.page[0]].filter((s: section) => s.id === params.page[1])[0]?.routes?.filter((sub: subsection) => sub.id === params.page[2])[0].content
+    : data[params.page[0]].filter((s: section) => s.id === params.page[1])[0]?.content || null
 
+    const page = _data_.filter((s: section) => s.id === params.page[1])[0]?.name || null
+    const subpage = params.page[2] && _data_.filter((s: section) => s.id === params.page[1])[0]?.routes.filter((sub: subsection) => sub.id === params.page[2])[0]?.name || null
   return {
     props: {
+      page: page,
+      subpage: subpage,
+      lang: params.page[0],
       data: _data_,
       content: _content_ || [],
       languages: dataLang,

@@ -18,3 +18,7 @@ Manual de utilização do sistema da empresa SCA Portões Eletrônicos para auxi
 + Adicionado componente de lista
 + Adicionado mostrador de versão
 + Adicionado novos conteúdos
+
+### Update 1.0.4
++ Adicionado título nas páginas
++ Adicionado novos conteúdos

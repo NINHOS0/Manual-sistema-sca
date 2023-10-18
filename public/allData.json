@@ -9,17 +9,17 @@
             "type": "text",
             "fontSize": "2xl",
             "fontWeight": "bold",
-            "value": "Painel inicial"
+            "value": "Página inicial"
           },
           {
             "type": "text",
-            "value": "Na tela inicial/painel, podemos indentificar o número de visitas pendentes e concluídas, além de um gráfico mensal para uma visão mais clara."
+            "value": "Na tela inicial, podemos indentificar o número de visitas pendentes e concluídas, além de um gráfico mensal para uma visão mais clara."
           },
           {
             "type": "gallery",
             "images": [
               {
-                "src": "painel.png",
+                "src": "inicio/01.png",
                 "alt": "Página inicial"
               }
             ]
@@ -51,13 +51,17 @@
                 "title": "Cliente"
               },
               {
+                "title": "Forma de Pagamento"
+              },
+              {
+                "title": "Parcelas",
+                "text": "(Exibe apenas se a forma de pagamento for 'Crédito')"
+              },
+              {
                 "title": "Produto"
               },
               {
                 "title": "Quantidade"
-              },
-              {
-                "title": "Forma de Pagamento"
               }
             ]
           },
@@ -69,11 +73,11 @@
             "type": "gallery",
             "images": [
               {
-                "src": "vendas_01.png",
-                "alt": "Adicionando nova venda"
+                "src": "vendas/01.png",
+                "alt": "Criando uma venda"
               },
               {
-                "src": "vendas_02.png",
+                "src": "vendas/02.png",
                 "alt": "Adicionando venda à tabela"
               }
             ]
@@ -86,8 +90,8 @@
             "type": "gallery",
             "images": [
               {
-                "src": "vendas_03.png",
-                "alt": "Finalização da venda"
+                "src": "vendas/03.png",
+                "alt": "Finalizando venda"
               }
             ]
           }
@@ -112,14 +116,14 @@
               },
               {
                 "type": "text",
-                "value": "Na tela clientes, podemos identificar o botão 'Adicionar' na direita superior da tela, entrando no botão vemos a seguinte tela:"
+                "value": "Na tela de clientes, podemos identificar o botão 'Adicionar' na direita superior da tela, entrando no botão vemos as seguintes informações:"
               },
               {
                 "type": "gallery",
                 "images": [
                   {
-                    "src": "clientes_01.png",
-                    "alt": "Acessando página para registro de cliente"
+                    "src": "clientes/01.png",
+                    "alt": "Entrando na página de cadastro"
                   }
                 ]
               },
@@ -219,18 +223,20 @@
                 "type": "gallery",
                 "images": [
                   {
-                    "src": "clientes_02.png",
+                    "src": "clientes/02.png",
                     "alt": "Formulário via CNPJ"
                   },
                   {
-                    "src": "clientes_03.png",
+                    "src": "clientes/03.png",
                     "alt": "Formulário via CPF"
                   }
                 ]
               },
               {
                 "type": "text",
-                "value": "Caminhando para a segunda aba, 'Contato' veremos os seguintes campos:"
+                "value": "Caminhando para a segunda aba, 'Contato' veremos os seguintes campos:",
+                "fontSize": "xl",
+                "fontWeight": "medium"
               },
               {
                 "type": "list",
@@ -258,14 +264,16 @@
                 "type": "gallery",
                 "images": [
                   {
-                    "src": "clientes_04.png",
+                    "src": "clientes/04.png",
                     "alt": "Aba de contado do cliente"
                   }
                 ]
               },
               {
                 "type": "text",
-                "value": "Finalizando para a aba de 'Localização' obtemos os campos:"
+                "value": "Finalizando para a aba de 'Localização' obtemos os campos:",
+                "fontSize": "xl",
+                "fontWeight": "medium"
               },
               {
                 "type": "list",
@@ -293,7 +301,7 @@
                 "type": "gallery",
                 "images": [
                   {
-                    "src": "clientes_05.png",
+                    "src": "clientes/05.png",
                     "alt": "Aba de localização do cliente"
                   }
                 ]
@@ -316,14 +324,18 @@
               },
               {
                 "type": "text",
-                "value": "Na tela clientes, podemos identificar os clientes cadastrados na lista, em cada um deles há uma opção editar e deletar cliente, como a imagem abaixo:"
+                "value": "Na tela clientes, podemos identificar os clientes na tabela, clicando no botão de 'Lápis' podemos editar esse cliente, ou excluí-lo apertando na 'Lixeira', entrando no botão 'Lápis' vemos a seguinte tela:"
               },
               {
                 "type": "gallery",
                 "images": [
                   {
-                    "src": "clientes_01.png",
-                    "alt": "Acessando página para registro de cliente"
+                    "src": "clientes/06.png",
+                    "alt": "Entrando na página de edição"
+                  },
+                  {
+                    "src": "clientes/07.png",
+                    "alt": "Campos do formulário"
                   }
                 ]
               },
@@ -417,24 +429,9 @@
               },
               {
                 "type": "text",
-                "value": "Para maior compreenção observe a imagem abaixo:"
-              },
-              {
-                "type": "gallery",
-                "images": [
-                  {
-                    "src": "clientes_02.png",
-                    "alt": "Formulário via CNPJ"
-                  },
-                  {
-                    "src": "clientes_03.png",
-                    "alt": "Formulário via CPF"
-                  }
-                ]
-              },
-              {
-                "type": "text",
-                "value": "Caminhando para a segunda aba, 'Contato' veremos os seguintes campos:"
+                "value": "Caminhando para a segunda aba, 'Contato' veremos os seguintes campos:",
+                "fontSize": "xl",
+                "fontWeight": "medium"
               },
               {
                 "type": "list",
@@ -462,14 +459,16 @@
                 "type": "gallery",
                 "images": [
                   {
-                    "src": "clientes_04.png",
+                    "src": "clientes/08.png",
                     "alt": "Aba de contado do cliente"
                   }
                 ]
               },
               {
                 "type": "text",
-                "value": "Finalizando para a aba de 'Localização' obtemos os campos:"
+                "value": "Finalizando para a aba de 'Localização' obtemos os campos:",
+                "fontSize": "xl",
+                "fontWeight": "medium"
               },
               {
                 "type": "list",
@@ -497,14 +496,14 @@
                 "type": "gallery",
                 "images": [
                   {
-                    "src": "clientes_05.png",
-                    "alt": "Aba de localização do cliente"
+                    "src": "clientes/09.png",
+                    "alt": "Aba de localização"
                   }
                 ]
               },
               {
                 "type": "text",
-                "value": "Após alterar as informações necessárias do cliente aperte no botão 'Salvar' para adicionar o cliente. O botão 'Cancelar' ou 'Voltar' para retornar à página inicial."
+                "value": "Após alterar as informações necessárias do cliente aperte no botão 'Salvar' para salvar as alterações do cliente. O botão 'Cancelar' ou 'Voltar' para retornar à página inicial."
               }
             ]
           }
@@ -523,7 +522,26 @@
             "content": [
               {
                 "type": "text",
+                "value": "Adicionando Produto",
+                "fontSize": "2xl",
+                "fontWeight": "bold"
+              },
+              {
+                "type": "text",
                 "value": "Na tela de produtos, podemos identificar o botão 'Adicionar' na direita superior da tela, entrando no botão vemos a seguinte tela:"
+              },
+              {
+                "type": "gallery",
+                "images": [
+                  {
+                    "src": "produtos/01.png",
+                    "alt": "Entrando na página de cadastro"
+                  },
+                  {
+                    "src": "produtos/02.png",
+                    "alt": "Campos do formulário"
+                  }
+                ]
               },
               {
                 "type": "text",
@@ -538,20 +556,20 @@
                     "text": "Nome, descrição e demais informações do produto." 
                   },
                   {
-                    "title": "Código de barras:"
+                    "title": "Código de barras"
                   },
                   {
-                    "title": "Referência:"
+                    "title": "Referência"
                   },
                   {
-                    "title": "Fabricante:"
+                    "title": "Fabricante"
                   },
                   {
                     "title": "Grupo:",
                     "text": "Grupo/Categoria do produto." 
                   },
                   {
-                    "title": "Situação Tributária:" 
+                    "title": "Situação Tributária" 
                   },
                   {
                     "title": "Estoque:",
@@ -566,25 +584,34 @@
                     "text": "Valor do produto á ser vendido." 
                   },
                   {
-                    "title": "Preço de Custo:",
-                    "text": "Valor do custo de compra." 
-                  },
-                  {
                     "title": "Margem de Lucro:",
                     "text": "Margem de lucro em porcentagem (%)." 
                   },
                   {
-                    "title": "ICMS:"
+                    "title": "Preço de Custo:",
+                    "text": "Valor do custo de compra." 
+                  },
+                  {
+                    "title": "ICMS"
                   },
                   {
                     "title": "Ativo/Desativado:",
-                    "text": "Status do produto se está sendo circulado ou não." 
+                    "text": "Status do produto se está sendo circulando ou não." 
                   }
                 ]
               },
               {
                 "type": "text",
-                "value": "Após preencher todos os campos clique em 'Cadastrar' para salvar o produto, ou 'Cancelar' para voltar."
+                "value": "Após preencher todos os campos clique em 'Salvar' para salvar o produto, ou 'Cancelar' para voltar."
+              },
+              {
+                "type": "gallery",
+                "images": [
+                  {
+                    "src": "produtos/03.png",
+                    "alt": "Finalizando o cadastro"
+                  }
+                ]
               }
             ]
           },
@@ -594,7 +621,26 @@
             "content": [
               {
                 "type": "text",
-                "value": "Na tela produtos, podemos identificar o botão 'Adicionar' na direita superior da tela, entrando no botão vemos a seguinte tela:"
+                "value": "Editando Produto",
+                "fontSize": "2xl",
+                "fontWeight": "bold"
+              },
+              {
+                "type": "text",
+                "value": "Na tela de produtos, podemos identificar os produtos na tabela, clicando no botão de 'Lápis' podemos editar esse produto, ou excluí-lo apertando na 'Lixeira', entrando no botão 'Lápis' vemos a seguinte tela:"
+              },
+              {
+                "type": "gallery",
+                "images": [
+                  {
+                    "src": "produtos/04.png",
+                    "alt": "Entrando na página de edição"
+                  },
+                  {
+                    "src": "produtos/05.png",
+                    "alt": "Campos do formulário"
+                  }
+                ]
               },
               {
                 "type": "text",
@@ -609,20 +655,20 @@
                     "text": "Nome, descrição e demais informações do produto." 
                   },
                   {
-                    "title": "Código de barras:"
+                    "title": "Código de barras"
                   },
                   {
-                    "title": "Referência:"
+                    "title": "Referência"
                   },
                   {
-                    "title": "Fabricante:"
+                    "title": "Fabricante"
                   },
                   {
                     "title": "Grupo:",
                     "text": "Grupo/Categoria do produto." 
                   },
                   {
-                    "title": "Situação Tributária:" 
+                    "title": "Situação Tributária" 
                   },
                   {
                     "title": "Estoque:",
@@ -637,25 +683,37 @@
                     "text": "Valor do produto á ser vendido." 
                   },
                   {
-                    "title": "Preço de Custo:",
-                    "text": "Valor do custo de compra." 
-                  },
-                  {
                     "title": "Margem de Lucro:",
                     "text": "Margem de lucro em porcentagem (%)." 
                   },
                   {
-                    "title": "ICMS:"
+                    "title": "Preço de Custo:",
+                    "text": "Valor do custo de compra." 
+                  },
+                  {
+                    "title": "ICMS"
                   },
                   {
                     "title": "Ativo/Desativado:",
-                    "text": "Status do produto se está sendo circulado ou não." 
+                    "text": "Status do produto se está sendo circulando ou não." 
+                  },
+                  {
+                    "title": "Data de criação"
                   }
                 ]
               },
               {
                 "type": "text",
-                "value": "Após preencher todos os campos clique em 'Cadastrar' para salvar o produto, ou 'Cancelar' para voltar."
+                "value": "Após alterar o desejado clique em 'Salvar' para salvar as alterações, ou 'Cancelar' para voltar."
+              },
+              {
+                "type": "gallery",
+                "images": [
+                  {
+                    "src": "produtos/06.png",
+                    "alt": "Finalizando a edição"
+                  }
+                ]
               }
             ]
           }
@@ -671,12 +729,12 @@
           {
             "type": "text",
             "value": "Agenda",
-            "fontSize": "3xl"
+            "fontSize": "2xl",
+            "fontWeight": "bold"
           },
           {
             "type": "text",
-            "value": "Na tela de agenda, podemos identificar o botão 'Agendar Visita' e o calendário. Ao clicar no botão 'Agendar Visita', você verá à direita um formulário que permite agendar uma visita. No formulário, você preencherá os seguintes campos:",
-            "fontSize": "lg"
+            "value": "Na tela de agenda, podemos identificar o botão 'Agendar Visita' e o calendário. Ao clicar no botão 'Agendar Visita', você verá à direita um formulário que permite agendar uma visita. No formulário, você preencherá os seguintes campos:"
           },
           {
             "type": "list",
@@ -708,39 +766,37 @@
             "type": "gallery",
             "images": [
               {
-                "src": "agenda_01.png",
+                "src": "agenda/01.png",
                 "alt": "Conhecendo a página de agenda"
               },
               {
-                "src": "agenda_02.png",
+                "src": "agenda/02.png",
                 "alt": "Agendando uma nova visita"
               }              
             ]
           },
           {
             "type": "text",
-            "value": "Preenchendo todos os dados necessários e clicando no botão de 'Agendar Visita' o formulário será fechado e aparecerá no calendário a visita registrada conforme imagem abaixo:",
-            "fontSize": "lg"
+            "value": "Preenchendo todos os dados necessários e clicando no botão de 'Agendar Visita' o formulário será fechado e aparecerá no calendário a visita registrada conforme imagem abaixo:"
           },
           {
             "type": "gallery",
             "images": [
               {
-                "src": "agenda_03.png",
+                "src": "agenda/03.png",
                 "alt": "Visualizando a visita agendada no calendário"
               }
             ]
           },
           {
             "type": "text",
-            "value": "Ao clicar na visita que já está agendada no calendário, você poderá ver e fazer alterações em todas as informações relacionadas a essa visita. Se você fizer alguma alteração, basta clicar em 'Salvar Alterações' para garantir que as informações atualizadas sejam salvas. Se a visita já foi realizada, clique em 'Concluir OS' para definir como concluída.",
-            "fontSize": "lg"
+            "value": "Ao clicar na visita que já está agendada no calendário, você poderá ver e fazer alterações em todas as informações relacionadas a essa visita. Se você fizer alguma alteração, basta clicar em 'Salvar Alterações' para garantir que as informações atualizadas sejam salvas. Se a visita já foi realizada, clique em 'Concluir OS' para definir como concluída."
           },
           {
             "type": "gallery",
             "images": [
               {
-                "src": "agenda_04.png",
+                "src": "agenda/04.png",
                 "alt": "Abrindo e editando a visita agendada"
               }              
             ]
@@ -756,7 +812,22 @@
         "content": [
           {
             "type": "text",
-            "value": "Na tela de importar xml, podemos identificar um espaço para anexar um arquivo xml, caso tenha um arquivo xml de um produto, basta arrastar o arquivo no espaço disponível."
+            "value": "Importar XML",
+            "fontSize": "2xl",
+            "fontWeight": "bold"
+          },
+          {
+            "type": "text",
+            "value": "Na tela de Importar XML, podemos identificar um espaço para anexar um arquivo xml de um produto, caso tenha o arquivo, clique para selecionar o xml ou arrastar o arquivo no espaço vazio."
+          },
+          {
+            "type": "gallery",
+            "images": [
+              {
+                "src": "xml/01.png",
+                "alt": "Conhecendo a página de Importar XML"
+              }
+            ]
           }
         ]
       },
@@ -765,8 +836,14 @@
 
       {
         "id": "contas-a-receber",
-        "name": "Contas a receber",
+        "name": "Contas à Receber",
         "content": [
+          {
+            "type": "text",
+            "value": "Contas à Receber",
+            "fontSize": "2xl",
+            "fontWeight": "bold"
+          },
           {
             "type": "text",
             "value": "Sem informações"
@@ -782,23 +859,23 @@
         "content": [
           {
             "type": "text",
-            "value": "Relatórios",
-            "fontSize": "3xl"
+            "value": "Página de Relatórios",
+            "fontSize": "2xl",
+            "fontWeight": "bold"
           },
           {
             "type": "text",
-            "value": "Na tela de relatórios, podemos identificar 'Inventário de Estoque', basta seguir as instruções na imagem. Ao expandir, você pode escolher o período que deseja analisar, especificando a data de início e fim. Depois de definir o intervalo desejado, clique em 'Gerar PDF' e salve o arquivo em um local seguro.",
-            "fontSize": "lg"
+            "value": "Na tela de relatórios, podemos identificar 'Inventário de Estoque', basta seguir as instruções na imagem. Ao expandir, você pode escolher o período que deseja analisar, especificando a data de início e fim. Depois de definir o intervalo desejado, clique em 'Gerar PDF' e salve o arquivo em um local seguro."
           },
           {
             "type": "gallery",
             "images": [
               {
-                "src": "relatorios_01.png",
+                "src": "relatorios/01.png",
                 "alt": "Abrindo relatório 'Inventário de Estoque'"
               },
               {
-                "src": "relatorios_02.png",
+                "src": "relatorios/02.png",
                 "alt": "Exportando pdf"
               }
             ]
@@ -816,6 +893,12 @@
             "content": [
               {
                 "type": "text",
+                "value": "Serviços site SCA",
+                "fontSize": "2xl",
+                "fontWeight": "bold"
+              },
+              {
+                "type": "text",
                 "value": "Na aba serviços da tela site SCA, podemos identificar a lista de serviços, clicando no ícone de lápis você pode editar, e na lixeira para excluir. Caso queira adicionar um novo serviço, basta clicar em 'Novo Serviço'."
               }
             ]
@@ -824,6 +907,12 @@
             "id": "faq",
             "name": "FAQ",
             "content": [
+              {
+                "type": "text",
+                "value": "FAQ site SCA",
+                "fontSize": "2xl",
+                "fontWeight": "bold"
+              },
               {
                 "type": "text",
                 "value": "Na aba FAQ da tela site SCA, podemos identificar a lista de FAQs, clicando no ícone de lápis você pode editar, e na lixeira para excluir. Caso queira adicionar um novo FAQ, basta clicar em 'Novo FAQ'."
@@ -866,7 +955,7 @@
         "name": "Products",
         "routes": [
           {
-            "id": "cadastro_produtos",
+            "id": "adicionar",
             "name": "New product",
             "content": [
               {

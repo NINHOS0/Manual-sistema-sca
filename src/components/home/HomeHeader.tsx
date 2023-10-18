@@ -3,12 +3,14 @@ import LogoBlack from "/public/img/logo-black.png"
 import LogoWhite from "/public/img/logo-white.png"
 import { section } from "@/interfaces/contentProps";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
+import { memo } from 'react';
 
 interface HomeHeaderProps {
   data: section[],
+  lang: string
 }
 
-export default function HomeHeader({ data }: HomeHeaderProps) {
+const HomeHeader = ({ data, lang }: HomeHeaderProps) => {
   const { colorMode, toggleColorMode } = useColorMode()
 
   return (
@@ -16,7 +18,7 @@ export default function HomeHeader({ data }: HomeHeaderProps) {
       <Grid w={"full"} maxW={"1400px"} templateColumns="repeat(3, 1fr)" templateRows={"40px"} px={{ base: 4, sm: 8, md: 14 }}>
         <GridItem colStart={1} colEnd={3}>
           <Tooltip label="Início">
-            <Link href={`${data[0].id}`} h={"full"}>
+            <Link href={`/${lang}/${data[0].id}` || '#'} h={"full"}>
               <Image alt="Trocar tema" src={colorMode === "light" ? LogoBlack.src : LogoWhite.src} h={"full"} />
             </Link>
           </Tooltip>
@@ -30,3 +32,5 @@ export default function HomeHeader({ data }: HomeHeaderProps) {
     </Flex>
   );
 }
+
+export default memo(HomeHeader)

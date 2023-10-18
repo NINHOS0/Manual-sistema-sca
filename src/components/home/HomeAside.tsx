@@ -1,21 +1,20 @@
 import { section, subsection } from "@/interfaces/contentProps"
 import { Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPanel, Box, Link, Stack } from "@chakra-ui/react"
 import { useRouter } from "next/router"
-import React from 'react';
-
+import {memo, Fragment} from 'react';
 
 interface HomeAsideProps {
   data: section[],
 }
 
-export default function HomeAside({ data }: HomeAsideProps) {
+const HomeAside = ({ data }: HomeAsideProps) => {
   const { query } = useRouter()
 
   return (
     <Accordion allowMultiple border={"none"}>
       <Stack gap={0}>
         {data.map((sec: section) => (
-          <React.Fragment key={sec.id}>
+          <Fragment key={sec.id}>
             {sec.routes ? (
               <AccordionItem border={"none"} w={"fit-content"}>
                 <AccordionButton _hover={{ bgColor: "transparent" }}>
@@ -35,9 +34,11 @@ export default function HomeAside({ data }: HomeAsideProps) {
             ) : (
               <Link pl={"2.8em"} my={2} href={`/${query.page![0]}/${sec.id}`} fontWeight={query.page && query.page![0] === sec.id ? "medium" : "normal"}>{sec.name}</Link>
             )}
-          </React.Fragment>
+          </Fragment>
         ))}
       </Stack>
     </Accordion>
   )
 }
+
+export default memo(HomeAside)

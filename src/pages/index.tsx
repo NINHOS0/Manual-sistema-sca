@@ -4,7 +4,7 @@ import { useEffect} from 'react';
 import allData from "../../public/allData.json";
 
 
-export default function Home({data}: {data: content}) {
+export default function Home() {
   const route = useRouter()
   // const { currentLanguage } = useContext<ContextProps>(PageContext)
 
@@ -19,12 +19,12 @@ export default function Home({data}: {data: content}) {
   return <></>
 }
 
-export async function getStaticProps() {
-  const data: any = allData.data
+// export async function getStaticProps() {
+//   const data: any = allData.data
 
-  return {
-    props: {
-      data: data
-    }
-  }
-}
+//   return {
+//     props: {
+//       data: data
+//     }
+//   }
+// }

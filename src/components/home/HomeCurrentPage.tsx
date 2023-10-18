@@ -2,13 +2,14 @@ import { section } from "@/interfaces/contentProps"
 import { ChevronRightIcon } from "@chakra-ui/icons"
 import { Text } from "@chakra-ui/react"
 import { useRouter } from "next/router"
+import { memo } from 'react';
 
 interface HomeCurrentPageProps {
   data: section[],
   fontSize?: string
 }
 
-export default function HomeCurrentPage({ data, fontSize = 'base' }: HomeCurrentPageProps) {
+const HomeCurrentPage = ({ data, fontSize = 'base' }: HomeCurrentPageProps) => {
   const route = useRouter();
   const { page } = route.query
 
@@ -22,3 +23,5 @@ export default function HomeCurrentPage({ data, fontSize = 'base' }: HomeCurrent
     </>
   )
 }
+
+export default memo(HomeCurrentPage)
