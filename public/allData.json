@@ -883,6 +883,8 @@
         ]
       },
 
+
+
       {
         "id": "site_sca",
         "name": "Site SCA",
@@ -893,13 +895,13 @@
             "content": [
               {
                 "type": "text",
-                "value": "Serviços site SCA",
+                "value": "Serviços SCA",
                 "fontSize": "2xl",
                 "fontWeight": "bold"
               },
               {
                 "type": "text",
-                "value": "Na aba serviços da tela site SCA, podemos identificar a lista de serviços, clicando no ícone de lápis você pode editar, e na lixeira para excluir. Caso queira adicionar um novo serviço, basta clicar em 'Novo Serviço'."
+                "value": "Na aba 'Serviços' da tela site SCA, podemos identificar a lista de serviços, clicando no ícone de lápis você pode editar, e na lixeira para excluir. Caso queira adicionar um novo serviço, basta clicar em 'Novo Serviço'."
               }
             ]
           },
@@ -909,13 +911,92 @@
             "content": [
               {
                 "type": "text",
-                "value": "FAQ site SCA",
+                "value": "FAQ SCA",
                 "fontSize": "2xl",
                 "fontWeight": "bold"
               },
               {
                 "type": "text",
-                "value": "Na aba FAQ da tela site SCA, podemos identificar a lista de FAQs, clicando no ícone de lápis você pode editar, e na lixeira para excluir. Caso queira adicionar um novo FAQ, basta clicar em 'Novo FAQ'."
+                "value": "Na aba 'FAQ' da tela site SCA, podemos identificar a lista de FAQs, clicando no ícone de lápis você pode editar, e na lixeira para excluir. Caso queira adicionar um novo FAQ, basta clicar em 'Adicionar FAQ'."
+              }
+            ]
+          },
+          {
+            "id": "avaliacoes",
+            "name": "Avaliações",
+            "content": [
+              {
+                "type": "text",
+                "value": "Avaliações SCA",
+                "fontSize": "2xl",
+                "fontWeight": "bold"
+              },
+              {
+                "type": "text",
+                "value": "Na aba 'Avaliações' da tela site SCA, podemos identificar a lista de avaliações, clicando no ícone de lápis você pode editar, e na lixeira para excluir. Caso queira adicionar uma nova avaliação, basta clicar em 'Adicionar Avaliação'."
+              }
+            ]
+          }
+        ]
+      },
+
+
+
+      {
+        "id": "aplicativo",
+        "name": "Aplicativo",
+        "routes": [
+          {
+            "id": "conhecendo",
+            "name": "Conhecendo",
+            "content": [
+              {
+                "type": "text",
+                "value": "Conhecendo o app",
+                "fontSize": "2xl",
+                "fontWeight": "bold"
+              },
+              {
+                "type": "text",
+                "value": "O aplicativo da SCA proporciona vizualizar e registrar novas visitas a clientes, contendo todas as visitas pendentes que ainda faltam ser realizadas e as visitas já concluídas."
+              },
+              {
+                "type": "text",
+                "value": "Segue os links abaixo para descobrir cada detalhe do aplicativo:"
+              },
+              {
+                "type": "link",
+                "value": "Vizualizar visitas",
+                "url": "ver-visitas"
+              },
+              {
+                "type": "link",
+                "value": "Registrar nova visita",
+                "url": "nova-visita"
+              }
+            ]
+          },
+          {
+            "id": "ver-visitas",
+            "name": "Ver visitas",
+            "content": [
+              {
+                "type": "text",
+                "value": "Vizualizar visitas",
+                "fontSize": "2xl",
+                "fontWeight": "bold"
+              }
+            ]
+          },
+          {
+            "id": "nova-visita",
+            "name": "Nova visita",
+            "content": [
+              {
+                "type": "text",
+                "value": "Registrar nova visita",
+                "fontSize": "2xl",
+                "fontWeight": "bold"
               }
             ]
           }

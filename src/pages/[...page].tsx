@@ -67,9 +67,9 @@ export default function InitialHome({ page, subpage, lang, data, content, langua
             <HomeMainContent content={content} />
           </Box>
         </Flex>
-        <Flex align={"center"} justify={"center"} w={"full"} h={8} color={"black"} bgColor={"blackAlpha.200"} _dark={{ color: "white", bgColor: "blackAlpha.500" }}>
+        <Flex align={"center"} justify={"center"} direction={{base: "column", sm: "row"}} w={"full"} p={1} color={"black"} bgColor={"blackAlpha.200"} _dark={{ color: "white", bgColor: "blackAlpha.500" }}>
           <Text fontSize={"sm"} fontWeight={"medium"}>Innosec - Manual de utilização do sistema</Text>
-          <Box fontSize={"xs"} as="span" pos={'absolute'} right={2}>Versão {projectVersion}</Box>
+          <Box fontSize={"xs"} pos={{base: "inherit", sm: "absolute"}} right={{sm: 2}}>Versão {projectVersion}</Box>
         </Flex>
       </Flex>
     </>
@@ -107,7 +107,7 @@ export async function getStaticProps(context: any) {
 
   const _data_ = data[params.page[0]]
   const _content_ = params.page[2]
-    ? data[params.page[0]].filter((s: section) => s.id === params.page[1])[0]?.routes?.filter((sub: subsection) => sub.id === params.page[2])[0].content
+    ? data[params.page[0]].filter((s: section) => s.id === params.page[1])[0]?.routes?.filter((sub: subsection) => sub.id === params.page[2])[0]?.content
     : data[params.page[0]].filter((s: section) => s.id === params.page[1])[0]?.content || null
 
     const page = _data_.filter((s: section) => s.id === params.page[1])[0]?.name || null

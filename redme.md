@@ -22,3 +22,12 @@ Manual de utilização do sistema da empresa SCA Portões Eletrônicos para auxi
 ### Update 1.0.4
 + Adicionado título nas páginas
 + Adicionado novos conteúdos
+
+### Update 1.0.4 FIX
++ Arrumado imagens não aparecendo
+
+### Update 1.0.5
++ Otimização de código e imagens
++ Arrumado posição da versão no mobile
++ Adicionado a base do manual do aplicativo
++ Adicionado novos conteúdos
