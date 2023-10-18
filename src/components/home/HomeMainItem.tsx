@@ -1,6 +1,6 @@
 import { galleryItem, linkItem, listItem, textItem } from "@/interfaces/itensProps"
 import { ExternalLinkIcon } from "@chakra-ui/icons"
-import { CircularProgress, Flex, Grid, Image, Link, ListItem, OrderedList, Stack, Text, UnorderedList } from "@chakra-ui/react"
+import { CircularProgress, Grid, Image, Link, ListItem, OrderedList, Stack, Text, UnorderedList, useColorMode} from "@chakra-ui/react"
 
 interface HomeMainItemProps {
   item: (textItem | linkItem | galleryItem | listItem)
@@ -8,7 +8,8 @@ interface HomeMainItemProps {
 }
 
 export default function HomeMainItem({ item, handleOpenLighbox }: HomeMainItemProps) {
-  
+  const {colorMode} = useColorMode()
+
   return (
     <>
       {
@@ -22,7 +23,7 @@ export default function HomeMainItem({ item, handleOpenLighbox }: HomeMainItemPr
           {item.images.map((img, i) => (
             <Stack gap={0.5} key={i}>
               <Text fontSize={'xs'} color={'gray.400'}>{img.alt}</Text>
-              <Image boxShadow={"xl"} _dark={{boxShadow: 'none'}} cursor={'pointer'} src={`/img/${img.src}`} fallback={<CircularProgress isIndeterminate color="gray.900" m={20}/>} onClick={() => handleOpenLighbox(`/img/${img.src}`)} alt={img.alt} w={'full'} maxW={750} borderRadius={"lg"} />
+              <Image boxShadow={"xl"} _dark={{boxShadow: 'none'}} cursor={'pointer'} src={`/img/${img.src}`} fallback={colorMode === "dark" ? <CircularProgress isIndeterminate capIsRound trackColor="gray.900" color="gray.100" thickness={6} m={20}/> : <CircularProgress isIndeterminate capIsRound trackColor="gray.100" color="gray.900" thickness={6} m={20}/>} onClick={() => handleOpenLighbox(`/img/${img.src}`)} alt={img.alt} w={'full'} maxW={750} borderRadius={"lg"} />
             </Stack>
           ))}
         </Grid>

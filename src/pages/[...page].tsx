@@ -1,4 +1,4 @@
-import { Text, Flex, Box, IconButton, Drawer, DrawerOverlay, DrawerContent, DrawerBody, DrawerCloseButton, DrawerHeader, useDisclosure } from "@chakra-ui/react";
+import { Text, Flex, Box, IconButton, Drawer, DrawerOverlay, DrawerContent, DrawerBody, DrawerCloseButton, DrawerHeader, useDisclosure, CircularProgress } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import { language, section, subsection } from "@/interfaces/contentProps";
 import HomeHeader from "@/components/home/HomeHeader";
