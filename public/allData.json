@@ -947,8 +947,8 @@
         "name": "Aplicativo",
         "routes": [
           {
-            "id": "conhecendo",
-            "name": "Conhecendo",
+            "id": "inicio",
+            "name": "Início",
             "content": [
               {
                 "type": "text",
@@ -981,6 +981,11 @@
             "name": "Ver visitas",
             "content": [
               {
+                "type": "link",
+                "value": "Ir para início",
+                "url": "inicio"
+              },
+              {
                 "type": "text",
                 "value": "Vizualizar visitas",
                 "fontSize": "2xl",
@@ -992,6 +997,11 @@
             "id": "nova-visita",
             "name": "Nova visita",
             "content": [
+              {
+                "type": "link",
+                "value": "Ir para início",
+                "url": "inicio"
+              },
               {
                 "type": "text",
                 "value": "Registrar nova visita",
