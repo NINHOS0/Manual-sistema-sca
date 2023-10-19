@@ -37,3 +37,8 @@ Manual de utilização do sistema da empresa SCA Portões Eletrônicos para auxi
 + Adicionado loading nas imagens
 + Adicionado redirecionamento de página (Caso a página não for encontrada)
 + Alterado o ícone do site
+
+### Update 1.0.7
++ Arrumado a exibição no sidebar
++ Correção da cor do loading das imagens
++ Adicionado novos conteúdos

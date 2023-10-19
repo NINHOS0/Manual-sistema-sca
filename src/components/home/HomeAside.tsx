@@ -26,7 +26,7 @@ const HomeAside = ({ data }: HomeAsideProps) => {
                 <AccordionPanel p={0}>
                   <Stack pl={14} spacing={0}>
                     {sec.routes?.map((sub: subsection) => (
-                      <Link key={sub.id} href={`/${query.page![0]}/${sec.id}/${sub.id.split('_')[0]}`} fontWeight={query.page && query.page![2] === sub.id ? "bold" : "normal"}>{sub.name}</Link>
+                      <Link key={sub.id} href={`/${query.page![0]}/${sec.id}/${sub.id}`} fontWeight={query.page && query.page![1] === sec.id && query.page![2] === sub.id ? "bold" : "normal"}>{sub.name}</Link>
                     ))}
                   </Stack>
                 </AccordionPanel>

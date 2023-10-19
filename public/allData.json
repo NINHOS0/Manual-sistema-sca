@@ -84,7 +84,16 @@
           },
           {
             "type": "text",
-            "value": "Para adicionar todos os produtos à venda, basta clicar no botão 'Finalizar venda'. Se precisar remover algum produto individualmente, clique no ícone de lixeira. Se desejar cancelar a operação, simplesmente pressione o botão 'Cancelar'."
+            "value": "Para adicionar todos os produtos à venda, basta clicar no botão 'Finalizar venda' e a venda será encaminhada para a página 'Contas á Receber'."
+          },
+          {
+            "type": "link",
+            "value": "Ir para Contas á Receber",
+            "url": "contas-a-receber"
+          },
+          {
+            "type": "text",
+            "value": "Se precisar remover algum produto individualmente, clique no ícone de lixeira. Se desejar cancelar a operação, simplesmente pressione o botão 'Cancelar'."
           },
           {
             "type": "gallery",
@@ -94,7 +103,7 @@
                 "alt": "Finalizando venda"
               }
             ]
-          }
+          }          
         ]
       },
 
@@ -767,7 +776,7 @@
             "images": [
               {
                 "src": "agenda/01.png",
-                "alt": "Conhecendo a página de agenda"
+                "alt": "Conhecendo a página de Agenda"
               },
               {
                 "src": "agenda/02.png",
@@ -846,7 +855,36 @@
           },
           {
             "type": "text",
-            "value": "Sem informações"
+            "value": "Na tela de Contas à Pagar, vemos uma tabela com vendas, em cada item da tabela têm o botão de Editar (Lápis Azul) e de Finalizar Venda (Cédula Verde)."
+          },
+          {
+            "type": "gallery",
+            "images": [
+              {
+                "src": "contas/01.png",
+                "alt": "Conhecendo apágina de Contas á Pagar"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "value": "Finalizando a Venda",
+            "fontSize": "xl",
+            "fontWeight": "medium"
+          },
+          {
+            "type": "text",
+            "value": "Ao clicar no botão de Finalizar Venda (Cédula Verde) em um item da tabela que esteja com o estado como 'Aberta', será alterada para 'Fechada'."
+          },
+          {
+            "type": "text",
+            "value": "Editando a Venda",
+            "fontSize": "xl",
+            "fontWeight": "medium"
+          },
+          {
+            "type": "text",
+            "value": "Ao clicar no botão de Editar (Lápis Azul), será aberta um formulário de edição, basta alterar o que deseja e clicar em salvar."
           }
         ]
       },
@@ -865,7 +903,7 @@
           },
           {
             "type": "text",
-            "value": "Na tela de relatórios, podemos identificar 'Inventário de Estoque', basta seguir as instruções na imagem. Ao expandir, você pode escolher o período que deseja analisar, especificando a data de início e fim. Depois de definir o intervalo desejado, clique em 'Gerar PDF' e salve o arquivo em um local seguro."
+            "value": "Na tela de Relatórios, podemos identificar 'Inventário de Estoque', basta seguir as instruções na imagem. Ao expandir, você pode escolher o período que deseja analisar, especificando a data de início e fim. Depois de definir o intervalo desejado, clique em 'Gerar PDF' e salve o arquivo em um local seguro."
           },
           {
             "type": "gallery",
@@ -876,7 +914,7 @@
               },
               {
                 "src": "relatorios/02.png",
-                "alt": "Exportando pdf"
+                "alt": "Exportando PDF"
               }
             ]
           }
@@ -886,7 +924,7 @@
 
 
       {
-        "id": "site_sca",
+        "id": "site-sca",
         "name": "Site SCA",
         "routes": [
           {
@@ -902,6 +940,23 @@
               {
                 "type": "text",
                 "value": "Na aba 'Serviços' da tela site SCA, podemos identificar a lista de serviços, clicando no ícone de lápis você pode editar, e na lixeira para excluir. Caso queira adicionar um novo serviço, basta clicar em 'Novo Serviço'."
+              },
+              {
+                "type": "text",
+                "value": "Clicando no botão 'Novo Serviço', temos os seguintes campos:"
+              },
+              {
+                "type": "gallery",
+                "images": [
+                  {
+                    "src": "site/servicos/01.png",
+                    "alt": "Adicionando novo Serviço"
+                  },
+                  {
+                    "src": "site/servicos/02.png",
+                    "alt": "Formulário Serviços"
+                  }
+                ]
               }
             ]
           },
@@ -917,7 +972,85 @@
               },
               {
                 "type": "text",
+                "value": "Adicionando FAQ",
+                "fontSize": "xl",
+                "fontWeight": "medium"
+              },
+              {
+                "type": "text",
                 "value": "Na aba 'FAQ' da tela site SCA, podemos identificar a lista de FAQs, clicando no ícone de lápis você pode editar, e na lixeira para excluir. Caso queira adicionar um novo FAQ, basta clicar em 'Adicionar FAQ'."
+              },
+              {
+                "type": "text",
+                "value": "Clicando no botão 'Adicionar FAQ', temos os seguintes campos:"
+              },
+              {
+                "type": "list",
+                "style": "point",
+                "list": [
+                  {
+                    "title": "Pergunta"
+                  },
+                  {
+                    "title": "Resposta"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "value": "Após preencher ambos os campos clique no botão 'Adicionar FAQ'."
+              },
+              {
+                "type": "gallery",
+                "images": [
+                  {
+                    "src": "site/faq/01.png",
+                    "alt": "Adicionando novo FAQ"
+                  },
+                  {
+                    "src": "site/faq/02.png",
+                    "alt": "Formulário FAQ"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "value": "Editando FAQ",
+                "fontSize": "xl",
+                "fontWeight": "medium"
+              },
+              {
+                "type": "text",
+                "value": "Clicando no ícone de lápis de um FAQ na tabela, podemos ver os seguintes campos:"
+              },
+              {
+                "type": "list",
+                "style": "point",
+                "list": [
+                  {
+                    "title": "Pergunta"
+                  },
+                  {
+                    "title": "Resposta"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "value": "Após modificar o que deseja clique em 'Salvar Alterações' para salvar."
+              },
+              {
+                "type": "gallery",
+                "images": [
+                  {
+                    "src": "site/faq/03.png",
+                    "alt": "Adicionando novo FAQ"
+                  },
+                  {
+                    "src": "site/faq/04.png",
+                    "alt": "Formulário FAQ"
+                  }
+                ]
               }
             ]
           },
@@ -934,6 +1067,23 @@
               {
                 "type": "text",
                 "value": "Na aba 'Avaliações' da tela site SCA, podemos identificar a lista de avaliações, clicando no ícone de lápis você pode editar, e na lixeira para excluir. Caso queira adicionar uma nova avaliação, basta clicar em 'Adicionar Avaliação'."
+              },
+              {
+                "type": "text",
+                "value": "Clicando no botão 'Adicionar Avaliação', temos os seguintes campos:"
+              },
+              {
+                "type": "gallery",
+                "images": [
+                  {
+                    "src": "site/avaliacoes/01.png",
+                    "alt": "Adicionando nova Avaliação"
+                  },
+                  {
+                    "src": "site/avaliacoes/02.png",
+                    "alt": "Formulário Avaliação"
+                  }
+                ]
               }
             ]
           }
@@ -958,11 +1108,16 @@
               },
               {
                 "type": "text",
-                "value": "O aplicativo da SCA proporciona vizualizar e registrar novas visitas a clientes, contendo todas as visitas pendentes que ainda faltam ser realizadas e as visitas já concluídas."
+                "value": "O aplicativo da SCA proporciona vizualizar e agendar novas visitas à clientes, contendo todas as visitas pendentes que ainda faltam ser realizadas e as visitas que já foram concluídas."
               },
               {
                 "type": "text",
-                "value": "Segue os links abaixo para descobrir cada detalhe do aplicativo:"
+                "value": "Segue os links abaixo para descobrir mais do aplicativo:"
+              },
+              {
+                "type": "link",
+                "value": "Agendar visita",
+                "url": "nova-visita"
               },
               {
                 "type": "link",
@@ -970,26 +1125,42 @@
                 "url": "ver-visitas"
               },
               {
-                "type": "link",
-                "value": "Registrar nova visita",
-                "url": "nova-visita"
-              }
-            ]
-          },
-          {
-            "id": "ver-visitas",
-            "name": "Ver visitas",
-            "content": [
-              {
-                "type": "link",
-                "value": "Ir para início",
-                "url": "inicio"
+                "type": "text",
+                "value": "Entrando no aplicativo.",
+                "fontSize": "xl",
+                "fontWeight": "medium"
               },
               {
                 "type": "text",
-                "value": "Vizualizar visitas",
-                "fontSize": "2xl",
-                "fontWeight": "bold"
+                "value": "Ao iniciar o aplicativo conseguimos ver a tela de login, basta colocar o usuário e senha corretamente e clicar no botão 'Entrar' para acessar."
+              },
+              {
+                "type": "gallery",
+                "images": [
+                  {
+                    "src": "aplicativo/01.png",
+                    "alt": "Fazendo login"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "value": "Desconectando do aplicativo.",
+                "fontSize": "xl",
+                "fontWeight": "medium"
+              },
+              {
+                "type": "text",
+                "value": "Ao logar-se no aplicativo e navegar por ele podemos ver no canto superior direito o ícone de porta, apertando sobre ele podemos desconectar a conta."
+              },
+              {
+                "type": "gallery",
+                "images": [
+                  {
+                    "src": "aplicativo/02.png",
+                    "alt": "Desconectando"
+                  }
+                ]
               }
             ]
           },
@@ -1004,12 +1175,195 @@
               },
               {
                 "type": "text",
-                "value": "Registrar nova visita",
+                "value": "Agendar visita",
                 "fontSize": "2xl",
                 "fontWeight": "bold"
+              },
+              {
+                "type": "text",
+                "value": "Na tela podemos vizualizar o botão 'Nova Visita' na parte inferior da tela, clicando no botão vemos os seguintes campos:"
+              },
+              {
+                "type": "list",
+                "style": "point",
+                "list": [
+                  {
+                    "title": "Título"
+                  },
+                  {
+                    "title": "Data"
+                  },
+                  {
+                    "title": "Horário"
+                  },
+                  {
+                    "title": "Selecione um cliente:",
+                    "text": "Se o cliente ESTÁ no sistema"
+                  },
+                  {
+                    "title": "Cliente:",
+                    "text": "Se o cliente NÃO ESTÁ no sistema"
+                  },
+                  {
+                    "title": "Descrição"
+                  },
+                  {
+                    "title": "Endereço"
+                  }
+                ]
+              },
+              {
+                "type": "gallery",
+                "images": [
+                  {
+                    "src": "aplicativo/03.png",
+                    "alt": "Conhecendo agendar visita"
+                  },
+                  {
+                    "src": "aplicativo/04.png",
+                    "alt": "Conhecendo agendar visita"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "value": "Após preencher todos os campos clique em 'Agendar Visita' para agendar, após isso, a visita agendada será mostrada em visitas pendentes."
+              },
+              {
+                "type": "link",
+                "value": "Ir para Visitas Pendentes",
+                "url": "ver-visitas"
+              },
+              {
+                "type": "gallery",
+                "images": [
+                  {
+                    "src": "aplicativo/05.png",
+                    "alt": "Conhecendo agendar visita"
+                  },
+                  {
+                    "src": "aplicativo/06.png",
+                    "alt": "Conhecendo agendar visita"
+                  }
+                ]
               }
             ]
-          }
+          },
+          {
+            "id": "ver-visitas",
+            "name": "Ver visitas",
+            "content": [
+              {
+                "type": "link",
+                "value": "Ir para início",
+                "url": "inicio"
+              },
+              {
+                "type": "text",
+                "value": "Vizualizando visitas pendentes.",
+                "fontSize": "2xl",
+                "fontWeight": "bold"
+              },
+              {
+                "type": "text",
+                "value": "Na tela podemos vizualizar dois botões abaixo de minhas visitas, 'Pendentes' e 'Concluídas', clicando em 'Pendentes' podemos vizualizar uma lista de visitas que ainda faltam ser realizadas, se não houver, é porque não há nenhuma visita pendente. Clicando em uma visita pendente vemos os seguinte dados:"
+              },
+              {
+                "type": "list",
+                "style": "point",
+                "list": [
+                  {
+                    "title": "Título"
+                  },
+                  {
+                    "title": "Data da visita"
+                  },
+                  {
+                    "title": "Horário da visita"
+                  },
+                  {
+                    "title": "Cliente:",
+                    "text": "Cliente cadastrado ou nome"
+                  },
+                  {
+                    "title": "Descrição da visita"
+                  },
+                  {
+                    "title": "Endereço da visita"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "value": "Podemos modificar cada campo como quiser. Na parte inferior da tela há dois botões, 'Concluir' e 'Compartilhar Agendamento'. Clicando no botão 'Concluir' a visita será marcada como realizada, e no botão 'Compartilhar Agendamento' podemos compartilhar o agendamento via whatsapp."
+              },
+              {
+                "type": "gallery",
+                "images": [
+                  {
+                    "src": "aplicativo/06.png",
+                    "alt": "Acessando visita pendente"
+                  },
+                  {
+                    "src": "aplicativo/07.png",
+                    "alt": "Informações da visita pendente"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "value": "Vizualizando visitas concluídas",
+                "fontSize": "2xl",
+                "fontWeight": "bold"
+              },
+              {
+                "type": "text",
+                "value": "Na tela podemos vizualizar dois botões abaixo de minhas visitas, 'Pendentes' e 'Concluídas', clicando em 'Concluídas' podemos vizualizar uma lista de visitas já realizadas, se não houver, é porque nenhuma visita foi realizada. Clicando em uma visita concluída vemos os seguinte dados:"
+              },
+              {
+                "type": "list",
+                "style": "point",
+                "list": [
+                  {
+                    "title": "Título"
+                  },
+                  {
+                    "title": "Data da visita"
+                  },
+                  {
+                    "title": "Horário da visita"
+                  },
+                  {
+                    "title": "Cliente:",
+                    "text": "Cliente cadastrado ou nome"
+                  },
+                  {
+                    "title": "Descrição da visita"
+                  },
+                  {
+                    "title": "Endereço da visita"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "value": "Podemos vizualizar cada campo e ver o botão 'Compartilhar Agendamento', clicando no botão 'Compartilhar Agendamento' podemos compartilhar o agendamento via whatsapp."
+              },
+              {
+                "type": "gallery",
+                "images": [
+                  {
+                    "src": "aplicativo/08.png",
+                    "alt": "Acessando visita concluída"
+                  },
+                  {
+                    "src": "aplicativo/09.png",
+                    "alt": "Informações da visita concluída"
+                  }
+                ]
+              }
+            ]
+          }          
         ]
       }
     ],

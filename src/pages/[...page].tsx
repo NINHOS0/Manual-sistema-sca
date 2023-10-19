@@ -101,13 +101,13 @@ export async function getStaticProps(context: any) {
   const packageJson = JSON.parse(packageJsonContent);
   const projectVersion: string = packageJson.version;  
 
-  const _data_ = data[params.page[0]]
+  const _data_ = data[params.page[0]] || null
   const _content_ = params.page[2]
     ? data[params.page[0]]?.filter((s: section) => s.id === params.page[1])[0]?.routes?.filter((sub: subsection) => sub.id === params.page[2])[0]?.content
     : data[params.page[0]]?.filter((s: section) => s.id === params.page[1])[0]?.content || null
 
-  const page = _data_.filter((s: section) => s.id === params.page[1])[0]?.name || null
-  const subpage = params.page[2] && _data_.filter((s: section) => s.id === params.page[1])[0]?.routes?.filter((sub: subsection) => sub.id === params.page[2])[0]?.name || null
+  const page = _data_?.filter((s: section) => s.id === params.page[1])[0]?.name || null
+  const subpage = params.page[2] && _data_?.filter((s: section) => s.id === params.page[1])[0]?.routes?.filter((sub: subsection) => sub.id === params.page[2])[0]?.name || null
 
   if (!page || params.page[2] && !subpage) {
     return {
