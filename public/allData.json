@@ -532,8 +532,8 @@
 
 
       {
-        "id": "clientes",
-        "name": "Clientes",
+        "id": "produtos",
+        "name": "Produtos",
         "routes": [
           {
             "id": "adicionar",
@@ -541,205 +541,96 @@
             "content": [
               {
                 "type": "text",
-                "value": "Adicionando Cliente",
+                "value": "Adicionando Produto",
                 "fontSize": "2xl",
                 "fontWeight": "bold"
               },
               {
                 "type": "text",
-                "value": "Na tela de clientes, podemos identificar o botão 'Adicionar' no canto superior direito da tela. Ao clicar no botão, veremos as seguintes informações:"
+                "value": "Na tela de produtos, podemos identificar o botão 'Adicionar' na direita superior da tela, entrando no botão vemos a seguinte tela:"
               },
               {
                 "type": "gallery",
                 "images": [
                   {
-                    "src": "clientes/01.png",
+                    "src": "produtos/01.png",
                     "alt": "Entrando na página de cadastro"
+                  },
+                  {
+                    "src": "produtos/02.png",
+                    "alt": "Campos do formulário"
                   }
                 ]
               },
               {
                 "type": "text",
-                "value": "Ao acessar, podemos visualizar três abas: Principal, contato e localização. Cada uma dessas abas contém um formulário. Começando pela aba principal, percebemos um botão para alternar entre CNPJ e CPF. Selecionando CNPJ, encontramos os seguintes campos:"
+                "value": "No formulário conseguimos ver os seguintes campos:"
               },
               {
                 "type": "list",
                 "style": "point",
                 "list": [
                   {
-                    "title": "CNPJ",
-                    "text": "CNPJ do cliente."
+                    "title": "Descrição:",
+                    "text": "Nome, descrição e demais informações do produto." 
                   },
                   {
-                    "title": "Nome",
-                    "text": "Nome completo do cliente."
+                    "title": "Código de barras"
                   },
                   {
-                    "title": "Nome Fantasia",
-                    "text": "Nome fantasia do cliente, se houver."
+                    "title": "Referência"
                   },
                   {
-                    "title": "Inscrição Estadual",
-                    "text": "Inscrição estadual do cliente, se houver."
+                    "title": "Fabricante"
                   },
                   {
-                    "title": "Fundação",
-                    "text": "Data de fundação do cliente."
+                    "title": "Grupo:",
+                    "text": "Grupo/Categoria do produto." 
                   },
                   {
-                    "title": "Data de Abertura",
-                    "text": "Data de abertura do local do cliente."
+                    "title": "Situação Tributária" 
                   },
                   {
-                    "title": "Alugado?",
-                    "text": "Alterne esta opção se o local do cliente for alugado."
+                    "title": "Estoque:",
+                    "text": "Quantidade do produto no estoque." 
                   },
                   {
-                    "title": "Limite de Crédito",
-                    "text": "Limite de crédito do cliente."
+                    "title": "Estoque Mínimo:",
+                    "text": "Quantidade do estoque mínimo para alerta." 
                   },
                   {
-                    "title": "Inativo",
-                    "text": "Cliente está ativo no sistema."
+                    "title": "Preço de Venda:",
+                    "text": "Valor do produto á ser vendido." 
                   },
                   {
-                    "title": "Grupo",
-                    "text": "Grupo ao qual o cliente pertence, ex: industrial, climatizadores, segurança, etc."
+                    "title": "Margem de Lucro:",
+                    "text": "Margem de lucro em porcentagem (%)." 
+                  },
+                  {
+                    "title": "Preço de Custo:",
+                    "text": "Valor do custo de compra." 
+                  },
+                  {
+                    "title": "ICMS"
+                  },
+                  {
+                    "title": "Ativo/Desativado:",
+                    "text": "Status do produto se está sendo circulando ou não." 
                   }
                 ]
               },
               {
                 "type": "text",
-                "value": "Se o cliente for por CPF, os campos são:"
-              },
-              {
-                "type": "list",
-                "style": "point",
-                "list": [
-                  {
-                    "title": "CPF",
-                    "text": "CPF do cliente."
-                  },
-                  {
-                    "title": "Nome",
-                    "text": "Nome completo do cliente."
-                  },
-                  {
-                    "title": "RG",
-                    "text": "RG do cliente."
-                  },
-                  {
-                    "title": "Gênero",
-                    "text": "Gênero do cliente."
-                  },
-                  {
-                    "title": "Data de nascimento",
-                    "text": "Data de nascimento do cliente."
-                  },
-                  {
-                    "title": "Limite de Crédito",
-                    "text": "Limite de crédito do cliente."
-                  },
-                  {
-                    "title": "Grupo",
-                    "text": "Grupo ao qual o cliente pertence, ex: industrial, climatizadores, segurança, etc."
-                  }
-                ]
-              },
-              {
-                "type": "text",
-                "value": "Para uma melhor compreensão, observe a imagem abaixo:"
+                "value": "Após preencher todos os campos clique em 'Salvar' para salvar o produto, ou 'Cancelar' para voltar."
               },
               {
                 "type": "gallery",
                 "images": [
                   {
-                    "src": "clientes/02.png",
-                    "alt": "Formulário via CNPJ"
-                  },
-                  {
-                    "src": "clientes/03.png",
-                    "alt": "Formulário via CPF"
+                    "src": "produtos/03.png",
+                    "alt": "Finalizando o cadastro"
                   }
                 ]
-              },
-              {
-                "type": "text",
-                "value": "Avançando para a segunda aba, 'Contato', veremos os seguintes campos:",
-                "fontSize": "xl",
-                "fontWeight": "medium"
-              },
-              {
-                "type": "list",
-                "style": "point",
-                "list": [
-                  {
-                    "title": "E-mail",
-                    "text": "E-mail de contato do cliente."
-                  },
-                  {
-                    "title": "Fax",
-                    "text": "Fax do cliente."
-                  },
-                  {
-                    "title": "Celular",
-                    "text": "Celular de contato do cliente."
-                  },
-                  {
-                    "title": "Telefone",
-                    "text": "Telefone de contato do cliente."
-                  }
-                ]
-              },
-              {
-                "type": "gallery",
-                "images": [
-                  {
-                    "src": "clientes/04.png",
-                    "alt": "Aba de contato do cliente"
-                  }
-                ]
-              },
-              {
-                "type": "text",
-                "value": "Concluindo com a aba 'Localização', obtemos os campos:",
-                "fontSize": "xl",
-                "fontWeight": "medium"
-              },
-              {
-                "type": "list",
-                "style": "point",
-                "list": [
-                  {
-                    "title": "Código Postal",
-                    "text": "Código postal do cliente."
-                  },
-                  {
-                    "title": "Bairro",
-                    "text": "Bairro do cliente."
-                  },
-                  {
-                    "title": "Rua",
-                    "text": "Rua do cliente."
-                  },
-                  {
-                    "title": "Município",
-                    "text": "Município do cliente."
-                  }
-                ]
-              },
-              {
-                "type": "gallery",
-                "images": [
-                  {
-                    "src": "clientes/05.png",
-                    "alt": "Aba de localização do cliente"
-                  }
-                ]
-              },
-              {
-                "type": "text",
-                "value": "Após preencher todas as informações necessárias do cliente, clique no botão 'Salvar' para adicionar o cliente. Use o botão 'Cancelar' ou 'Voltar' para retornar à página inicial."
               }
             ]
           },
@@ -749,192 +640,99 @@
             "content": [
               {
                 "type": "text",
-                "value": "Editando Cliente",
+                "value": "Editando Produto",
                 "fontSize": "2xl",
                 "fontWeight": "bold"
               },
               {
                 "type": "text",
-                "value": "Na tela de clientes, podemos identificar os clientes na tabela. Ao clicar no botão de 'Lápis', podemos editar esse cliente, ou excluí-lo ao clicar na 'Lixeira'. Ao entrar no botão 'Lápis', vemos a seguinte tela:"
+                "value": "Na tela de produtos, podemos identificar os produtos na tabela, clicando no botão de 'Lápis' podemos editar esse produto, ou excluí-lo apertando na 'Lixeira', entrando no botão 'Lápis' vemos a seguinte tela:"
               },
               {
                 "type": "gallery",
                 "images": [
                   {
-                    "src": "clientes/06.png",
+                    "src": "produtos/04.png",
                     "alt": "Entrando na página de edição"
                   },
                   {
-                    "src": "clientes/07.png",
+                    "src": "produtos/05.png",
                     "alt": "Campos do formulário"
                   }
                 ]
               },
               {
                 "type": "text",
-                "value": "Na tela de clientes, podemos identificar três abas: Principal, contato e localização. Cada uma dessas abas contém um formulário. Começando pela aba principal, percebemos um botão para alternar entre CNPJ e CPF. Selecionando CNPJ, encontramos os seguintes campos:"
+                "value": "No formulário conseguimos ver os seguintes campos:"
               },
               {
                 "type": "list",
                 "style": "point",
                 "list": [
                   {
-                    "title": "CNPJ",
-                    "text": "CNPJ do cliente."
+                    "title": "Descrição:",
+                    "text": "Nome, descrição e demais informações do produto." 
                   },
                   {
-                    "title": "Nome",
-                    "text": "Nome completo do cliente."
+                    "title": "Código de barras"
                   },
                   {
-                    "title": "Nome Fantasia",
-                    "text": "Nome fantasia do cliente, se houver."
+                    "title": "Referência"
                   },
                   {
-                    "title": "Inscrição Estadual",
-                    "text": "Inscrição estadual do cliente, se houver."
+                    "title": "Fabricante"
                   },
                   {
-                    "title": "Fundação",
-                    "text": "Data de fundação do cliente."
+                    "title": "Grupo:",
+                    "text": "Grupo/Categoria do produto." 
                   },
                   {
-                    "title": "Data de Abertura",
-                    "text": "Data de abertura do local do cliente."
+                    "title": "Situação Tributária" 
                   },
                   {
-                    "title": "Alugado?",
-                    "text": "Alterne esta opção se o local do cliente for alugado."
+                    "title": "Estoque:",
+                    "text": "Quantidade do produto no estoque." 
                   },
                   {
-                    "title": "Limite de Crédito",
-                    "text": "Limite de crédito do cliente."
+                    "title": "Estoque Mínimo:",
+                    "text": "Quantidade do estoque mínimo para alerta." 
                   },
                   {
-                    "title": "Inativo",
-                    "text": "Cliente está ativo no sistema."
+                    "title": "Preço de Venda:",
+                    "text": "Valor do produto á ser vendido." 
                   },
                   {
-                    "title": "Grupo",
-                    "text": "Grupo ao qual o cliente pertence, ex: industrial, climatizadores, segurança, etc."
+                    "title": "Margem de Lucro:",
+                    "text": "Margem de lucro em porcentagem (%)." 
+                  },
+                  {
+                    "title": "Preço de Custo:",
+                    "text": "Valor do custo de compra." 
+                  },
+                  {
+                    "title": "ICMS"
+                  },
+                  {
+                    "title": "Ativo/Desativado:",
+                    "text": "Status do produto se está sendo circulando ou não." 
+                  },
+                  {
+                    "title": "Data de criação"
                   }
                 ]
               },
               {
                 "type": "text",
-                "value": "Se o cliente for por CPF, os campos são:"
-              },
-              {
-                "type": "list",
-                "style": "point",
-                "list": [
-                  {
-                    "title": "CPF",
-                    "text": "CPF do cliente."
-                  },
-                  {
-                    "title": "Nome",
-                    "text": "Nome completo do cliente."
-                  },
-                  {
-                    "title": "RG",
-                    "text": "RG do cliente."
-                  },
-                  {
-                    "title": "Gênero",
-                    "text": "Gênero do cliente."
-                  },
-                  {
-                    "title": "Data de nascimento",
-                    "text": "Data de nascimento do cliente."
-                  },
-                  {
-                    "title": "Limite de Crédito",
-                    "text": "Limite de crédito do cliente."
-                  },
-                  {
-                    "title": "Grupo",
-                    "text": "Grupo ao qual o cliente pertence, ex: industrial, climatizadores, segurança, etc."
-                  }
-                ]
-              },
-              {
-                "type": "text",
-                "value": "Concluindo com a aba 'Contato', veremos os seguintes campos:",
-                "fontSize": "xl",
-                "fontWeight": "medium"
-              },
-              {
-                "type": "list",
-                "style": "point",
-                "list": [
-                  {
-                    "title": "E-mail",
-                    "text": "E-mail de contato do cliente."
-                  },
-                  {
-                    "title": "Fax",
-                    "text": "Fax do cliente."
-                  },
-                  {
-                    "title": "Celular",
-                    "text": "Celular de contato do cliente."
-                  },
-                  {
-                    "title": "Telefone",
-                    "text": "Telefone de contato do cliente."
-                  }
-                ]
+                "value": "Após alterar o desejado clique em 'Salvar' para salvar as alterações, ou 'Cancelar' para voltar."
               },
               {
                 "type": "gallery",
                 "images": [
                   {
-                    "src": "clientes/08.png",
-                    "alt": "Aba de contato do cliente"
+                    "src": "produtos/06.png",
+                    "alt": "Finalizando a edição"
                   }
                 ]
-              },
-              {
-                "type": "text",
-                "value": "Finalizando com a aba de 'Localização', obtemos os campos:",
-                "fontSize": "xl",
-                "fontWeight": "medium"
-              },
-              {
-                "type": "list",
-                "style": "point",
-                "list": [
-                  {
-                    "title": "Código Postal",
-                    "text": "Código postal do cliente."
-                  },
-                  {
-                    "title": "Bairro",
-                    "text": "Bairro do cliente."
-                  },
-                  {
-                    "title": "Rua",
-                    "text": "Rua do cliente."
-                  },
-                  {
-                    "title": "Município",
-                    "text": "Município do cliente."
-                  }
-                ]
-              },
-              {
-                "type": "gallery",
-                "images": [
-                  {
-                    "src": "clientes/09.png",
-                    "alt": "Aba de localização"
-                  }
-                ]
-              },
-              {
-                "type": "text",
-                "value": "Após alterar as informações necessárias do cliente, clique no botão 'Salvar' para salvar as alterações do cliente. Use o botão 'Cancelar' ou 'Voltar' para retornar à página inicial."
               }
             ]
           }
