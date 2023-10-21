@@ -13,7 +13,7 @@
           },
           {
             "type": "text",
-            "value": "Na tela inicial, podemos indentificar o número de visitas pendentes e concluídas, além de um gráfico mensal para uma visão mais clara."
+            "value": "Na tela inicial, podemos identificar o número de visitas pendentes e concluídas, além de um gráfico mensal para uma visão mais clara."
           },
           {
             "type": "gallery",
@@ -23,6 +23,16 @@
                 "alt": "Página inicial"
               }
             ]
+          },
+          {
+            "type": "text",
+            "value": "Desconectando da conta",
+            "fontSize": "xl",
+            "fontWeight": "medium"
+          },
+          {
+            "type": "text",
+            "value": "Na tela podemos observar no canto superior direito o ícone do seu perfil, clicando sobre ele e pressionando o botão 'Sair' conseguimos desconectar da conta"
           }
         ]
       },
@@ -88,7 +98,7 @@
           },
           {
             "type": "link",
-            "value": "Ir para Contas á Receber",
+            "value": "Ir para Contas a Receber",
             "url": "contas-a-receber"
           },
           {
@@ -522,8 +532,8 @@
 
 
       {
-        "id": "produtos",
-        "name": "Produtos",
+        "id": "clientes",
+        "name": "Clientes",
         "routes": [
           {
             "id": "adicionar",
@@ -531,96 +541,205 @@
             "content": [
               {
                 "type": "text",
-                "value": "Adicionando Produto",
+                "value": "Adicionando Cliente",
                 "fontSize": "2xl",
                 "fontWeight": "bold"
               },
               {
                 "type": "text",
-                "value": "Na tela de produtos, podemos identificar o botão 'Adicionar' na direita superior da tela, entrando no botão vemos a seguinte tela:"
+                "value": "Na tela de clientes, podemos identificar o botão 'Adicionar' no canto superior direito da tela. Ao clicar no botão, veremos as seguintes informações:"
               },
               {
                 "type": "gallery",
                 "images": [
                   {
-                    "src": "produtos/01.png",
+                    "src": "clientes/01.png",
                     "alt": "Entrando na página de cadastro"
-                  },
-                  {
-                    "src": "produtos/02.png",
-                    "alt": "Campos do formulário"
                   }
                 ]
               },
               {
                 "type": "text",
-                "value": "No formulário conseguimos ver os seguintes campos:"
+                "value": "Ao acessar, podemos visualizar três abas: Principal, contato e localização. Cada uma dessas abas contém um formulário. Começando pela aba principal, percebemos um botão para alternar entre CNPJ e CPF. Selecionando CNPJ, encontramos os seguintes campos:"
               },
               {
                 "type": "list",
                 "style": "point",
                 "list": [
                   {
-                    "title": "Descrição:",
-                    "text": "Nome, descrição e demais informações do produto." 
+                    "title": "CNPJ",
+                    "text": "CNPJ do cliente."
                   },
                   {
-                    "title": "Código de barras"
+                    "title": "Nome",
+                    "text": "Nome completo do cliente."
                   },
                   {
-                    "title": "Referência"
+                    "title": "Nome Fantasia",
+                    "text": "Nome fantasia do cliente, se houver."
                   },
                   {
-                    "title": "Fabricante"
+                    "title": "Inscrição Estadual",
+                    "text": "Inscrição estadual do cliente, se houver."
                   },
                   {
-                    "title": "Grupo:",
-                    "text": "Grupo/Categoria do produto." 
+                    "title": "Fundação",
+                    "text": "Data de fundação do cliente."
                   },
                   {
-                    "title": "Situação Tributária" 
+                    "title": "Data de Abertura",
+                    "text": "Data de abertura do local do cliente."
                   },
                   {
-                    "title": "Estoque:",
-                    "text": "Quantidade do produto no estoque." 
+                    "title": "Alugado?",
+                    "text": "Alterne esta opção se o local do cliente for alugado."
                   },
                   {
-                    "title": "Estoque Mínimo:",
-                    "text": "Quantidade do estoque mínimo para alerta." 
+                    "title": "Limite de Crédito",
+                    "text": "Limite de crédito do cliente."
                   },
                   {
-                    "title": "Preço de Venda:",
-                    "text": "Valor do produto á ser vendido." 
+                    "title": "Inativo",
+                    "text": "Cliente está ativo no sistema."
                   },
                   {
-                    "title": "Margem de Lucro:",
-                    "text": "Margem de lucro em porcentagem (%)." 
-                  },
-                  {
-                    "title": "Preço de Custo:",
-                    "text": "Valor do custo de compra." 
-                  },
-                  {
-                    "title": "ICMS"
-                  },
-                  {
-                    "title": "Ativo/Desativado:",
-                    "text": "Status do produto se está sendo circulando ou não." 
+                    "title": "Grupo",
+                    "text": "Grupo ao qual o cliente pertence, ex: industrial, climatizadores, segurança, etc."
                   }
                 ]
               },
               {
                 "type": "text",
-                "value": "Após preencher todos os campos clique em 'Salvar' para salvar o produto, ou 'Cancelar' para voltar."
+                "value": "Se o cliente for por CPF, os campos são:"
+              },
+              {
+                "type": "list",
+                "style": "point",
+                "list": [
+                  {
+                    "title": "CPF",
+                    "text": "CPF do cliente."
+                  },
+                  {
+                    "title": "Nome",
+                    "text": "Nome completo do cliente."
+                  },
+                  {
+                    "title": "RG",
+                    "text": "RG do cliente."
+                  },
+                  {
+                    "title": "Gênero",
+                    "text": "Gênero do cliente."
+                  },
+                  {
+                    "title": "Data de nascimento",
+                    "text": "Data de nascimento do cliente."
+                  },
+                  {
+                    "title": "Limite de Crédito",
+                    "text": "Limite de crédito do cliente."
+                  },
+                  {
+                    "title": "Grupo",
+                    "text": "Grupo ao qual o cliente pertence, ex: industrial, climatizadores, segurança, etc."
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "value": "Para uma melhor compreensão, observe a imagem abaixo:"
               },
               {
                 "type": "gallery",
                 "images": [
                   {
-                    "src": "produtos/03.png",
-                    "alt": "Finalizando o cadastro"
+                    "src": "clientes/02.png",
+                    "alt": "Formulário via CNPJ"
+                  },
+                  {
+                    "src": "clientes/03.png",
+                    "alt": "Formulário via CPF"
                   }
                 ]
+              },
+              {
+                "type": "text",
+                "value": "Avançando para a segunda aba, 'Contato', veremos os seguintes campos:",
+                "fontSize": "xl",
+                "fontWeight": "medium"
+              },
+              {
+                "type": "list",
+                "style": "point",
+                "list": [
+                  {
+                    "title": "E-mail",
+                    "text": "E-mail de contato do cliente."
+                  },
+                  {
+                    "title": "Fax",
+                    "text": "Fax do cliente."
+                  },
+                  {
+                    "title": "Celular",
+                    "text": "Celular de contato do cliente."
+                  },
+                  {
+                    "title": "Telefone",
+                    "text": "Telefone de contato do cliente."
+                  }
+                ]
+              },
+              {
+                "type": "gallery",
+                "images": [
+                  {
+                    "src": "clientes/04.png",
+                    "alt": "Aba de contato do cliente"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "value": "Concluindo com a aba 'Localização', obtemos os campos:",
+                "fontSize": "xl",
+                "fontWeight": "medium"
+              },
+              {
+                "type": "list",
+                "style": "point",
+                "list": [
+                  {
+                    "title": "Código Postal",
+                    "text": "Código postal do cliente."
+                  },
+                  {
+                    "title": "Bairro",
+                    "text": "Bairro do cliente."
+                  },
+                  {
+                    "title": "Rua",
+                    "text": "Rua do cliente."
+                  },
+                  {
+                    "title": "Município",
+                    "text": "Município do cliente."
+                  }
+                ]
+              },
+              {
+                "type": "gallery",
+                "images": [
+                  {
+                    "src": "clientes/05.png",
+                    "alt": "Aba de localização do cliente"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "value": "Após preencher todas as informações necessárias do cliente, clique no botão 'Salvar' para adicionar o cliente. Use o botão 'Cancelar' ou 'Voltar' para retornar à página inicial."
               }
             ]
           },
@@ -630,106 +749,199 @@
             "content": [
               {
                 "type": "text",
-                "value": "Editando Produto",
+                "value": "Editando Cliente",
                 "fontSize": "2xl",
                 "fontWeight": "bold"
               },
               {
                 "type": "text",
-                "value": "Na tela de produtos, podemos identificar os produtos na tabela, clicando no botão de 'Lápis' podemos editar esse produto, ou excluí-lo apertando na 'Lixeira', entrando no botão 'Lápis' vemos a seguinte tela:"
+                "value": "Na tela de clientes, podemos identificar os clientes na tabela. Ao clicar no botão de 'Lápis', podemos editar esse cliente, ou excluí-lo ao clicar na 'Lixeira'. Ao entrar no botão 'Lápis', vemos a seguinte tela:"
               },
               {
                 "type": "gallery",
                 "images": [
                   {
-                    "src": "produtos/04.png",
+                    "src": "clientes/06.png",
                     "alt": "Entrando na página de edição"
                   },
                   {
-                    "src": "produtos/05.png",
+                    "src": "clientes/07.png",
                     "alt": "Campos do formulário"
                   }
                 ]
               },
               {
                 "type": "text",
-                "value": "No formulário conseguimos ver os seguintes campos:"
+                "value": "Na tela de clientes, podemos identificar três abas: Principal, contato e localização. Cada uma dessas abas contém um formulário. Começando pela aba principal, percebemos um botão para alternar entre CNPJ e CPF. Selecionando CNPJ, encontramos os seguintes campos:"
               },
               {
                 "type": "list",
                 "style": "point",
                 "list": [
                   {
-                    "title": "Descrição:",
-                    "text": "Nome, descrição e demais informações do produto." 
+                    "title": "CNPJ",
+                    "text": "CNPJ do cliente."
                   },
                   {
-                    "title": "Código de barras"
+                    "title": "Nome",
+                    "text": "Nome completo do cliente."
                   },
                   {
-                    "title": "Referência"
+                    "title": "Nome Fantasia",
+                    "text": "Nome fantasia do cliente, se houver."
                   },
                   {
-                    "title": "Fabricante"
+                    "title": "Inscrição Estadual",
+                    "text": "Inscrição estadual do cliente, se houver."
                   },
                   {
-                    "title": "Grupo:",
-                    "text": "Grupo/Categoria do produto." 
+                    "title": "Fundação",
+                    "text": "Data de fundação do cliente."
                   },
                   {
-                    "title": "Situação Tributária" 
+                    "title": "Data de Abertura",
+                    "text": "Data de abertura do local do cliente."
                   },
                   {
-                    "title": "Estoque:",
-                    "text": "Quantidade do produto no estoque." 
+                    "title": "Alugado?",
+                    "text": "Alterne esta opção se o local do cliente for alugado."
                   },
                   {
-                    "title": "Estoque Mínimo:",
-                    "text": "Quantidade do estoque mínimo para alerta." 
+                    "title": "Limite de Crédito",
+                    "text": "Limite de crédito do cliente."
                   },
                   {
-                    "title": "Preço de Venda:",
-                    "text": "Valor do produto á ser vendido." 
+                    "title": "Inativo",
+                    "text": "Cliente está ativo no sistema."
                   },
                   {
-                    "title": "Margem de Lucro:",
-                    "text": "Margem de lucro em porcentagem (%)." 
-                  },
-                  {
-                    "title": "Preço de Custo:",
-                    "text": "Valor do custo de compra." 
-                  },
-                  {
-                    "title": "ICMS"
-                  },
-                  {
-                    "title": "Ativo/Desativado:",
-                    "text": "Status do produto se está sendo circulando ou não." 
-                  },
-                  {
-                    "title": "Data de criação"
+                    "title": "Grupo",
+                    "text": "Grupo ao qual o cliente pertence, ex: industrial, climatizadores, segurança, etc."
                   }
                 ]
               },
               {
                 "type": "text",
-                "value": "Após alterar o desejado clique em 'Salvar' para salvar as alterações, ou 'Cancelar' para voltar."
+                "value": "Se o cliente for por CPF, os campos são:"
+              },
+              {
+                "type": "list",
+                "style": "point",
+                "list": [
+                  {
+                    "title": "CPF",
+                    "text": "CPF do cliente."
+                  },
+                  {
+                    "title": "Nome",
+                    "text": "Nome completo do cliente."
+                  },
+                  {
+                    "title": "RG",
+                    "text": "RG do cliente."
+                  },
+                  {
+                    "title": "Gênero",
+                    "text": "Gênero do cliente."
+                  },
+                  {
+                    "title": "Data de nascimento",
+                    "text": "Data de nascimento do cliente."
+                  },
+                  {
+                    "title": "Limite de Crédito",
+                    "text": "Limite de crédito do cliente."
+                  },
+                  {
+                    "title": "Grupo",
+                    "text": "Grupo ao qual o cliente pertence, ex: industrial, climatizadores, segurança, etc."
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "value": "Concluindo com a aba 'Contato', veremos os seguintes campos:",
+                "fontSize": "xl",
+                "fontWeight": "medium"
+              },
+              {
+                "type": "list",
+                "style": "point",
+                "list": [
+                  {
+                    "title": "E-mail",
+                    "text": "E-mail de contato do cliente."
+                  },
+                  {
+                    "title": "Fax",
+                    "text": "Fax do cliente."
+                  },
+                  {
+                    "title": "Celular",
+                    "text": "Celular de contato do cliente."
+                  },
+                  {
+                    "title": "Telefone",
+                    "text": "Telefone de contato do cliente."
+                  }
+                ]
               },
               {
                 "type": "gallery",
                 "images": [
                   {
-                    "src": "produtos/06.png",
-                    "alt": "Finalizando a edição"
+                    "src": "clientes/08.png",
+                    "alt": "Aba de contato do cliente"
                   }
                 ]
+              },
+              {
+                "type": "text",
+                "value": "Finalizando com a aba de 'Localização', obtemos os campos:",
+                "fontSize": "xl",
+                "fontWeight": "medium"
+              },
+              {
+                "type": "list",
+                "style": "point",
+                "list": [
+                  {
+                    "title": "Código Postal",
+                    "text": "Código postal do cliente."
+                  },
+                  {
+                    "title": "Bairro",
+                    "text": "Bairro do cliente."
+                  },
+                  {
+                    "title": "Rua",
+                    "text": "Rua do cliente."
+                  },
+                  {
+                    "title": "Município",
+                    "text": "Município do cliente."
+                  }
+                ]
+              },
+              {
+                "type": "gallery",
+                "images": [
+                  {
+                    "src": "clientes/09.png",
+                    "alt": "Aba de localização"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "value": "Após alterar as informações necessárias do cliente, clique no botão 'Salvar' para salvar as alterações do cliente. Use o botão 'Cancelar' ou 'Voltar' para retornar à página inicial."
               }
             ]
           }
         ]
       },
-
-
+      
+      
 
       {
         "id": "agenda",
@@ -827,7 +1039,7 @@
           },
           {
             "type": "text",
-            "value": "Na tela de Importar XML, podemos identificar um espaço para anexar um arquivo xml de um produto, caso tenha o arquivo, clique para selecionar o xml ou arrastar o arquivo no espaço vazio."
+            "value": "Na tela de Importar XML, podemos identificar um espaço para anexar um arquivo XML de um produto, caso tenha o arquivo, clique para selecionar o XML ou arraste o arquivo no espaço vazio."
           },
           {
             "type": "gallery",
@@ -844,25 +1056,33 @@
 
 
       {
+        "id": "contas-a-pagar",
+        "name": "Contas a Pagar",
+        "content": []
+      },
+
+
+
+      {
         "id": "contas-a-receber",
-        "name": "Contas à Receber",
+        "name": "Contas a Receber",
         "content": [
           {
             "type": "text",
-            "value": "Contas à Receber",
+            "value": "Contas a Receber",
             "fontSize": "2xl",
             "fontWeight": "bold"
           },
           {
             "type": "text",
-            "value": "Na tela de Contas à Pagar, vemos uma tabela com vendas, em cada item da tabela têm o botão de Editar (Lápis Azul) e de Finalizar Venda (Cédula Verde)."
+            "value": "Na tela de Contas a Pagar, vemos uma tabela com vendas. Em cada item da tabela, há o botão de Editar (Lápis Azul) e o de Finalizar Venda (Cédula Verde)."
           },
           {
             "type": "gallery",
             "images": [
               {
                 "src": "contas/01.png",
-                "alt": "Conhecendo apágina de Contas á Pagar"
+                "alt": "Conhecendo a página de Contas a Pagar"
               }
             ]
           },
@@ -874,7 +1094,7 @@
           },
           {
             "type": "text",
-            "value": "Ao clicar no botão de Finalizar Venda (Cédula Verde) em um item da tabela que esteja com o estado como 'Aberta', será alterada para 'Fechada'."
+            "value": "Ao clicar no botão de Finalizar Venda (Cédula Verde) em um item da tabela que esteja com o estado 'Aberta', ele será alterado para 'Fechada'."
           },
           {
             "type": "text",
@@ -884,10 +1104,11 @@
           },
           {
             "type": "text",
-            "value": "Ao clicar no botão de Editar (Lápis Azul), será aberta um formulário de edição, basta alterar o que deseja e clicar em salvar."
+            "value": "Ao clicar no botão de Editar (Lápis Azul), será aberto um formulário de edição. Basta fazer as alterações desejadas e clicar em salvar."
           }
         ]
       },
+      
 
 
 
@@ -1108,11 +1329,11 @@
               },
               {
                 "type": "text",
-                "value": "O aplicativo da SCA proporciona vizualizar e agendar novas visitas à clientes, contendo todas as visitas pendentes que ainda faltam ser realizadas e as visitas que já foram concluídas."
+                "value": "O aplicativo da SCA proporciona visualizar e agendar novas visitas à clientes, contendo todas as visitas pendentes que ainda faltam ser realizadas e as visitas que já foram concluídas."
               },
               {
                 "type": "text",
-                "value": "Segue os links abaixo para descobrir mais do aplicativo:"
+                "value": "Acesse os links abaixo para descobrir mais do aplicativo:"
               },
               {
                 "type": "link",
@@ -1121,7 +1342,7 @@
               },
               {
                 "type": "link",
-                "value": "Vizualizar visitas",
+                "value": "visualizar visitas",
                 "url": "ver-visitas"
               },
               {
@@ -1181,7 +1402,7 @@
               },
               {
                 "type": "text",
-                "value": "Na tela podemos vizualizar o botão 'Nova Visita' na parte inferior da tela, clicando no botão vemos os seguintes campos:"
+                "value": "Na tela podemos visualizar o botão 'Nova Visita' na parte inferior da tela, clicando no botão vemos os seguintes campos:"
               },
               {
                 "type": "list",
@@ -1217,17 +1438,17 @@
                 "images": [
                   {
                     "src": "aplicativo/03.png",
-                    "alt": "Conhecendo agendar visita"
+                    "alt": "Conhecendo Agendar Visita"
                   },
                   {
                     "src": "aplicativo/04.png",
-                    "alt": "Conhecendo agendar visita"
+                    "alt": "Formulário agendar visita"
                   }
                 ]
               },
               {
                 "type": "text",
-                "value": "Após preencher todos os campos clique em 'Agendar Visita' para agendar, após isso, a visita agendada será mostrada em visitas pendentes."
+                "value": "Após preencher todos os campos clique em 'Agendar Visita' para agendar, em seguida, a visita agendada será mostrada em visitas pendentes."
               },
               {
                 "type": "link",
@@ -1239,11 +1460,11 @@
                 "images": [
                   {
                     "src": "aplicativo/05.png",
-                    "alt": "Conhecendo agendar visita"
+                    "alt": "Agendando visita"
                   },
                   {
                     "src": "aplicativo/06.png",
-                    "alt": "Conhecendo agendar visita"
+                    "alt": "Vendo visita agendada"
                   }
                 ]
               }
@@ -1260,13 +1481,13 @@
               },
               {
                 "type": "text",
-                "value": "Vizualizando visitas pendentes.",
+                "value": "Visualizando visitas pendentes.",
                 "fontSize": "2xl",
                 "fontWeight": "bold"
               },
               {
                 "type": "text",
-                "value": "Na tela podemos vizualizar dois botões abaixo de minhas visitas, 'Pendentes' e 'Concluídas', clicando em 'Pendentes' podemos vizualizar uma lista de visitas que ainda faltam ser realizadas, se não houver, é porque não há nenhuma visita pendente. Clicando em uma visita pendente vemos os seguinte dados:"
+                "value": "Na tela podemos visualizar dois botões abaixo de 'Minhas Visitas', 'Pendentes' e 'Concluídas', clicando em 'Pendentes' podemos visualizar uma lista de visitas que ainda faltam ser realizadas, se não houver, é porque não há nenhuma visita pendente. Clicando em uma visita pendente vemos os seguintes dados:"
               },
               {
                 "type": "list",
@@ -1295,7 +1516,7 @@
               },
               {
                 "type": "text",
-                "value": "Podemos modificar cada campo como quiser. Na parte inferior da tela há dois botões, 'Concluir' e 'Compartilhar Agendamento'. Clicando no botão 'Concluir' a visita será marcada como realizada, e no botão 'Compartilhar Agendamento' podemos compartilhar o agendamento via whatsapp."
+                "value": "Podemos modificar cada campo conforme desejar. Na parte inferior da tela há dois botões, 'Concluir' e 'Compartilhar Agendamento'. Clicando no botão 'Concluir' a visita será marcada como realizada, e no botão 'Compartilhar Agendamento' podemos compartilhar o agendamento via WhatsApp."
               },
               {
                 "type": "gallery",
@@ -1312,13 +1533,13 @@
               },
               {
                 "type": "text",
-                "value": "Vizualizando visitas concluídas",
+                "value": "Visualizando visitas concluídas",
                 "fontSize": "2xl",
                 "fontWeight": "bold"
               },
               {
                 "type": "text",
-                "value": "Na tela podemos vizualizar dois botões abaixo de minhas visitas, 'Pendentes' e 'Concluídas', clicando em 'Concluídas' podemos vizualizar uma lista de visitas já realizadas, se não houver, é porque nenhuma visita foi realizada. Clicando em uma visita concluída vemos os seguinte dados:"
+                "value": "Na tela podemos visualizar dois botões abaixo de 'Minhas Visitas', 'Pendentes' e 'Concluídas', clicando em 'Concluídas' podemos visualizar uma lista de visitas já realizadas, se não houver, é porque nenhuma visita foi realizada. Clicando em uma visita concluída vemos os seguinte dados:"
               },
               {
                 "type": "list",
@@ -1347,7 +1568,7 @@
               },
               {
                 "type": "text",
-                "value": "Podemos vizualizar cada campo e ver o botão 'Compartilhar Agendamento', clicando no botão 'Compartilhar Agendamento' podemos compartilhar o agendamento via whatsapp."
+                "value": "Podemos visualizar cada campo e ver o botão 'Compartilhar Agendamento', clicando no botão 'Compartilhar Agendamento' podemos compartilhar o agendamento via WhatsApp."
               },
               {
                 "type": "gallery",
