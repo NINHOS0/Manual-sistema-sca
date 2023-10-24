@@ -11,7 +11,7 @@ const HomeAside = ({ data }: HomeAsideProps) => {
   const { query } = useRouter()
 
   return (
-    <Accordion allowMultiple border={"none"} defaultIndex={[data.filter(e => e.routes !== undefined).findIndex((e) => e.id === query.page![1]) || -1]}>
+    <Accordion allowMultiple border={"none"} defaultIndex={[data.filter(e => e.routes !== undefined).findIndex((e) => e.id === query.page![1])]}>
       <Stack gap={0}>
         {data.map((sec: section) => (
           <Fragment key={sec.id}>

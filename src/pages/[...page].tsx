@@ -23,6 +23,7 @@ interface InitialHomeProps {
 export default function InitialHome({ page, subpage, lang, data, content, languages, projectVersion }: InitialHomeProps) {
   const { isOpen, onOpen, onClose } = useDisclosure()
   
+
   return (
     <>
       <Head>
@@ -64,8 +65,8 @@ export default function InitialHome({ page, subpage, lang, data, content, langua
           </Box>
         </Flex>
         <Flex align={"center"} justify={"center"} direction={{base: "column", sm: "row"}} w={"full"} p={1} color={"black"} bgColor={"blackAlpha.200"} _dark={{ color: "white", bgColor: "blackAlpha.500" }}>
-          <Text fontSize={"sm"} fontWeight={"medium"}>Innosec - Manual de utilização do sistema</Text>
-          <Box fontSize={"xs"} pos={{base: "inherit", sm: "absolute"}} right={{sm: 2}}>Versão {projectVersion}</Box>
+          <Text fontSize={"sm"} fontWeight={"medium"}>Innosec - {lang === 'en' ? 'System user manual' : 'Manual de utilização do sistema'}</Text>
+          <Box fontSize={"xs"} pos={{base: "inherit", sm: "absolute"}} right={{sm: 2}}>{lang === 'en' ? 'Version' : 'Versão'} {projectVersion}</Box>
         </Flex>
       </Flex>
     </>

@@ -8,7 +8,7 @@ const HomeLanguage = ({ languages }: { languages: language[] }) => {
   const { page } = route.query
 
   return (
-    <Tooltip label="Idioma">
+    <Tooltip label={page![0] === 'en' ? 'Language' : 'Idioma'}>
       <Select defaultValue={page![0]} variant="unstyled" w={"28"} onChange={(e) => route.push(`/${e.target.value}/${page?.slice(1).toString().replaceAll(',', '/')}`)}>
         {languages && languages.map((lang: language) => (
           <option key={lang.id} style={{ color: "white", backgroundColor: "#171923" }} value={lang.id}>

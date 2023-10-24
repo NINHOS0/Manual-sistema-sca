@@ -37,8 +37,6 @@
         ]
       },
 
-
-
       {
         "id": "vendas",
         "name": "Vendas",
@@ -113,11 +111,9 @@
                 "alt": "Finalizando venda"
               }
             ]
-          }          
+          }
         ]
       },
-
-
 
       {
         "id": "clientes",
@@ -155,43 +151,37 @@
                 "style": "point",
                 "list": [
                   {
-                    "title": "CNPJ",
-                    "text": "CNPJ do cliente."
+                    "title": "CNPJ"
                   },
                   {
-                    "title": "Nome",
-                    "text": "Nome completo do cliente."
+                    "title": "Nome Completo"
                   },
                   {
-                    "title": "Nome Fantasia",
-                    "text": "Nome fantasia do cliente, se houver."
+                    "title": "Nome Fantasia (se houver)"
                   },
                   {
-                    "title": "Inscrição Estadual",
-                    "text": "Inscrição estadual do cliente, se houver."
+                    "title": "Inscrição Estadual (se houver)"
                   },
                   {
-                    "title": "Fundação",
+                    "title": "Fundação:",
                     "text": "Data de fundação do cliente"
                   },
                   {
-                    "title": "Data de Abertura",
-                    "text": "Data de abertura do local do cliente."
+                    "title": "Data de Abertura"
                   },
                   {
-                    "title": "Alugado?",
+                    "title": "Alugado?:",
                     "text": "Alterne esta opção se o local do cliente for alugado."
                   },
                   {
-                    "title": "Limite de Crédito",
-                    "text": "Limite de crédito do cliente"
+                    "title": "Limite de Crédito"
                   },
                   {
-                    "title": "Inativo",
+                    "title": "Inativo:",
                     "text": "Cliente está ativo no sistema."
                   },
                   {
-                    "title": "Grupo",
+                    "title": "Grupo:",
                     "text": "Grupo ao qual o cliente pertence, ex: industrial, climatizadores, segurança e etc..."
                   }
                 ]
@@ -205,31 +195,25 @@
                 "style": "point",
                 "list": [
                   {
-                    "title": "CPF",
-                    "text": "CPF do cliente."
+                    "title": "CPF"
                   },
                   {
-                    "title": "Nome",
-                    "text": "Nome completo do cliente."
+                    "title": "Nome Completo"
                   },
                   {
-                    "title": "RG",
-                    "text": "RG do cliente."
+                    "title": "RG"
                   },
                   {
-                    "title": "Gênero",
-                    "text": "Gênero do cliente."
+                    "title": "Gênero"
                   },
                   {
-                    "title": "Data de nascimento",
-                    "text": "Data de nascimento do cliente."
+                    "title": "Data de nascimento"
                   },
                   {
-                    "title": "Limite de Crédito",
-                    "text": "Limite de crédito do cliente"
+                    "title": "Limite de Crédito"
                   },
                   {
-                    "title": "Grupo",
+                    "title": "Grupo:",
                     "text": "Grupo ao qual o cliente pertence, ex: industrial, climatizadores, segurança e etc..."
                   }
                 ]
@@ -262,20 +246,16 @@
                 "style": "point",
                 "list": [
                   {
-                    "title": "E-mail",
-                    "text": "E-mail de contato do cliente."
+                    "title": "E-mail"
                   },
                   {
-                    "title": "Fax",
-                    "text": "Fax do cliente."
+                    "title": "Fax"
                   },
                   {
-                    "title": "Celular",
-                    "text": "Celular de contato do cliente."
+                    "title": "Celular"
                   },
                   {
-                    "title": "Telefone",
-                    "text": "Telefone de contato do cliente."
+                    "title": "Telefone"
                   }
                 ]
               },
@@ -299,20 +279,16 @@
                 "style": "point",
                 "list": [
                   {
-                    "title": "Código Postal",
-                    "text": "Código postal do cliente."
+                    "title": "Código Postal"
                   },
                   {
-                    "title": "Bairro",
-                    "text": "Bairro do cliente."
+                    "title": "Bairro"
                   },
                   {
-                    "title": "Rua",
-                    "text": "Rua do cliente."
+                    "title": "Rua"
                   },
                   {
-                    "title": "Município",
-                    "text": "Município do cliente."
+                    "title": "Município"
                   }
                 ]
               },
@@ -367,43 +343,37 @@
                 "style": "point",
                 "list": [
                   {
-                    "title": "CNPJ",
-                    "text": "CNPJ do cliente."
+                    "title": "CNPJ"
                   },
                   {
-                    "title": "Nome",
-                    "text": "Nome completo do cliente."
+                    "title": "Nome Completo"
                   },
                   {
-                    "title": "Nome Fantasia",
-                    "text": "Nome fantasia do cliente, se houver."
+                    "title": "Nome Fantasia (se houver)"
                   },
                   {
-                    "title": "Inscrição Estadual",
-                    "text": "Inscrição estadual do cliente, se houver."
+                    "title": "Inscrição Estadual (se houver)"
                   },
                   {
-                    "title": "Fundação",
+                    "title": "Fundação:",
                     "text": "Data de fundação do cliente"
                   },
                   {
-                    "title": "Data de Abertura",
-                    "text": "Data de abertura do local do cliente."
+                    "title": "Data de Abertura"
                   },
                   {
-                    "title": "Alugado?",
+                    "title": "Alugado?:",
                     "text": "Alterne esta opção se o local do cliente for alugado."
                   },
                   {
-                    "title": "Limite de Crédito",
-                    "text": "Limite de crédito do cliente"
+                    "title": "Limite de Crédito"
                   },
                   {
-                    "title": "Inativo",
+                    "title": "Inativo:",
                     "text": "Cliente está ativo no sistema."
                   },
                   {
-                    "title": "Grupo",
+                    "title": "Grupo:",
                     "text": "Grupo ao qual o cliente pertence, ex: industrial, climatizadores, segurança e etc..."
                   }
                 ]
@@ -417,31 +387,25 @@
                 "style": "point",
                 "list": [
                   {
-                    "title": "CPF",
-                    "text": "CPF do cliente."
+                    "title": "CPF"
                   },
                   {
-                    "title": "Nome",
-                    "text": "Nome completo do cliente."
+                    "title": "Nome Completo"
                   },
                   {
-                    "title": "RG",
-                    "text": "RG do cliente."
+                    "title": "RG"
                   },
                   {
-                    "title": "Gênero",
-                    "text": "Gênero do cliente."
+                    "title": "Gênero"
                   },
                   {
-                    "title": "Data de nascimento",
-                    "text": "Data de nascimento do cliente."
+                    "title": "Data de nascimento"
                   },
                   {
-                    "title": "Limite de Crédito",
-                    "text": "Limite de crédito do cliente"
+                    "title": "Limite de Crédito"
                   },
                   {
-                    "title": "Grupo",
+                    "title": "Grupo:",
                     "text": "Grupo ao qual o cliente pertence, ex: industrial, climatizadores, segurança e etc..."
                   }
                 ]
@@ -457,20 +421,16 @@
                 "style": "point",
                 "list": [
                   {
-                    "title": "E-mail",
-                    "text": "E-mail de contato do cliente."
+                    "title": "E-mail"
                   },
                   {
-                    "title": "Fax",
-                    "text": "Fax do cliente."
+                    "title": "Fax"
                   },
                   {
-                    "title": "Celular",
-                    "text": "Celular de contato do cliente."
+                    "title": "Celular"
                   },
                   {
-                    "title": "Telefone",
-                    "text": "Telefone de contato do cliente."
+                    "title": "Telefone"
                   }
                 ]
               },
@@ -494,20 +454,16 @@
                 "style": "point",
                 "list": [
                   {
-                    "title": "Código Postal",
-                    "text": "Código postal do cliente."
+                    "title": "Código Postal"
                   },
                   {
-                    "title": "Bairro",
-                    "text": "Bairro do cliente."
+                    "title": "Bairro"
                   },
                   {
-                    "title": "Rua",
-                    "text": "Rua do cliente."
+                    "title": "Rua"
                   },
                   {
-                    "title": "Município",
-                    "text": "Município do cliente."
+                    "title": "Município:"
                   }
                 ]
               },
@@ -528,8 +484,6 @@
           }
         ]
       },
-
-
 
       {
         "id": "produtos",
@@ -572,7 +526,7 @@
                 "list": [
                   {
                     "title": "Descrição:",
-                    "text": "Nome, descrição e demais informações do produto." 
+                    "text": "Nome, descrição e demais informações do produto."
                   },
                   {
                     "title": "Código de barras"
@@ -585,37 +539,37 @@
                   },
                   {
                     "title": "Grupo:",
-                    "text": "Grupo/Categoria do produto." 
+                    "text": "Grupo/Categoria do produto."
                   },
                   {
-                    "title": "Situação Tributária" 
+                    "title": "Situação Tributária"
                   },
                   {
                     "title": "Estoque:",
-                    "text": "Quantidade do produto no estoque." 
+                    "text": "Quantidade do produto no estoque."
                   },
                   {
                     "title": "Estoque Mínimo:",
-                    "text": "Quantidade do estoque mínimo para alerta." 
+                    "text": "Quantidade do estoque mínimo para alerta."
                   },
                   {
                     "title": "Preço de Venda:",
-                    "text": "Valor do produto á ser vendido." 
+                    "text": "Valor do produto á ser vendido."
                   },
                   {
                     "title": "Margem de Lucro:",
-                    "text": "Margem de lucro em porcentagem (%)." 
+                    "text": "Margem de lucro em porcentagem (%)."
                   },
                   {
                     "title": "Preço de Custo:",
-                    "text": "Valor do custo de compra." 
+                    "text": "Valor do custo de compra."
                   },
                   {
                     "title": "ICMS"
                   },
                   {
                     "title": "Ativo/Desativado:",
-                    "text": "Status do produto se está sendo circulando ou não." 
+                    "text": "Status do produto se está sendo circulando ou não."
                   }
                 ]
               },
@@ -671,7 +625,7 @@
                 "list": [
                   {
                     "title": "Descrição:",
-                    "text": "Nome, descrição e demais informações do produto." 
+                    "text": "Nome, descrição e demais informações do produto."
                   },
                   {
                     "title": "Código de barras"
@@ -684,37 +638,37 @@
                   },
                   {
                     "title": "Grupo:",
-                    "text": "Grupo/Categoria do produto." 
+                    "text": "Grupo/Categoria do produto."
                   },
                   {
-                    "title": "Situação Tributária" 
+                    "title": "Situação Tributária"
                   },
                   {
                     "title": "Estoque:",
-                    "text": "Quantidade do produto no estoque." 
+                    "text": "Quantidade do produto no estoque."
                   },
                   {
                     "title": "Estoque Mínimo:",
-                    "text": "Quantidade do estoque mínimo para alerta." 
+                    "text": "Quantidade do estoque mínimo para alerta."
                   },
                   {
                     "title": "Preço de Venda:",
-                    "text": "Valor do produto á ser vendido." 
+                    "text": "Valor do produto á ser vendido."
                   },
                   {
                     "title": "Margem de Lucro:",
-                    "text": "Margem de lucro em porcentagem (%)." 
+                    "text": "Margem de lucro em porcentagem (%)."
                   },
                   {
                     "title": "Preço de Custo:",
-                    "text": "Valor do custo de compra." 
+                    "text": "Valor do custo de compra."
                   },
                   {
                     "title": "ICMS"
                   },
                   {
                     "title": "Ativo/Desativado:",
-                    "text": "Status do produto se está sendo circulando ou não." 
+                    "text": "Status do produto se está sendo circulando ou não."
                   },
                   {
                     "title": "Data de criação"
@@ -738,8 +692,6 @@
           }
         ]
       },
-      
-      
 
       {
         "id": "agenda",
@@ -791,7 +743,7 @@
               {
                 "src": "agenda/02.png",
                 "alt": "Agendando uma nova visita"
-              }              
+              }
             ]
           },
           {
@@ -817,13 +769,11 @@
               {
                 "src": "agenda/04.png",
                 "alt": "Abrindo e editando a visita agendada"
-              }              
+              }
             ]
           }
         ]
       },
-
-
 
       {
         "id": "importar-xml",
@@ -851,15 +801,11 @@
         ]
       },
 
-
-
       {
         "id": "contas-a-pagar",
         "name": "Contas a Pagar",
         "content": []
       },
-
-
 
       {
         "id": "contas-a-receber",
@@ -873,14 +819,14 @@
           },
           {
             "type": "text",
-            "value": "Na tela de Contas a Pagar, vemos uma tabela com vendas. Em cada item da tabela, há o botão de Editar (Lápis Azul) e o de Finalizar Venda (Cédula Verde)."
+            "value": "Na tela de Contas a Receber, vemos uma tabela com vendas. Em cada item da tabela, há o botão de Editar e o de Finalizar Venda."
           },
           {
             "type": "gallery",
             "images": [
               {
                 "src": "contas/01.png",
-                "alt": "Conhecendo a página de Contas a Pagar"
+                "alt": "Conhecendo a página de Contas a Receber"
               }
             ]
           },
@@ -892,7 +838,7 @@
           },
           {
             "type": "text",
-            "value": "Ao clicar no botão de Finalizar Venda (Cédula Verde) em um item da tabela que esteja com o estado 'Aberta', ele será alterado para 'Fechada'."
+            "value": "Ao clicar no botão de Finalizar Venda em um item da tabela que esteja com o estado 'Aberta', ele será alterado para 'Fechada'."
           },
           {
             "type": "text",
@@ -902,13 +848,35 @@
           },
           {
             "type": "text",
-            "value": "Ao clicar no botão de Editar (Lápis Azul), será aberto um formulário de edição. Basta fazer as alterações desejadas e clicar em salvar."
+            "value": "Ao clicar no botão de Editar, será aberto um formulário para adicionar um novo produto na venda, o formulário possui os seguintes campos:"
+          },
+          {
+            "type": "list",
+            "style": "point",
+            "list": [
+              {
+                "title": "Produto"
+              },
+              {
+                "title": "Quantidade"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "value": "Após preencher todos os campos clique em 'Adicionar Item' para adicionar o item à venda."
+          },
+          {
+            "type": "gallery",
+            "images": [
+              {
+                "src": "contas/02.png",
+                "alt": "Adicionando produto à venda"
+              }
+            ]
           }
         ]
       },
-      
-
-
 
       {
         "id": "relatorios",
@@ -940,8 +908,6 @@
         ]
       },
 
-
-
       {
         "id": "site-sca",
         "name": "Site SCA",
@@ -958,11 +924,36 @@
               },
               {
                 "type": "text",
+                "value": "Adicionando Serviço",
+                "fontSize": "xl",
+                "fontWeight": "medium"
+              },
+              {
+                "type": "text",
                 "value": "Na aba 'Serviços' da tela site SCA, podemos identificar a lista de serviços, clicando no ícone de lápis você pode editar, e na lixeira para excluir. Caso queira adicionar um novo serviço, basta clicar em 'Novo Serviço'."
               },
               {
                 "type": "text",
                 "value": "Clicando no botão 'Novo Serviço', temos os seguintes campos:"
+              },
+              {
+                "type": "list",
+                "style": "point",
+                "list": [
+                  {
+                    "title": "Título"
+                  },
+                  {
+                    "title": "Descrição"
+                  },
+                  {
+                    "title": "Imagem"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "value": "Após preencher todos os campos clique no botão 'Adicionar Serviço'."
               },
               {
                 "type": "gallery",
@@ -973,7 +964,49 @@
                   },
                   {
                     "src": "site/servicos/02.png",
-                    "alt": "Formulário Serviços"
+                    "alt": "Formulário Serviço"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "value": "Editando Serviço",
+                "fontSize": "xl",
+                "fontWeight": "medium"
+              },
+              {
+                "type": "text",
+                "value": "Clicando no ícone de lápis em um serviço da tabela, podemos ver os seguintes campos:"
+              },
+              {
+                "type": "list",
+                "style": "point",
+                "list": [
+                  {
+                    "title": "Título"
+                  },
+                  {
+                    "title": "Descrição"
+                  },
+                  {
+                    "title": "Imagem"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "value": "Após modificar o que deseja clique em 'Salvar Alterações' para salvar."
+              },
+              {
+                "type": "gallery",
+                "images": [
+                  {
+                    "src": "site/servicos/03.png",
+                    "alt": "Editando Serviço"
+                  },
+                  {
+                    "src": "site/servicos/04.png",
+                    "alt": "Formulário edição de Serviço"
                   }
                 ]
               }
@@ -1040,7 +1073,7 @@
               },
               {
                 "type": "text",
-                "value": "Clicando no ícone de lápis de um FAQ na tabela, podemos ver os seguintes campos:"
+                "value": "Clicando no ícone de lápis de um FAQ da tabela, podemos ver os seguintes campos:"
               },
               {
                 "type": "list",
@@ -1063,11 +1096,11 @@
                 "images": [
                   {
                     "src": "site/faq/03.png",
-                    "alt": "Adicionando novo FAQ"
+                    "alt": "Editando FAQ"
                   },
                   {
                     "src": "site/faq/04.png",
-                    "alt": "Formulário FAQ"
+                    "alt": "Formulário edição de FAQ"
                   }
                 ]
               }
@@ -1085,11 +1118,36 @@
               },
               {
                 "type": "text",
+                "value": "Adicionando Avaliação",
+                "fontSize": "xl",
+                "fontWeight": "medium"
+              },
+              {
+                "type": "text",
                 "value": "Na aba 'Avaliações' da tela site SCA, podemos identificar a lista de avaliações, clicando no ícone de lápis você pode editar, e na lixeira para excluir. Caso queira adicionar uma nova avaliação, basta clicar em 'Adicionar Avaliação'."
               },
               {
                 "type": "text",
                 "value": "Clicando no botão 'Adicionar Avaliação', temos os seguintes campos:"
+              },
+              {
+                "type": "list",
+                "style": "point",
+                "list": [
+                  {
+                    "title": "Nome"
+                  },
+                  {
+                    "title": "Descrição"
+                  },
+                  {
+                    "title": "Avaliação"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "value": "Após preencher ambos os campos clique no botão 'Adicionar Avaliação'."
               },
               {
                 "type": "gallery",
@@ -1103,13 +1161,53 @@
                     "alt": "Formulário Avaliação"
                   }
                 ]
+              },
+              {
+                "type": "text",
+                "value": "Editando Avaliação",
+                "fontSize": "xl",
+                "fontWeight": "medium"
+              },
+              {
+                "type": "text",
+                "value": "Clicando no ícone de lápis em uma avaliação da tabela, podemos ver os seguintes campos:"
+              },
+              {
+                "type": "list",
+                "style": "point",
+                "list": [
+                  {
+                    "title": "Nome"
+                  },
+                  {
+                    "title": "Descrição"
+                  },
+                  {
+                    "title": "Avaliação"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "value": "Após modificar o que deseja clique em 'Salvar Alterações' para salvar."
+              },
+              {
+                "type": "gallery",
+                "images": [
+                  {
+                    "src": "site/avaliacoes/03.png",
+                    "alt": "Editando Avaliação"
+                  },
+                  {
+                    "src": "site/avaliacoes/04.png",
+                    "alt": "Formulário edição de Avaliação"
+                  }
+                ]
               }
             ]
           }
         ]
       },
-
-
 
       {
         "id": "aplicativo",
@@ -1382,50 +1480,1489 @@
                 ]
               }
             ]
-          }          
+          }
         ]
       }
     ],
 
-
-
-
-
-
     "en": [
       {
         "id": "inicio",
-        "name": "Welcome",
+        "name": "Home",
         "content": [
           {
             "type": "text",
-            "fontSize": "3xl",
+            "fontSize": "2xl",
             "fontWeight": "bold",
-            "value": "Welcome"
+            "value": "Home Page"
           },
           {
             "type": "text",
-            "value": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, pariatur exercitationem! Iste deserunt adipisci, fuga omnis sequi aspernatur ad rerum nobis, doloribus odit maxime dignissimos commodi ex vitae totam. Quibusdam? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non perspiciatis fuga vero dolorum quaerat, corporis numquam? Omnis, debitis alias tempore soluta doloremque recusandae quo explicabo officiis, reprehenderit molestias possimus in."
+            "value": "On the home screen, we can identify the number of pending and completed visits, along with a monthly chart for a clearer view."
           },
           {
-            "type": "link",
-            "value": "Go to products",
-            "url": "produtos/cadastro"
+            "type": "gallery",
+            "images": [
+              {
+                "src": "inicio/01.png",
+                "alt": "Home Page"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "value": "Logging out of the account",
+            "fontSize": "xl",
+            "fontWeight": "medium"
+          },
+          {
+            "type": "text",
+            "value": "On the screen, you can see the icon of your profile in the upper right corner. By clicking on it and pressing the 'Log Out' button, you can disconnect from the account."
           }
         ]
       },
+
+      {
+        "id": "vendas",
+        "name": "Sales",
+        "content": [
+          {
+            "type": "text",
+            "value": "Sales Page",
+            "fontSize": "2xl",
+            "fontWeight": "bold"
+          },
+          {
+            "type": "text",
+            "value": "On the sales page, we can identify two important sections: a form and a table. In the form, you will find the following fields:"
+          },
+          {
+            "type": "list",
+            "style": "point",
+            "list": [
+              {
+                "title": "Customer"
+              },
+              {
+                "title": "Payment Method"
+              },
+              {
+                "title": "Installments",
+                "text": "(Only displayed if the payment method is 'Credit')"
+              },
+              {
+                "title": "Product"
+              },
+              {
+                "title": "Quantity"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "value": "To add a new item, fill in all the fields and click the 'Add Item' button. After pressing the button, the entered data will be displayed in the table, as shown in the image below:"
+          },
+          {
+            "type": "gallery",
+            "images": [
+              {
+                "src": "vendas/01.png",
+                "alt": "Creating a sale"
+              },
+              {
+                "src": "vendas/02.png",
+                "alt": "Adding a sale to the table"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "value": "To add all the products to the sale, simply click the 'Finish Sale' button, and the sale will be forwarded to the 'Accounts Receivable' page."
+          },
+          {
+            "type": "link",
+            "value": "Go to Accounts Receivable",
+            "url": "contas-a-receber"
+          },
+          {
+            "type": "text",
+            "value": "If you need to remove a product individually, click the trash icon. If you wish to cancel the operation, simply press the 'Cancel' button."
+          },
+          {
+            "type": "gallery",
+            "images": [
+              {
+                "src": "vendas/03.png",
+                "alt": "Finishing the sale"
+              }
+            ]
+          }
+        ]
+      },
+
+      {
+        "id": "clientes",
+        "name": "Clients",
+        "routes": [
+          {
+            "id": "adicionar",
+            "name": "Add",
+            "content": [
+              {
+                "type": "text",
+                "value": "Adding a Client",
+                "fontSize": "2xl",
+                "fontWeight": "bold"
+              },
+              {
+                "type": "text",
+                "value": "On the clients screen, you can identify the 'Add' button in the upper right corner of the screen. Clicking on the button, you will see the following information:"
+              },
+              {
+                "type": "gallery",
+                "images": [
+                  {
+                    "src": "clientes/01.png",
+                    "alt": "Entering the registration page"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "value": "Upon accessing, you can view three tabs: Main, Contact, and Location. Each of these tabs contains a form. Starting with the main tab, you'll notice a button to switch between CNPJ and CPF. When selecting CNPJ, you will see the following fields:"
+              },
+              {
+                "type": "list",
+                "style": "point",
+                "list": [
+                  {
+                    "title": "CNPJ"
+                  },
+                  {
+                    "title": "Full Name"
+                  },
+                  {
+                    "title": "Trade Name (if available)"
+                  },
+                  {
+                    "title": "State Registration (if available)"
+                  },
+                  {
+                    "title": "Foundation:",
+                    "text": "Client's foundation date"
+                  },
+                  {
+                    "title": "Opening Date"
+                  },
+                  {
+                    "title": "Rented?:",
+                    "text": "Toggle this option if the client's location is rented."
+                  },
+                  {
+                    "title": "Credit Limit"
+                  },
+                  {
+                    "title": "Inactive:",
+                    "text": "Is the client active in the system."
+                  },
+                  {
+                    "title": "Group:",
+                    "text": "Group to which the client belongs, e.g., industrial, air conditioning, security, etc..."
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "value": "If the client is identified by CPF, the fields are as follows:"
+              },
+              {
+                "type": "list",
+                "style": "point",
+                "list": [
+                  {
+                    "title": "CPF"
+                  },
+                  {
+                    "title": "Full Name"
+                  },
+                  {
+                    "title": "ID"
+                  },
+                  {
+                    "title": "Gender"
+                  },
+                  {
+                    "title": "Date of Birth"
+                  },
+                  {
+                    "title": "Credit Limit"
+                  },
+                  {
+                    "title": "Group:",
+                    "text": "Group to which the client belongs, e.g., industrial, air conditioning, security, etc..."
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "value": "For a better understanding, please refer to the image below:"
+              },
+              {
+                "type": "gallery",
+                "images": [
+                  {
+                    "src": "clientes/02.png",
+                    "alt": "Form via CNPJ"
+                  },
+                  {
+                    "src": "clientes/03.png",
+                    "alt": "Form via CPF"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "value": "Moving on to the second tab, 'Contact,' you will find the following fields:",
+                "fontSize": "xl",
+                "fontWeight": "medium"
+              },
+              {
+                "type": "list",
+                "style": "point",
+                "list": [
+                  {
+                    "title": "Email"
+                  },
+                  {
+                    "title": "Fax"
+                  },
+                  {
+                    "title": "Mobile"
+                  },
+                  {
+                    "title": "Phone"
+                  }
+                ]
+              },
+              {
+                "type": "gallery",
+                "images": [
+                  {
+                    "src": "clientes/04.png",
+                    "alt": "Client's contact tab"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "value": "Finally, in the 'Location' tab, you will find the following fields:",
+                "fontSize": "xl",
+                "fontWeight": "medium"
+              },
+              {
+                "type": "list",
+                "style": "point",
+                "list": [
+                  {
+                    "title": "Postal Code"
+                  },
+                  {
+                    "title": "Neighborhood"
+                  },
+                  {
+                    "title": "Street"
+                  },
+                  {
+                    "title": "City"
+                  }
+                ]
+              },
+              {
+                "type": "gallery",
+                "images": [
+                  {
+                    "src": "clientes/05.png",
+                    "alt": "Location tab of the client"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "value": "After filling in all the necessary client information, click the 'Save' button to add the client. You can also use the 'Cancel' or 'Back' button to return to the main page."
+              }
+            ]
+          },
+          {
+            "id": "editar",
+            "name": "Edit",
+            "content": [
+              {
+                "type": "text",
+                "value": "Editing a Client",
+                "fontSize": "2xl",
+                "fontWeight": "bold"
+              },
+              {
+                "type": "text",
+                "value": "On the clients screen, you can identify the clients in the table. Clicking on the 'Pencil' button allows you to edit the client or delete them by clicking on the 'Trash' icon. When clicking on the 'Pencil' button, you will see the following screen:"
+              },
+              {
+                "type": "gallery",
+                "images": [
+                  {
+                    "src": "clientes/06.png",
+                    "alt": "Entering the edit page"
+                  },
+                  {
+                    "src": "clientes/07.png",
+                    "alt": "Form fields"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "value": "On the clients screen, you can identify three tabs: Main, Contact, and Location. Each of these tabs contains a form. Starting with the main tab, you'll notice a button to switch between CNPJ and CPF. When selecting CNPJ, you will see the following fields:"
+              },
+              {
+                "type": "list",
+                "style": "point",
+                "list": [
+                  {
+                    "title": "CNPJ"
+                  },
+                  {
+                    "title": "Full Name"
+                  },
+                  {
+                    "title": "Trade Name (if available)"
+                  },
+                  {
+                    "title": "State Registration (if available)"
+                  },
+                  {
+                    "title": "Foundation:",
+                    "text": "Client's foundation date"
+                  },
+                  {
+                    "title": "Opening Date"
+                  },
+                  {
+                    "title": "Rented?:",
+                    "text": "Toggle this option if the client's location is rented."
+                  },
+                  {
+                    "title": "Credit Limit"
+                  },
+                  {
+                    "title": "Inactive:",
+                    "text": "Is the client active in the system."
+                  },
+                  {
+                    "title": "Group:",
+                    "text": "Group to which the client belongs, e.g., industrial, air conditioning, security, etc..."
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "value": "If the client is identified by CPF, the fields are as follows:"
+              },
+              {
+                "type": "list",
+                "style": "point",
+                "list": [
+                  {
+                    "title": "CPF"
+                  },
+                  {
+                    "title": "Full Name"
+                  },
+                  {
+                    "title": "ID"
+                  },
+                  {
+                    "title": "Gender"
+                  },
+                  {
+                    "title": "Date of Birth"
+                  },
+                  {
+                    "title": "Credit Limit"
+                  },
+                  {
+                    "title": "Group:",
+                    "text": "Group to which the client belongs, e.g., industrial, air conditioning, security, etc..."
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "value": "Moving on to the second tab, 'Contact,' you will find the following fields:",
+                "fontSize": "xl",
+                "fontWeight": "medium"
+              },
+              {
+                "type": "list",
+                "style": "point",
+                "list": [
+                  {
+                    "title": "Email"
+                  },
+                  {
+                    "title": "Fax"
+                  },
+                  {
+                    "title": "Mobile"
+                  },
+                  {
+                    "title": "Phone"
+                  }
+                ]
+              },
+              {
+                "type": "gallery",
+                "images": [
+                  {
+                    "src": "clientes/08.png",
+                    "alt": "Client's contact tab"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "value": "Finally, in the 'Location' tab, you will find the following fields:",
+                "fontSize": "xl",
+                "fontWeight": "medium"
+              },
+              {
+                "type": "list",
+                "style": "point",
+                "list": [
+                  {
+                    "title": "Postal Code"
+                  },
+                  {
+                    "title": "Neighborhood"
+                  },
+                  {
+                    "title": "Street"
+                  },
+                  {
+                    "title": "City"
+                  }
+                ]
+              },
+              {
+                "type": "gallery",
+                "images": [
+                  {
+                    "src": "clientes/09.png",
+                    "alt": "Location tab of the client"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "value": "After making the necessary changes to the client's information, click the 'Save' button to save the client's modifications. You can also use the 'Cancel' or 'Back' button to return to the main page."
+              }
+            ]
+          }
+        ]
+      },
+
       {
         "id": "produtos",
         "name": "Products",
         "routes": [
           {
             "id": "adicionar",
-            "name": "New product",
+            "name": "Add",
             "content": [
               {
                 "type": "text",
+                "value": "Adding a Product",
                 "fontSize": "2xl",
-                "value": "Cadaster of products"
+                "fontWeight": "bold"
+              },
+              {
+                "type": "text",
+                "value": "On the products screen, you can identify the 'Add' button in the upper right corner of the screen. Clicking on this button will take you to the following screen:"
+              },
+              {
+                "type": "gallery",
+                "images": [
+                  {
+                    "src": "produtos/01.png",
+                    "alt": "Accessing the registration page"
+                  },
+                  {
+                    "src": "produtos/02.png",
+                    "alt": "Form fields"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "value": "In the form, you can see the following fields:"
+              },
+              {
+                "type": "list",
+                "style": "point",
+                "list": [
+                  {
+                    "title": "Description:",
+                    "text": "Name, description, and other product information."
+                  },
+                  {
+                    "title": "Barcode"
+                  },
+                  {
+                    "title": "Reference"
+                  },
+                  {
+                    "title": "Manufacturer"
+                  },
+                  {
+                    "title": "Group:",
+                    "text": "Product group/category."
+                  },
+                  {
+                    "title": "Tax Situation"
+                  },
+                  {
+                    "title": "Stock:",
+                    "text": "Quantity of the product in stock."
+                  },
+                  {
+                    "title": "Minimum Stock:",
+                    "text": "Minimum stock quantity for alerts."
+                  },
+                  {
+                    "title": "Selling Price:",
+                    "text": "Price at which the product will be sold."
+                  },
+                  {
+                    "title": "Profit Margin:",
+                    "text": "Profit margin as a percentage (%)."
+                  },
+                  {
+                    "title": "Cost Price:",
+                    "text": "Purchase cost value."
+                  },
+                  {
+                    "title": "VAT"
+                  },
+                  {
+                    "title": "Active/Inactive:",
+                    "text": "Product status, whether it is in circulation or not."
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "value": "After filling in all the fields, click 'Save' to save the product, or 'Cancel' to go back."
+              },
+              {
+                "type": "gallery",
+                "images": [
+                  {
+                    "src": "produtos/03.png",
+                    "alt": "Completing the registration"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "editar",
+            "name": "Edit",
+            "content": [
+              {
+                "type": "text",
+                "value": "Editing a Product",
+                "fontSize": "2xl",
+                "fontWeight": "bold"
+              },
+              {
+                "type": "text",
+                "value": "On the products screen, you can identify the products in the table. By clicking on the 'Pencil' button, you can edit the product or delete it by clicking on the 'Trash' button. Clicking on the 'Pencil' button will take you to the following screen:"
+              },
+              {
+                "type": "gallery",
+                "images": [
+                  {
+                    "src": "produtos/04.png",
+                    "alt": "Accessing the editing page"
+                  },
+                  {
+                    "src": "produtos/05.png",
+                    "alt": "Form fields"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "value": "In the form, you can see the following fields:"
+              },
+              {
+                "type": "list",
+                "style": "point",
+                "list": [
+                  {
+                    "title": "Description:",
+                    "text": "Name, description, and other product information."
+                  },
+                  {
+                    "title": "Barcode"
+                  },
+                  {
+                    "title": "Reference"
+                  },
+                  {
+                    "title": "Manufacturer"
+                  },
+                  {
+                    "title": "Group:",
+                    "text": "Product group/category."
+                  },
+                  {
+                    "title": "Tax Situation"
+                  },
+                  {
+                    "title": "Stock:",
+                    "text": "Quantity of the product in stock."
+                  },
+                  {
+                    "title": "Minimum Stock:",
+                    "text": "Minimum stock quantity for alerts."
+                  },
+                  {
+                    "title": "Selling Price:",
+                    "text": "Price at which the product will be sold."
+                  },
+                  {
+                    "title": "Profit Margin:",
+                    "text": "Profit margin as a percentage (%)."
+                  },
+                  {
+                    "title": "Cost Price:",
+                    "text": "Purchase cost value."
+                  },
+                  {
+                    "title": "VAT"
+                  },
+                  {
+                    "title": "Active/Inactive:",
+                    "text": "Product status, whether it is in circulation or not."
+                  },
+                  {
+                    "title": "Creation Date"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "value": "After making the desired changes, click 'Save' to save the alterations or 'Cancel' to go back."
+              },
+              {
+                "type": "gallery",
+                "images": [
+                  {
+                    "src": "produtos/06.png",
+                    "alt": "Completing the editing"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+
+      {
+        "id": "agenda",
+        "name": "Schedule",
+        "content": [
+          {
+            "type": "text",
+            "value": "Schedule",
+            "fontSize": "2xl",
+            "fontWeight": "bold"
+          },
+          {
+            "type": "text",
+            "value": "On the schedule screen, you can identify the 'Schedule Visit' button and the calendar. When you click on the 'Schedule Visit' button, you will see a form on the right that allows you to schedule a visit. In the form, you will fill out the following fields:"
+          },
+          {
+            "type": "list",
+            "style": "point",
+            "list": [
+              {
+                "title": "Title",
+                "text": "Main details."
+              },
+              {
+                "title": "Date & Time",
+                "text": "Date and time of the visit."
+              },
+              {
+                "title": "Client",
+                "text": "The client to be visited."
+              },
+              {
+                "title": "Description",
+                "text": "Additional details about the visit."
+              },
+              {
+                "title": "Address",
+                "text": "Location of the visit."
+              }
+            ]
+          },
+          {
+            "type": "gallery",
+            "images": [
+              {
+                "src": "agenda/01.png",
+                "alt": "Exploring the Schedule Page"
+              },
+              {
+                "src": "agenda/02.png",
+                "alt": "Scheduling a New Visit"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "value": "By filling in all the necessary data and clicking the 'Schedule Visit' button, the form will be closed, and the scheduled visit will appear on the calendar as shown in the image below:"
+          },
+          {
+            "type": "gallery",
+            "images": [
+              {
+                "src": "agenda/03.png",
+                "alt": "Viewing the Scheduled Visit on the Calendar"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "value": "When you click on the scheduled visit on the calendar, you can view and make changes to all the information related to that visit. If you make any changes, simply click 'Save Changes' to ensure the updated information is saved. If the visit has already been completed, click 'Complete Service Order' to mark it as completed."
+          },
+          {
+            "type": "gallery",
+            "images": [
+              {
+                "src": "agenda/04.png",
+                "alt": "Opening and Editing the Scheduled Visit"
+              }
+            ]
+          }
+        ]
+      },
+
+      {
+        "id": "importar-xml",
+        "name": "Import XML",
+        "content": [
+          {
+            "type": "text",
+            "value": "Import XML",
+            "fontSize": "2xl",
+            "fontWeight": "bold"
+          },
+          {
+            "type": "text",
+            "value": "On the Import XML screen, you can find a space to attach an XML file for a product. If you have the file, click to select the XML or drag the file into the empty space."
+          },
+          {
+            "type": "gallery",
+            "images": [
+              {
+                "src": "xml/01.png",
+                "alt": "Exploring the Import XML page"
+              }
+            ]
+          }
+        ]
+      },
+
+      {
+        "id": "contas-a-pagar",
+        "name": "Accounts Payable",
+        "content": []
+      },
+
+      {
+        "id": "contas-a-receber",
+        "name": "Accounts Receivable",
+        "content": [
+          {
+            "type": "text",
+            "value": "Accounts Receivable",
+            "fontSize": "2xl",
+            "fontWeight": "bold"
+          },
+          {
+            "type": "text",
+            "value": "On the Accounts Receivable screen, we see a table of sales. In each table item, there are Edit and Complete Sale buttons."
+          },
+          {
+            "type": "gallery",
+            "images": [
+              {
+                "src": "contas/01.png",
+                "alt": "Exploring the Accounts Receivable Page"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "value": "Completing the Sale",
+            "fontSize": "xl",
+            "fontWeight": "medium"
+          },
+          {
+            "type": "text",
+            "value": "By clicking the Complete Sale button on an item in the table that is in the 'Open' state, it will change to 'Closed'."
+          },
+          {
+            "type": "text",
+            "value": "Editing the Sale",
+            "fontSize": "xl",
+            "fontWeight": "medium"
+          },
+          {
+            "type": "text",
+            "value": "By clicking the Edit button, a form will open to add a new product to the sale. The form includes the following fields:"
+          },
+          {
+            "type": "list",
+            "style": "point",
+            "list": [
+              {
+                "title": "Product"
+              },
+              {
+                "title": "Quantity"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "value": "After filling out all the fields, click 'Add Item' to add the item to the sale."
+          },
+          {
+            "type": "gallery",
+            "images": [
+              {
+                "src": "contas/02.png",
+                "alt": "Adding a Product to the Sale"
+              }
+            ]
+          }
+        ]
+      },
+
+      {
+        "id": "relatorios",
+        "name": "Reports",
+        "content": [
+          {
+            "type": "text",
+            "value": "Reports Page",
+            "fontSize": "2xl",
+            "fontWeight": "bold"
+          },
+          {
+            "type": "text",
+            "value": "On the Reports screen, you can find 'Inventory Stock.' Just follow the instructions in the image. When expanded, you can choose the period you want to analyze by specifying the start and end dates. After setting the desired range, click 'Generate PDF' and save the file in a secure location."
+          },
+          {
+            "type": "gallery",
+            "images": [
+              {
+                "src": "relatorios/01.png",
+                "alt": "Opening 'Inventory Stock' report"
+              },
+              {
+                "src": "relatorios/02.png",
+                "alt": "Exporting PDF"
+              }
+            ]
+          }
+        ]
+      },
+
+      {
+        "id": "site-sca",
+        "name": "SCA website",
+        "routes": [
+          {
+            "id": "servicos",
+            "name": "Services",
+            "content": [
+              {
+                "type": "text",
+                "value": "SCA Services",
+                "fontSize": "2xl",
+                "fontWeight": "bold"
+              },
+              {
+                "type": "text",
+                "value": "Adding a Service",
+                "fontSize": "xl",
+                "fontWeight": "medium"
+              },
+              {
+                "type": "text",
+                "value": "In the 'Services' tab on the SCA website screen, you can find the list of services. Click on the pencil icon to edit, and the trash can to delete. If you want to add a new service, simply click on 'New Service'."
+              },
+              {
+                "type": "text",
+                "value": "Clicking on the 'New Service' button, you will see the following fields:"
+              },
+              {
+                "type": "list",
+                "style": "point",
+                "list": [
+                  {
+                    "title": "Title"
+                  },
+                  {
+                    "title": "Description"
+                  },
+                  {
+                    "title": "Image"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "value": "After filling in all the fields, click on the 'Add Service' button."
+              },
+              {
+                "type": "gallery",
+                "images": [
+                  {
+                    "src": "site/servicos/01.png",
+                    "alt": "Adding a new Service"
+                  },
+                  {
+                    "src": "site/servicos/02.png",
+                    "alt": "Service Form"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "value": "Editing a Service",
+                "fontSize": "xl",
+                "fontWeight": "medium"
+              },
+              {
+                "type": "text",
+                "value": "By clicking on the pencil icon on a service in the table, you can see the following fields:"
+              },
+              {
+                "type": "list",
+                "style": "point",
+                "list": [
+                  {
+                    "title": "Title"
+                  },
+                  {
+                    "title": "Description"
+                  },
+                  {
+                    "title": "Image"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "value": "After making the desired modifications, click 'Save Changes' to save."
+              },
+              {
+                "type": "gallery",
+                "images": [
+                  {
+                    "src": "site/servicos/03.png",
+                    "alt": "Editing Service"
+                  },
+                  {
+                    "src": "site/servicos/04.png",
+                    "alt": "Service Editing Form"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "faq",
+            "name": "FAQ",
+            "content": [
+              {
+                "type": "text",
+                "value": "FAQ SCA",
+                "fontSize": "2xl",
+                "fontWeight": "bold"
+              },
+              {
+                "type": "text",
+                "value": "Adding FAQ",
+                "fontSize": "xl",
+                "fontWeight": "medium"
+              },
+              {
+                "type": "text",
+                "value": "In the 'FAQ' tab on the SCA website screen, you can find the list of FAQs. By clicking the pencil icon, you can edit, and by clicking the trash can, you can delete. If you want to add a new FAQ, simply click 'Add FAQ'."
+              },
+              {
+                "type": "text",
+                "value": "Clicking the 'Add FAQ' button, you will see the following fields:"
+              },
+              {
+                "type": "list",
+                "style": "point",
+                "list": [
+                  {
+                    "title": "Question"
+                  },
+                  {
+                    "title": "Answer"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "value": "After filling in both fields, click the 'Add FAQ' button."
+              },
+              {
+                "type": "gallery",
+                "images": [
+                  {
+                    "src": "site/faq/01.png",
+                    "alt": "Adding a new FAQ"
+                  },
+                  {
+                    "src": "site/faq/02.png",
+                    "alt": "FAQ Form"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "value": "Editing FAQ",
+                "fontSize": "xl",
+                "fontWeight": "medium"
+              },
+              {
+                "type": "text",
+                "value": "By clicking the pencil icon of an FAQ in the table, you can see the following fields:"
+              },
+              {
+                "type": "list",
+                "style": "point",
+                "list": [
+                  {
+                    "title": "Question"
+                  },
+                  {
+                    "title": "Answer"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "value": "After making the desired changes, click 'Save Changes' to save."
+              },
+              {
+                "type": "gallery",
+                "images": [
+                  {
+                    "src": "site/faq/03.png",
+                    "alt": "Editing FAQ"
+                  },
+                  {
+                    "src": "site/faq/04.png",
+                    "alt": "FAQ Edit Form"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "avaliacoes",
+            "name": "Reviews",
+            "content": [
+              {
+                "type": "text",
+                "value": "SCA Reviews",
+                "fontSize": "2xl",
+                "fontWeight": "bold"
+              },
+              {
+                "type": "text",
+                "value": "Adding a Review",
+                "fontSize": "xl",
+                "fontWeight": "medium"
+              },
+              {
+                "type": "text",
+                "value": "In the 'Reviews' tab on the SCA website, you can find the list of reviews. By clicking on the pencil icon, you can edit a review, and by clicking on the trash can icon, you can delete it. If you want to add a new review, simply click on 'Add Review'."
+              },
+              {
+                "type": "text",
+                "value": "When you click the 'Add Review' button, you'll see the following fields:"
+              },
+              {
+                "type": "list",
+                "style": "point",
+                "list": [
+                  {
+                    "title": "Name"
+                  },
+                  {
+                    "title": "Description"
+                  },
+                  {
+                    "title": "Review"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "value": "After filling out both fields, click the 'Add Review' button."
+              },
+              {
+                "type": "gallery",
+                "images": [
+                  {
+                    "src": "site/avaliacoes/01.png",
+                    "alt": "Adding a New Review"
+                  },
+                  {
+                    "src": "site/avaliacoes/02.png",
+                    "alt": "Review Form"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "value": "Editing a Review",
+                "fontSize": "xl",
+                "fontWeight": "medium"
+              },
+              {
+                "type": "text",
+                "value": "By clicking on the pencil icon next to a review in the table, you can see the following fields:"
+              },
+              {
+                "type": "list",
+                "style": "point",
+                "list": [
+                  {
+                    "title": "Name"
+                  },
+                  {
+                    "title": "Description"
+                  },
+                  {
+                    "title": "Review"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "value": "After making the desired changes, click 'Save Changes' to save."
+              },
+              {
+                "type": "gallery",
+                "images": [
+                  {
+                    "src": "site/avaliacoes/03.png",
+                    "alt": "Editing a Review"
+                  },
+                  {
+                    "src": "site/avaliacoes/04.png",
+                    "alt": "Review Edit Form"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+
+      {
+        "id": "aplicativo",
+        "name": "Application",
+        "routes": [
+          {
+            "id": "inicio",
+            "name": "Home",
+            "content": [
+              {
+                "type": "text",
+                "value": "Getting to Know the App",
+                "fontSize": "2xl",
+                "fontWeight": "bold"
+              },
+              {
+                "type": "text",
+                "value": "The SCA application allows you to view and schedule new visits to clients, including all pending visits that are yet to be conducted and completed visits."
+              },
+              {
+                "type": "text",
+                "value": "Access the links below to discover more about the application:"
+              },
+              {
+                "type": "link",
+                "value": "Schedule a Visit",
+                "url": "new-visit"
+              },
+              {
+                "type": "link",
+                "value": "View Visits",
+                "url": "view-visits"
+              },
+              {
+                "type": "text",
+                "value": "Logging into the Application",
+                "fontSize": "xl",
+                "fontWeight": "medium"
+              },
+              {
+                "type": "text",
+                "value": "When you start the application, you will see the login screen. Simply enter your username and password correctly and click the 'Login' button to access."
+              },
+              {
+                "type": "gallery",
+                "images": [
+                  {
+                    "src": "aplicativo/01.png",
+                    "alt": "Logging In"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "value": "Logging Out of the Application",
+                "fontSize": "xl",
+                "fontWeight": "medium"
+              },
+              {
+                "type": "text",
+                "value": "After logging into the application and navigating through it, you can see the door icon in the upper right corner. By clicking on it, you can log out of your account."
+              },
+              {
+                "type": "gallery",
+                "images": [
+                  {
+                    "src": "aplicativo/02.png",
+                    "alt": "Logging Out"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "nova-visita",
+            "name": "New Visit",
+            "content": [
+              {
+                "type": "link",
+                "value": "Go to Home",
+                "url": "home"
+              },
+              {
+                "type": "text",
+                "value": "Scheduling a Visit",
+                "fontSize": "2xl",
+                "fontWeight": "bold"
+              },
+              {
+                "type": "text",
+                "value": "On the screen, you can see the 'New Visit' button at the bottom of the screen. Clicking on the button, you will see the following fields:"
+              },
+              {
+                "type": "list",
+                "style": "point",
+                "list": [
+                  {
+                    "title": "Title"
+                  },
+                  {
+                    "title": "Date"
+                  },
+                  {
+                    "title": "Time"
+                  },
+                  {
+                    "title": "Select a Client:",
+                    "text": "If the client IS in the system"
+                  },
+                  {
+                    "title": "Client:",
+                    "text": "If the client IS NOT in the system"
+                  },
+                  {
+                    "title": "Description"
+                  },
+                  {
+                    "title": "Address"
+                  }
+                ]
+              },
+              {
+                "type": "gallery",
+                "images": [
+                  {
+                    "src": "aplicativo/03.png",
+                    "alt": "Getting to Know Schedule a Visit"
+                  },
+                  {
+                    "src": "aplicativo/04.png",
+                    "alt": "Schedule a Visit Form"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "value": "After filling out all the fields, click 'Schedule Visit' to schedule. The scheduled visit will then appear in pending visits."
+              },
+              {
+                "type": "link",
+                "value": "Go to Pending Visits",
+                "url": "view-visits"
+              },
+              {
+                "type": "gallery",
+                "images": [
+                  {
+                    "src": "aplicativo/05.png",
+                    "alt": "Scheduling a Visit"
+                  },
+                  {
+                    "src": "aplicativo/06.png",
+                    "alt": "Viewing Scheduled Visit"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "ver-visitas",
+            "name": "View Visits",
+            "content": [
+              {
+                "type": "link",
+                "value": "Go to Home",
+                "url": "home"
+              },
+              {
+                "type": "text",
+                "value": "Viewing Pending Visits",
+                "fontSize": "2xl",
+                "fontWeight": "bold"
+              },
+              {
+                "type": "text",
+                "value": "On the screen, you can see two buttons below 'My Visits,' 'Pending' and 'Completed.' Clicking 'Pending' allows you to view a list of visits that are yet to be conducted. If there are none, it means there are no pending visits. Clicking on a pending visit will display the following details:"
+              },
+              {
+                "type": "list",
+                "style": "point",
+                "list": [
+                  {
+                    "title": "Title"
+                  },
+                  {
+                    "title": "Visit Date"
+                  },
+                  {
+                    "title": "Visit Time"
+                  },
+                  {
+                    "title": "Client:",
+                    "text": "Registered Client or Name"
+                  },
+                  {
+                    "title": "Visit Description"
+                  },
+                  {
+                    "title": "Visit Address"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "value": "You can modify each field as desired. At the bottom of the screen, there are two buttons, 'Complete' and 'Share Appointment.' Clicking 'Complete' marks the visit as completed, and 'Share Appointment' allows you to share the appointment via WhatsApp."
+              },
+              {
+                "type": "gallery",
+                "images": [
+                  {
+                    "src": "aplicativo/06.png",
+                    "alt": "Accessing Pending Visit"
+                  },
+                  {
+                    "src": "aplicativo/07.png",
+                    "alt": "Pending Visit Details"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "value": "Viewing Completed Visits",
+                "fontSize": "2xl",
+                "fontWeight": "bold"
+              },
+              {
+                "type": "text",
+                "value": "On the screen, you can see two buttons below 'My Visits,' 'Pending' and 'Completed.' Clicking 'Completed' allows you to view a list of visits that have already been conducted. If there are none, it means no visits have been completed. Clicking on a completed visit will display the following details:"
+              },
+              {
+                "type": "list",
+                "style": "point",
+                "list": [
+                  {
+                    "title": "Title"
+                  },
+                  {
+                    "title": "Visit Date"
+                  },
+                  {
+                    "title": "Visit Time"
+                  },
+                  {
+                    "title": "Client:",
+                    "text": "Registered Client or Name"
+                  },
+                  {
+                    "title": "Visit Description"
+                  },
+                  {
+                    "title": "Visit Address"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "value": "You can view each field and find the 'Share Appointment' button. Clicking the 'Share Appointment' button allows you to share the appointment via WhatsApp."
+              },
+              {
+                "type": "gallery",
+                "images": [
+                  {
+                    "src": "aplicativo/08.png",
+                    "alt": "Accessing Completed Visit"
+                  },
+                  {
+                    "src": "aplicativo/09.png",
+                    "alt": "Completed Visit Details"
+                  }
+                ]
               }
             ]
           }
@@ -1433,16 +2970,6 @@
       }
     ]
   },
-
-
-
-
-
-
-
-
-
-
 
   "languages": [
     {

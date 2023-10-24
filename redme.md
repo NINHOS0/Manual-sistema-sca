@@ -42,3 +42,9 @@ Manual de utilização do sistema da empresa SCA Portões Eletrônicos para auxi
 + Arrumado a exibição no sidebar
 + Correção da cor do loading das imagens
 + Adicionado novos conteúdos
+
+### Update 1.0.8
++ Adicionado o idioma: Inglês
++ Adicionado novos conteúdos
++ Melhoria de performance
++ Pequenas melhorias e correções
