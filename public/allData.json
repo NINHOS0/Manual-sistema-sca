@@ -13,7 +13,7 @@
           },
           {
             "type": "text",
-            "value": "Na tela inicial, podemos identificar o número de visitas pendentes e concluídas, além de um gráfico mensal para uma visão mais clara."
+            "value": "Na tela inicial, podemos identificar a quantidade de visitas pendentes e concluídas, além de um gráfico mensal para uma visualização mais clara."
           },
           {
             "type": "gallery",
@@ -32,7 +32,7 @@
           },
           {
             "type": "text",
-            "value": "Na tela podemos observar no canto superior direito o ícone do seu perfil, clicando sobre ele e pressionando o botão 'Sair' conseguimos desconectar da conta"
+            "value": "Na tela podemos observar no canto superior direito o ícone de seu perfil, clique sobre ele e pressione o botão 'Sair' desconectar da conta"
           }
         ]
       },
@@ -101,7 +101,7 @@
           },
           {
             "type": "text",
-            "value": "Se precisar remover algum produto individualmente, clique no ícone de lixeira. Se desejar cancelar a operação, simplesmente pressione o botão 'Cancelar'."
+            "value": "Se precisar remover algum produto individualmente, clique no ícone de lixeira. Se desejar cancelar a operação, pressione o botão 'Cancelar'."
           },
           {
             "type": "gallery",
@@ -131,7 +131,7 @@
               },
               {
                 "type": "text",
-                "value": "Na tela de clientes, podemos identificar o botão 'Adicionar' na direita superior da tela, entrando no botão vemos as seguintes informações:"
+                "value": "Na tela de clientes, podemos identificar o botão 'Adicionar' na direita superior da tela, clicando no botão vemos as seguintes informações:"
               },
               {
                 "type": "gallery",
@@ -144,7 +144,7 @@
               },
               {
                 "type": "text",
-                "value": "Ao acessar podemos visualizar três abas: Principal, contato e localização. Cada uma dessas abas contêm um formulário, começando pelo principal percebemos um botão de alternar entre CNPJ e CPF, selecionando CNPJ temos os seguintes campos:"
+                "value": "Ao acessar podemos visualizar três abas: Principal, contato e localização. Cada uma das abas contêm um formulário, começando pelo principal vemos um botão de alternar entre CNPJ e CPF, selecionando CNPJ teremos os seguintes campos:"
               },
               {
                 "type": "list",
@@ -154,17 +154,13 @@
                     "title": "CNPJ"
                   },
                   {
-                    "title": "Nome Completo"
+                    "title": "Nome"
                   },
                   {
                     "title": "Nome Fantasia (se houver)"
                   },
                   {
                     "title": "Inscrição Estadual (se houver)"
-                  },
-                  {
-                    "title": "Fundação:",
-                    "text": "Data de fundação do cliente"
                   },
                   {
                     "title": "Data de Abertura"
@@ -188,7 +184,7 @@
               },
               {
                 "type": "text",
-                "value": "Se o cliente for por CPF os campos são:"
+                "value": "Se o cliente for CPF os campos são:"
               },
               {
                 "type": "list",
@@ -214,13 +210,9 @@
                   },
                   {
                     "title": "Grupo:",
-                    "text": "Grupo ao qual o cliente pertence, ex: industrial, climatizadores, segurança e etc..."
+                    "text": "Grupo ao qual o cliente pertence, ex: industrial, segurança e etc..."
                   }
                 ]
-              },
-              {
-                "type": "text",
-                "value": "Para maior compreenção observe a imagem abaixo:"
               },
               {
                 "type": "gallery",
@@ -237,7 +229,7 @@
               },
               {
                 "type": "text",
-                "value": "Caminhando para a segunda aba, 'Contato' veremos os seguintes campos:",
+                "value": "Caminhando para a aba 'Contato', veremos os seguintes campos:",
                 "fontSize": "xl",
                 "fontWeight": "medium"
               },
@@ -264,13 +256,13 @@
                 "images": [
                   {
                     "src": "clientes/04.png",
-                    "alt": "Aba de contado do cliente"
+                    "alt": "Aba contato"
                   }
                 ]
               },
               {
                 "type": "text",
-                "value": "Finalizando para a aba de 'Localização' obtemos os campos:",
+                "value": "Finalizando para a aba de 'Localização', obtemos os campos:",
                 "fontSize": "xl",
                 "fontWeight": "medium"
               },
@@ -297,13 +289,13 @@
                 "images": [
                   {
                     "src": "clientes/05.png",
-                    "alt": "Aba de localização do cliente"
+                    "alt": "Aba localização"
                   }
                 ]
               },
               {
                 "type": "text",
-                "value": "Após preencher todos os dados necessário do cliente aperte no botão 'Salvar' para adicionar o cliente. O botão 'Cancelar' ou 'Voltar' para retornar à página inicial."
+                "value": "Após preencher todos os dados necessário do cliente, aperte no botão 'Salvar' para adicionar o cliente. O botão 'Cancelar' ou 'Voltar' para retornar à página inicial."
               }
             ]
           },
@@ -319,7 +311,7 @@
               },
               {
                 "type": "text",
-                "value": "Na tela clientes, podemos identificar os clientes na tabela, clicando no botão de 'Lápis' podemos editar esse cliente, ou excluí-lo apertando na 'Lixeira', entrando no botão 'Lápis' vemos a seguinte tela:"
+                "value": "Na tela de clientes, podemos identificar os clientes na tabela, clicando no botão de editar vemos a seguinte tela:"
               },
               {
                 "type": "gallery",
@@ -336,7 +328,7 @@
               },
               {
                 "type": "text",
-                "value": "Na tela clientes, podemos identificar três abas: Principal, contato e localização. Cada uma dessas abas contêm um formulário, começando pelo principal percebemos um botão de alternar entre CNPJ e CPF, selecionando CNPJ temos os seguintes campos:"
+                "value": "Ao acessar podemos visualizar três abas: Principal, contato e localização. Cada uma das abas contêm um formulário, começando pelo principal vemos um botão de alternar entre CNPJ e CPF, selecionando CNPJ temos os seguintes campos:"
               },
               {
                 "type": "list",
@@ -353,10 +345,6 @@
                   },
                   {
                     "title": "Inscrição Estadual (se houver)"
-                  },
-                  {
-                    "title": "Fundação:",
-                    "text": "Data de fundação do cliente"
                   },
                   {
                     "title": "Data de Abertura"
@@ -380,7 +368,7 @@
               },
               {
                 "type": "text",
-                "value": "Se o cliente for por CPF os campos são:"
+                "value": "Se o cliente for CPF os campos são:"
               },
               {
                 "type": "list",
@@ -406,13 +394,13 @@
                   },
                   {
                     "title": "Grupo:",
-                    "text": "Grupo ao qual o cliente pertence, ex: industrial, climatizadores, segurança e etc..."
+                    "text": "Grupo ao qual o cliente pertence, ex: industrial, segurança e etc..."
                   }
                 ]
               },
               {
                 "type": "text",
-                "value": "Caminhando para a segunda aba, 'Contato' veremos os seguintes campos:",
+                "value": "Caminhando para a aba 'Contato', veremos os seguintes campos:",
                 "fontSize": "xl",
                 "fontWeight": "medium"
               },
@@ -439,13 +427,13 @@
                 "images": [
                   {
                     "src": "clientes/08.png",
-                    "alt": "Aba de contado do cliente"
+                    "alt": "Aba contato"
                   }
                 ]
               },
               {
                 "type": "text",
-                "value": "Finalizando para a aba de 'Localização' obtemos os campos:",
+                "value": "Finalizando para a aba de 'Localização', obtemos os campos:",
                 "fontSize": "xl",
                 "fontWeight": "medium"
               },
@@ -472,7 +460,7 @@
                 "images": [
                   {
                     "src": "clientes/09.png",
-                    "alt": "Aba de localização"
+                    "alt": "Aba localização"
                   }
                 ]
               },
@@ -481,6 +469,78 @@
                 "value": "Após alterar as informações necessárias do cliente aperte no botão 'Salvar' para salvar as alterações do cliente. O botão 'Cancelar' ou 'Voltar' para retornar à página inicial."
               }
             ]
+          }
+        ]
+      },
+
+      {
+        "id": "usuarios",
+        "name": "Usuários",
+        "content": [
+          {
+            "type": "text",
+            "value": "Adicionando usuário",
+            "fontSize": "2xl",
+            "fontWeight": "bold"
+          },
+          {
+            "type": "text", 
+            "value": "Na tela de usuários, podemos identificar o botão 'Adicionar' na direita superior da tela, clicando no botão vemos a seguinte tela:"
+          },
+          {
+            "type": "gallery",
+            "images": [
+              {
+                "src": "usuarios/01.png",
+                "alt": "Entrando na página de cadastro"
+              },
+              {
+                "src": "usuarios/02.png",
+                "alt": "Campos do formulário"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "value": "No formulário conseguimos ver os seguintes campos:"
+          },
+          {
+            "type": "list",
+            "style": "point",
+            "list": [
+              {
+                "title": "Nome"
+              },
+              {
+                "title": "E-mail"
+              },
+              {
+                "title": "Senha"
+              }                 
+            ]
+          },
+          {
+            "type": "text",
+            "value": "Após preencher todos os campos, clique em 'Salvar' para salvar o usuário, ou 'Cancelar' para voltar."
+          },
+          {
+            "type": "gallery",
+            "images": [
+              {
+                "src": "usuarios/03.png",
+                "alt": "Finalizando o cadastro"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "value": "Excluindo usuário.",
+            "fontSize": "2xl",
+            "fontWeight": "bold"
+          },
+          {
+            "type": "text",
+            "value": "Na tela de usuários clique no ícone de lixeira do usuário para excluir."            
           }
         ]
       },
@@ -501,7 +561,7 @@
               },
               {
                 "type": "text",
-                "value": "Na tela de produtos, podemos identificar o botão 'Adicionar' na direita superior da tela, entrando no botão vemos a seguinte tela:"
+                "value": "Na tela de produtos, podemos identificar o botão 'Adicionar' na direita superior da tela, clicando no botão vemos a seguinte tela:"
               },
               {
                 "type": "gallery",
@@ -575,7 +635,7 @@
               },
               {
                 "type": "text",
-                "value": "Após preencher todos os campos clique em 'Salvar' para salvar o produto, ou 'Cancelar' para voltar."
+                "value": "Após preencher todos os campos, clique em 'Salvar' para salvar o produto, ou 'Cancelar' para voltar."
               },
               {
                 "type": "gallery",
@@ -600,7 +660,7 @@
               },
               {
                 "type": "text",
-                "value": "Na tela de produtos, podemos identificar os produtos na tabela, clicando no botão de 'Lápis' podemos editar esse produto, ou excluí-lo apertando na 'Lixeira', entrando no botão 'Lápis' vemos a seguinte tela:"
+                "value": "Na tela de produtos, podemos identificar os produtos na tabela, clicando no botão de 'Lápis' podemos editar esse produto, ou excluí-lo apertando na 'Lixeira', clicando no botão 'Lápis' vemos a seguinte tela:"
               },
               {
                 "type": "gallery",
@@ -689,6 +749,172 @@
                 ]
               }
             ]
+          }
+        ]
+      },
+
+      {
+        "id": "fornecedores",
+        "name": "Fornecedores",
+        "content": [
+          {
+            "type": "text",
+            "value": "Adicionando fornecedor",
+            "fontSize": "2xl",
+            "fontWeight": "bold"
+          },
+          {
+            "type": "text", 
+            "value": "Na tela de fornecedores, podemos identificar o botão 'Adicionar' na direita superior da tela, clicando no botão vemos a seguinte tela:"
+          },
+          {
+            "type": "gallery",
+            "images": [
+              {
+                "src": "fornecedores/01.png",
+                "alt": "Entrando na página de cadastro"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "value": "Ao acessar podemos visualizar três abas: Principal, contato e localização. Cada uma das abas contêm um formulário, começando pelo principal vemos um botão de alternar entre CNPJ e CPF, selecionando CNPJ teremos os seguintes campos:"
+          },
+          {
+            "type": "list",
+            "style": "point",
+            "list": [
+              {
+                "title": "CNPJ"
+              },
+              {
+                "title": "Nome"
+              },
+              {
+                "title": "Nome Fantasia"
+              },
+              {
+                "title": "Inscrição Estadual"
+              },
+              {
+                "title": "Site"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "value": "Se o cliente for CPF os campos são:"
+          },
+          {
+            "type": "list",
+            "style": "point",
+            "list": [
+              {
+                "title": "CPF"
+              },
+              {
+                "title": "Nome Completo"
+              },
+              {
+                "title": "RG"
+              },
+              {
+                "title": "Site"
+              }
+            ]
+          },
+          {
+            "type": "gallery",
+            "images": [
+              {
+                "src": "fornecedores/02.png",
+                "alt": "Formulário via CNPJ"
+              },
+              {
+                "src": "fornecedores/03.png",
+                "alt": "Formulário via CPF"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "value": "Caminhando para a aba 'Contato', veremos os seguintes campos:",
+            "fontSize": "xl",
+            "fontWeight": "medium"
+          },
+          {
+            "type": "list",
+            "style": "point",
+            "list": [
+              {
+                "title": "E-mail"
+              },
+              {
+                "title": "Fax"
+              },
+              {
+                "title": "Celular"
+              },
+              {
+                "title": "Telefone"
+              }
+            ]
+          },
+          {
+            "type": "gallery",
+            "images": [
+              {
+                "src": "fornecedores/04.png",
+                "alt": "Aba contato"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "value": "Finalizando para a aba de 'Localização', obtemos os campos:",
+            "fontSize": "xl",
+            "fontWeight": "medium"
+          },
+          {
+            "type": "list",
+            "style": "point",
+            "list": [
+              {
+                "title": "Código Postal"
+              },
+              {
+                "title": "Bairro"
+              },
+              {
+                "title": "Rua"
+              },
+              {
+                "title": "Município"
+              }
+            ]
+          },
+          {
+            "type": "gallery",
+            "images": [
+              {
+                "src": "fornecedores/05.png",
+                "alt": "Aba localização"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "value": "Após preencher todos os campos, clique em 'Salvar' para salvar o fornecedor, ou 'Cancelar' para voltar."
+          },
+          {
+            "type": "text",
+            "value": "Excluindo fornecedor.",
+            "fontSize": "2xl",
+            "fontWeight": "bold"
+          },
+          {
+            "type": "text",
+            "value": "Na tela de fornecedores clique no ícone de lixeira do fornecedor para excluir."            
           }
         ]
       },
@@ -804,7 +1030,31 @@
       {
         "id": "contas-a-pagar",
         "name": "Contas a Pagar",
-        "content": []
+        "content": [
+          {
+            "type": "text",
+            "value": "Contas a Pagar",
+            "fontSize": "2xl",
+            "fontWeight": "bold"
+          },
+          {
+            "type": "text",
+            "value": "Na tela de Contas a Pagar, vemos uma tabela com vendas. Em cada item da tabela, há o botão de Processar Conta."
+          },
+          {
+            "type": "text",
+            "value": "Ao clicar no botão de Processar Conta o status será alterado de Pendente para Pago."
+          },
+          {
+            "type": "gallery",
+            "images": [
+              {
+                "src": "contas-a-pagar/01.png",
+                "alt": "Conhecendo a página de Contas a Pagar"
+              }
+            ]
+          }
+        ]
       },
 
       {
@@ -825,7 +1075,7 @@
             "type": "gallery",
             "images": [
               {
-                "src": "contas/01.png",
+                "src": "contas-a-receber/01.png",
                 "alt": "Conhecendo a página de Contas a Receber"
               }
             ]
@@ -864,13 +1114,13 @@
           },
           {
             "type": "text",
-            "value": "Após preencher todos os campos clique em 'Adicionar Item' para adicionar o item à venda."
+            "value": "Após preencher todos os campos, clique em 'Adicionar Item' para adicionar o item à venda."
           },
           {
             "type": "gallery",
             "images": [
               {
-                "src": "contas/02.png",
+                "src": "contas-a-receber/02.png",
                 "alt": "Adicionando produto à venda"
               }
             ]
@@ -953,7 +1203,7 @@
               },
               {
                 "type": "text",
-                "value": "Após preencher todos os campos clique no botão 'Adicionar Serviço'."
+                "value": "Após preencher todos os campos, clique no botão 'Adicionar Serviço'."
               },
               {
                 "type": "gallery",
@@ -970,45 +1220,13 @@
               },
               {
                 "type": "text",
-                "value": "Editando Serviço",
-                "fontSize": "xl",
-                "fontWeight": "medium"
+                "value": "Excluindo serviço.",
+                "fontSize": "2xl",
+                "fontWeight": "bold"
               },
               {
                 "type": "text",
-                "value": "Clicando no ícone de lápis em um serviço da tabela, podemos ver os seguintes campos:"
-              },
-              {
-                "type": "list",
-                "style": "point",
-                "list": [
-                  {
-                    "title": "Título"
-                  },
-                  {
-                    "title": "Descrição"
-                  },
-                  {
-                    "title": "Imagem"
-                  }
-                ]
-              },
-              {
-                "type": "text",
-                "value": "Após modificar o que deseja clique em 'Salvar Alterações' para salvar."
-              },
-              {
-                "type": "gallery",
-                "images": [
-                  {
-                    "src": "site/servicos/03.png",
-                    "alt": "Editando Serviço"
-                  },
-                  {
-                    "src": "site/servicos/04.png",
-                    "alt": "Formulário edição de Serviço"
-                  }
-                ]
+                "value": "Na aba de serviços clique no ícone de lixeira do serviço para excluir."            
               }
             ]
           },
@@ -1050,7 +1268,7 @@
               },
               {
                 "type": "text",
-                "value": "Após preencher ambos os campos clique no botão 'Adicionar FAQ'."
+                "value": "Após preencher ambos os campos, clique no botão 'Adicionar FAQ'."
               },
               {
                 "type": "gallery",
@@ -1147,7 +1365,7 @@
               },
               {
                 "type": "text",
-                "value": "Após preencher ambos os campos clique no botão 'Adicionar Avaliação'."
+                "value": "Após preencher ambos os campos, clique no botão 'Adicionar Avaliação'."
               },
               {
                 "type": "gallery",
@@ -1344,7 +1562,7 @@
               },
               {
                 "type": "text",
-                "value": "Após preencher todos os campos clique em 'Agendar Visita' para agendar, em seguida, a visita agendada será mostrada em visitas pendentes."
+                "value": "Após preencher todos os campos, clique em 'Agendar Visita' para agendar, em seguida, a visita agendada será mostrada em visitas pendentes."
               },
               {
                 "type": "link",
@@ -1971,6 +2189,78 @@
       },
 
       {
+        "id": "usuarios",
+        "name": "Users",
+        "content": [
+          {
+            "type": "text",
+            "value": "Adding a User",
+            "fontSize": "2xl",
+            "fontWeight": "bold"
+          },
+          {
+            "type": "text",
+            "value": "On the users screen, you can identify the 'Add' button in the upper right corner of the screen. Clicking on the button will display the following screen:"
+          },
+          {
+            "type": "gallery",
+            "images": [
+              {
+                "src": "usuarios/01.png",
+                "alt": "Entering the registration page"
+              },
+              {
+                "src": "usuarios/02.png",
+                "alt": "Form fields"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "value": "In the form, you can see the following fields:"
+          },
+          {
+            "type": "list",
+            "style": "point",
+            "list": [
+              {
+                "title": "Name"
+              },
+              {
+                "title": "Email"
+              },
+              {
+                "title": "Password"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "value": "After filling in all the fields, click 'Save' to save the user, or 'Cancel' to go back."
+          },
+          {
+            "type": "gallery",
+            "images": [
+              {
+                "src": "usuarios/03.png",
+                "alt": "Completing the registration"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "value": "Deleting a User",
+            "fontSize": "2xl",
+            "fontWeight": "bold"
+          },
+          {
+            "type": "text",
+            "value": "On the users screen, click on the trash can icon for the user you want to delete."
+          }
+        ]
+      },   
+
+      {
         "id": "produtos",
         "name": "Products",
         "routes": [
@@ -2179,6 +2469,172 @@
       },
 
       {
+        "id": "fornecedores",
+        "name": "Suppliers",
+        "content": [
+          {
+            "type": "text",
+            "value": "Adding a Supplier",
+            "fontSize": "2xl",
+            "fontWeight": "bold"
+          },
+          {
+            "type": "text",
+            "value": "On the suppliers' screen, you can identify the 'Add' button in the upper right corner of the screen. Clicking this button will display the following screen:"
+          },
+          {
+            "type": "gallery",
+            "images": [
+              {
+                "src": "fornecedores/01.png",
+                "alt": "Accessing the registration page"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "value": "When you access, you will see three tabs: Main, Contact, and Location. Each of these tabs contains a form. Starting with the main tab, you will find a toggle button between CNPJ and CPF. Selecting CNPJ will show the following fields:"
+          },
+          {
+            "type": "list",
+            "style": "point",
+            "list": [
+              {
+                "title": "CNPJ"
+              },
+              {
+                "title": "Name"
+              },
+              {
+                "title": "Trade Name"
+              },
+              {
+                "title": "State Registration"
+              },
+              {
+                "title": "Website"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "value": "If the supplier is an individual (CPF), the fields are as follows:"
+          },
+          {
+            "type": "list",
+            "style": "point",
+            "list": [
+              {
+                "title": "CPF"
+              },
+              {
+                "title": "Full Name"
+              },
+              {
+                "title": "ID"
+              },
+              {
+                "title": "Website"
+              }
+            ]
+          },
+          {
+            "type": "gallery",
+            "images": [
+              {
+                "src": "fornecedores/02.png",
+                "alt": "Form via CNPJ"
+              },
+              {
+                "src": "fornecedores/03.png",
+                "alt": "Form via CPF"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "value": "Moving to the 'Contact' tab, you will see the following fields:",
+            "fontSize": "xl",
+            "fontWeight": "medium"
+          },
+          {
+            "type": "list",
+            "style": "point",
+            "list": [
+              {
+                "title": "Email"
+              },
+              {
+                "title": "Fax"
+              },
+              {
+                "title": "Mobile"
+              },
+              {
+                "title": "Phone"
+              }
+            ]
+          },
+          {
+            "type": "gallery",
+            "images": [
+              {
+                "src": "fornecedores/04.png",
+                "alt": "Contact Tab"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "value": "Finally, in the 'Location' tab, you will find the following fields:",
+            "fontSize": "xl",
+            "fontWeight": "medium"
+          },
+          {
+            "type": "list",
+            "style": "point",
+            "list": [
+              {
+                "title": "Postal Code"
+              },
+              {
+                "title": "Neighborhood"
+              },
+              {
+                "title": "Street"
+              },
+              {
+                "title": "City"
+              }
+            ]
+          },
+          {
+            "type": "gallery",
+            "images": [
+              {
+                "src": "fornecedores/05.png",
+                "alt": "Location Tab"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "value": "After filling in all the fields, click 'Save' to save the supplier or 'Cancel' to go back."
+          },
+          {
+            "type": "text",
+            "value": "Deleting a Supplier",
+            "fontSize": "2xl",
+            "fontWeight": "bold"
+          },
+          {
+            "type": "text",
+            "value": "On the suppliers' screen, click the trash can icon of the supplier to delete it."
+          }
+        ]
+      },      
+
+      {
         "id": "agenda",
         "name": "Schedule",
         "content": [
@@ -2289,8 +2745,32 @@
       {
         "id": "contas-a-pagar",
         "name": "Accounts Payable",
-        "content": []
-      },
+        "content": [
+          {
+            "type": "text",
+            "value": "Accounts Payable",
+            "fontSize": "2xl",
+            "fontWeight": "bold"
+          },
+          {
+            "type": "text",
+            "value": "On the Accounts Payable screen, we see a table of sales. In each item of the table, there is a Process Account button."
+          },
+          {
+            "type": "text",
+            "value": "Clicking on the Process Account button will change the status from Pending to Paid."
+          },
+          {
+            "type": "gallery",
+            "images": [
+              {
+                "src": "contas-a-pagar/01.png",
+                "alt": "Exploring the Accounts Payable page"
+              }
+            ]
+          }
+        ]
+      },      
 
       {
         "id": "contas-a-receber",
@@ -2310,7 +2790,7 @@
             "type": "gallery",
             "images": [
               {
-                "src": "contas/01.png",
+                "src": "contas-a-receber/01.png",
                 "alt": "Exploring the Accounts Receivable Page"
               }
             ]
@@ -2355,7 +2835,7 @@
             "type": "gallery",
             "images": [
               {
-                "src": "contas/02.png",
+                "src": "contas-a-receber/02.png",
                 "alt": "Adding a Product to the Sale"
               }
             ]
@@ -2455,45 +2935,13 @@
               },
               {
                 "type": "text",
-                "value": "Editing a Service",
+                "value": "Deleting service",
                 "fontSize": "xl",
                 "fontWeight": "medium"
-              },
+              },              
               {
                 "type": "text",
-                "value": "By clicking on the pencil icon on a service in the table, you can see the following fields:"
-              },
-              {
-                "type": "list",
-                "style": "point",
-                "list": [
-                  {
-                    "title": "Title"
-                  },
-                  {
-                    "title": "Description"
-                  },
-                  {
-                    "title": "Image"
-                  }
-                ]
-              },
-              {
-                "type": "text",
-                "value": "After making the desired modifications, click 'Save Changes' to save."
-              },
-              {
-                "type": "gallery",
-                "images": [
-                  {
-                    "src": "site/servicos/03.png",
-                    "alt": "Editing Service"
-                  },
-                  {
-                    "src": "site/servicos/04.png",
-                    "alt": "Service Editing Form"
-                  }
-                ]
+                "value": "In the services tab, click on the service's trash icon to delete."
               }
             ]
           },

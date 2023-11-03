@@ -48,3 +48,6 @@ Manual de utilização do sistema da empresa SCA Portões Eletrônicos para auxi
 + Adicionado novos conteúdos
 + Melhoria de performance
 + Pequenas melhorias e correções
+
+### Update 1.0.9
++ Adicionado novos conteúdos
