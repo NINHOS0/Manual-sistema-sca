@@ -1,8 +1,7 @@
 import { galleryItem, linkItem, listItem, textItem } from "./itensProps";
 
 export interface data {
-  languages: language[];
-  content: content;
+  content: content[];
 }
 
 export interface language {

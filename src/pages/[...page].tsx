@@ -1,6 +1,6 @@
 import { Text, Flex, Box, IconButton, Drawer, DrawerOverlay, DrawerContent, DrawerBody, DrawerCloseButton, DrawerHeader, useDisclosure, CircularProgress } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
-import { language, section, subsection } from "@/interfaces/contentProps";
+import { data, language, section, subsection } from "@/interfaces/contentProps";
 import HomeHeader from "@/components/home/HomeHeader";
 import HomeAside from "@/components/home/HomeAside";
 import HomeCurrentPage from "@/components/home/HomeCurrentPage";
@@ -90,7 +90,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps(context: any) {
   const data: any = allData.data
-  const dataLang: any = allData.languages
+  const dataLang: language[] = allData.languages
   
   const { params } = context
   
@@ -109,6 +109,15 @@ export async function getStaticProps(context: any) {
 
   const page = _data_?.filter((s: section) => s.id === params.page[1])[0]?.name || null
   const subpage = params.page[2] && _data_?.filter((s: section) => s.id === params.page[1])[0]?.routes?.filter((sub: subsection) => sub.id === params.page[2])[0]?.name || null
+
+  if (!dataLang.find(e => e.id === params.page[0])) {
+    return {
+      redirect: {
+        destination: `/pt-br/inicio`,
+        permanent: false,
+      }
+    }
+  }
 
   if (!page || params.page[2] && !subpage) {
     return {
