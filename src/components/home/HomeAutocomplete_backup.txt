@@ -1,0 +1,70 @@
+import { section } from "@/interfaces/contentProps";
+import { AutoComplete, AutoCompleteInput, AutoCompleteItem, AutoCompleteList, Item } from "@choc-ui/chakra-autocomplete";
+import { useRouter } from "next/router";
+import { useState, useEffect } from 'react'
+
+
+interface ISearchResult {
+  id: string
+  name: string
+  data: string
+}
+
+interface HomeAutocompleteProps {
+  data: section[],
+  lang: string
+}
+
+export default function HomeAutocomplete({data, lang}: HomeAutocompleteProps) {
+  const [searchResult, setSearchResult] = useState<ISearchResult[]>([])
+  const route = useRouter()
+
+  useEffect(() => {
+    let searchs: ISearchResult[] = []
+    data.forEach(sec => {
+      sec.content?.forEach((item: any) => {
+        if (item.value) {
+          if (searchs.find(e => e.id === sec.id)) {
+
+            searchs = searchs.map((e: ISearchResult) => {
+              if (e.id === sec.id) return {...e, data: `${e.data} ${item.value.toLowerCase()}`}
+              else return e
+            })
+
+          }
+          else searchs.push({
+            id: sec.id,
+            name: sec.name,
+            data: item.value.toLowerCase()
+          })
+        }
+      })
+    })
+    setSearchResult(searchs)
+  }, []);
+
+  return (
+    <AutoComplete
+      onSelectOption={({ item }: { item: Item }) => route.push(`/${lang}/${item.label}`)}
+      filter={(query: string, optionValue: Item["value"]) => optionValue.includes(query)}
+    >
+      <AutoCompleteInput
+        placeholder={lang === 'en' ? 'Search...' : 'Pesquisar...'}
+        w={96}
+        onFocus={(e: React.FocusEvent<HTMLInputElement>) => e.target.value = ""}
+      />
+      <AutoCompleteList>
+        {searchResult.map((item, id) => (
+          <AutoCompleteItem
+            key={`option-${id}`}
+            label={item.id}
+            value={item.data}
+            textTransform="capitalize"
+          >
+            {item.name}
+          </AutoCompleteItem>
+        ))}
+      </AutoCompleteList>
+    </AutoComplete>
+  )
+}

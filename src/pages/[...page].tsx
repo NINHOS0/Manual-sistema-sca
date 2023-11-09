@@ -22,7 +22,6 @@ interface InitialHomeProps {
 
 export default function InitialHome({ page, subpage, lang, data, content, languages, projectVersion }: InitialHomeProps) {
   const { isOpen, onOpen, onClose } = useDisclosure()
-  
 
   return (
     <>

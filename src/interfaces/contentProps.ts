@@ -16,12 +16,14 @@ export interface content {
 export interface section {
   id: string;
   name: string;
-  content?: (textItem | linkItem | galleryItem | listItem)[];
+  content?: itens[];
   routes?: subsection[];
 }
 
 export interface subsection {
   id: string;
   name: string;
-  content: (textItem | linkItem | galleryItem | listItem)[];
+  content: itens[];
 }
+
+export type itens = (textItem | linkItem | galleryItem | listItem)
