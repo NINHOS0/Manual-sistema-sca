@@ -22,7 +22,7 @@ export default function HomeMainItem({ item, handleOpenLighbox }: HomeMainItemPr
         <Flex justifyItems={{base: 'center', lg: 'baseline'}} gap={2} mt={1} mb={4} px={1}>
           {item.images.map((img, i) => (
             <Stack gap={0.5} key={i}>
-              <Text fontSize={'xs'} color={'gray.400'}>{img.alt}</Text>
+              <Text fontSize={'xs'} color={'gray.400'} display={{base: 'none', sm: 'inherit'}}>{img.alt}</Text>
               <Image boxShadow={"xl"} _dark={{boxShadow: 'none'}} cursor={'pointer'} src={`/img/${img.src}`} fallback={colorMode === "dark" ? <CircularProgress isIndeterminate capIsRound trackColor="gray.900" color="gray.100" thickness={6} m={20}/> : <CircularProgress isIndeterminate capIsRound trackColor="gray.100" color="gray.900" thickness={6} m={20}/>} onClick={() => handleOpenLighbox(`/img/${img.src}`)} alt={img.alt} w={'full'} maxW={750} maxH={450} borderRadius={"lg"} />
             </Stack>
           ))}
