@@ -31,7 +31,7 @@ const HomeHeader = ({ data, lang }: HomeHeaderProps) => {
           <HStack gap={4}>
             <InputGroup>
               <HomeAutocomplete lang={lang} data={data}/>
-              <InputRightAddon children={<SearchIcon/>}/>
+              <InputRightElement><SearchIcon/></InputRightElement>
             </InputGroup>
             <Tooltip label={route.query.page![0] === 'en' ? 'Change theme' : 'Trocar tema'}>
               {colorMode === "light" ? <SunIcon onClick={toggleColorMode} cursor={'pointer'} /> : <MoonIcon onClick={toggleColorMode} cursor={'pointer'} />}

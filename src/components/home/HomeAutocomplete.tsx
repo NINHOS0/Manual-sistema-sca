@@ -50,7 +50,7 @@ export default function HomeAutocomplete({ data, lang }: HomeAutocompleteProps) 
       })
     })
     setSearchResult(searchs)
-  }, []);
+  }, [data]);
 
   return (
     <AutoComplete
