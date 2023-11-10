@@ -1,11 +1,7 @@
-import { Text, Flex, Box, IconButton, Drawer, DrawerOverlay, DrawerContent, DrawerBody, DrawerCloseButton, DrawerHeader, useDisclosure, CircularProgress } from "@chakra-ui/react";
+import { HomeAside, HomeAsideMobile, HomeCurrentPage, HomeHeader, HomeLanguage, HomeMainContent } from "@/components/components";
+import { Text, Flex, Box, IconButton, useDisclosure } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
-import { data, language, section, subsection } from "@/interfaces/contentProps";
-import HomeHeader from "@/components/home/HomeHeader";
-import HomeAside from "@/components/home/HomeAside";
-import HomeCurrentPage from "@/components/home/HomeCurrentPage";
-import HomeLanguage from "@/components/home/HomeLanguage";
-import HomeMainContent from "@/components/home/HomeMainContent";
+import { language, section, subsection } from "@/interfaces/contentProps";
 import { galleryItem, linkItem, textItem } from "@/interfaces/itensProps";
 import allData from "../../public/allData.json";
 import Head from "next/head";
@@ -21,30 +17,14 @@ interface InitialHomeProps {
 }
 
 export default function InitialHome({ page, subpage, lang, data, content, languages, projectVersion }: InitialHomeProps) {
-  const { isOpen, onOpen, onClose } = useDisclosure()
+  const controller = useDisclosure()
 
   return (
     <>
       <Head>
         <title>{page ? (`${subpage ? `${page} - ${subpage}` : page}`) : "Manual de Utilização do Sistema"}</title>
       </Head>
-      <Drawer
-        isOpen={isOpen}
-        onClose={onClose}
-        placement="left"
-        size={"xs"}
-      >
-        <DrawerOverlay />
-        <DrawerContent bgColor={"gray.100"} color={"black"} _dark={{ color: "white", bgColor: "gray.900" }}>
-          <DrawerHeader>
-            <HomeCurrentPage data={data} fontSize={"xs"} />
-            <DrawerCloseButton />
-          </DrawerHeader>
-          <DrawerBody pl={"-2"} mt={2}>
-            <HomeAside data={data} />
-          </DrawerBody>
-        </DrawerContent>
-      </Drawer>
+      <HomeAsideMobile controller={controller} data={data}/>
 
       <Flex bgColor={"gray.100"} color={"black"} _dark={{ color: "white", bgColor: "gray.900" }} direction={"column"} minH={"100vh"} h={"full"} alignItems={"center"}>
         <HomeHeader data={data} lang={lang}/>
@@ -57,7 +37,7 @@ export default function InitialHome({ page, subpage, lang, data, content, langua
               <Box display={{ base: "none", md: "inherit" }}>
                 <HomeCurrentPage data={data} />
               </Box>
-              <IconButton aria-label="Menu" variant={"unstyled"} icon={<HamburgerIcon />} minW={"min-content"} h={"min-content"} display={{ base: "initial", md: "none" }} onClick={onOpen} />
+              <IconButton aria-label="Menu" variant={"unstyled"} icon={<HamburgerIcon />} minW={"min-content"} h={"min-content"} display={{ base: "initial", md: "none" }} onClick={controller.onOpen} />
               <HomeLanguage languages={languages} />
             </Flex>
             <HomeMainContent content={content} />

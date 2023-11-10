@@ -1,12 +1,10 @@
-import { Box, Flex, Grid, GridItem, HStack, IconButton, Image, Input, InputGroup, InputRightAddon, InputRightElement, Link, Tooltip, useColorMode } from "@chakra-ui/react";
-import { AutoComplete, AutoCompleteInput, AutoCompleteItem, AutoCompleteList, Item } from "@choc-ui/chakra-autocomplete";
-import LogoBlack from "/public/img/logo-black.png"
-import LogoWhite from "/public/img/logo-white.png"
-import { section } from "@/interfaces/contentProps";
+import { Box, Flex, Image, InputGroup, InputRightElement, Link, Tooltip, useColorMode } from "@chakra-ui/react";
 import { MoonIcon, SearchIcon, SunIcon } from "@chakra-ui/icons";
-import React, { memo, useState, useEffect } from 'react';
+import { LogoWhite, LogoBlack } from "@/exports/logo"
+import { section } from "@/interfaces/contentProps";
 import { useRouter } from 'next/router'
-import HomeAutocomplete from "./HomeAutocomplete";
+import React, { memo } from 'react';
+import { HomeAutocomplete } from "./components";
 
 interface HomeHeaderProps {
   data: section[],
@@ -32,7 +30,7 @@ const HomeHeader = ({ data, lang }: HomeHeaderProps) => {
             <HomeAutocomplete lang={lang} data={data} />
             <InputRightElement><SearchIcon /></InputRightElement>
           </InputGroup>
-          <Tooltip label={route.query.page![0] === 'en' ? 'Change theme' : 'Trocar tema'}>
+          <Tooltip label={route.query.page![0] === 'en' ? 'Change theme' : 'Mudar tema'}>
             {colorMode === "light" ? <SunIcon onClick={toggleColorMode} cursor={'pointer'} /> : <MoonIcon onClick={toggleColorMode} cursor={'pointer'} />}
           </Tooltip>
         </Flex>

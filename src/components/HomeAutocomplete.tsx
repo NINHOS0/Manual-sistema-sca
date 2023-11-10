@@ -1,7 +1,7 @@
 import { itens, section, subsection } from "@/interfaces/contentProps";
 import { AutoComplete, AutoCompleteInput, AutoCompleteItem, AutoCompleteList, Item } from "@choc-ui/chakra-autocomplete";
 import { useRouter } from "next/router";
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 
 
 interface ISearch {
@@ -18,6 +18,7 @@ interface HomeAutocompleteProps {
 export default function HomeAutocomplete({ data, lang }: HomeAutocompleteProps) {
   const [searchResult, setSearchResult] = useState<ISearch[]>([])
   const route = useRouter()
+  const search = useRef<any>()
 
   useEffect(() => {
     let searchs: ISearch[] = []
@@ -87,12 +88,13 @@ export default function HomeAutocomplete({ data, lang }: HomeAutocompleteProps) 
 
   return (
     <AutoComplete
-      onSelectOption={({ item }: { item: Item }) => route.push(`/${lang}/${searchResult.filter(e => e.name === item.label)[0].route}`)}
+    onSelectOption={({ item }: { item: Item }) => route.push(`/${lang}/${searchResult.filter(e => e.name === item.label)[0].route}${search.current.value.trim() !== '' ? '?s='+search.current.value.trim().toLowerCase() : ''}`)}
       filter={(query: string, optionValue: Item["value"]) => optionValue.includes(query.toLowerCase())}
     >
       <AutoCompleteInput
         placeholder={lang === 'en' ? 'Search...' : 'Pesquisar...'}
         onFocus={(e: React.FocusEvent<HTMLInputElement>) => e.target.value = ""}
+        ref={search}
       />
       <AutoCompleteList>
         {searchResult.map((item, id) => (

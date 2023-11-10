@@ -1,13 +1,13 @@
 import { Stack } from "@chakra-ui/react";
 import { useEffect, useRef, useState } from "react";
-import HomeMainItem from "./HomeMainItem";
 import { galleryItem, linkItem, textItem } from "@/interfaces/itensProps";
-import Lightbox from "yet-another-react-lightbox"
 import { Counter, Thumbnails, Captions, Zoom } from "yet-another-react-lightbox/plugins";
+import Lightbox from "yet-another-react-lightbox"
 import "yet-another-react-lightbox/styles.css";
 import "yet-another-react-lightbox/plugins/counter.css";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
 import "yet-another-react-lightbox/plugins/captions.css";
+import { HomeMainItem } from "./components";
 
 interface HomeMainContentProps {
   content: (textItem | linkItem | galleryItem)[],
@@ -41,8 +41,7 @@ export default function HomeMainContent({ content }: HomeMainContentProps) {
     let index = -1;
     images.forEach((ima, i) => {
       if (ima.src === src) {
-        index = i
-        return
+        return index = i
       }
     })
     return index
@@ -54,7 +53,7 @@ export default function HomeMainContent({ content }: HomeMainContentProps) {
   }
 
   return (
-    <Stack textAlign={"justify"} h={{ md: "calc(100vh - 13em)" }} overflowY={{ md: "auto" }} pr={4}>
+    <Stack textAlign={"justify"} h={{ md: "calc(100vh - 13em)" }} overflowY={{ md: "auto" }} pr={4} pb={16}>
       {content.map((item, i) => (
         <HomeMainItem key={i} item={item} handleOpenLighbox={handleOpenLighbox} />
       ))}

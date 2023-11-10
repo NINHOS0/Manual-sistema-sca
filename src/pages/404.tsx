@@ -7,7 +7,7 @@ export default function Error404() {
       <Container centerContent justifyContent={'center'}>
         <Heading size={'2xl'}>404</Heading>
         <Heading size={"lg"} mb={4}>Página não encontrada</Heading>
-        <Link href={'/pt-br/inicio'}>Ir para página inicial</Link>
+        <Link href={'/pt-br/inicio'}>Página inicial</Link>
       </Container>
     </Flex>
   )
